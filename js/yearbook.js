@@ -30,10 +30,11 @@
     countries += '<h4>Countries</h4>';
     countries += '<ul>';
     var sortedCountries = sortObject(dariahYearbookData.countries);
-    for (var id in sortedCountries) {
-      var countryId = sortedCountries[id];
+    var elementId = "";
+    for (var sortedCountryId in sortedCountries) {
+      var countryId = sortedCountries[sortedCountryId];
       var country = dariahYearbookData.countries[countryId];
-      var elementId = 'country' + countryId;
+      elementId = 'country' + countryId;
       countries += '<li><input id="' + elementId + '" name="countries" type="checkbox" value="' + countryId + '"/><label for="' + elementId + '">' + country + '</label></li>';
     }
     countries += '</ul>';
@@ -49,10 +50,10 @@
     institutions += '<h4>Institutions</h4>';
     institutions += '<ul>';
     var sortedInstitutions = sortObject(dariahYearbookData.institutions);
-    for (var id in sortedInstitutions) {
-      var institutionId = sortedInstitutions[id];
+    for (var sortedInstitutionId in sortedInstitutions) {
+      var institutionId = sortedInstitutions[sortedInstitutionId];
       var institution = dariahYearbookData.institutions[institutionId];
-      var elementId = 'institution' + institutionId;
+      elementId = 'institution' + institutionId;
       institutions += '<li><input id="' + elementId + '" name="institutions" type="checkbox" value="' + institutionId + '"/><label for="' + elementId + '">' + institution.name + '</label></li>';
     }
     institutions += '</ul>';
@@ -68,10 +69,10 @@
     positions += '<h4>Administrative positions</h4>';
     positions += '<ul>';
     var sortedPositions = sortObject(dariahYearbookData.positions);
-    for (var id in sortedPositions) {
-      var positionId = sortedPositions[id];
+    for (var sortedPositionId in sortedPositions) {
+      var positionId = sortedPositions[sortedPositionId];
       var position = dariahYearbookData.positions[positionId];
-      var elementId = 'position' + positionId;
+      elementId = 'position' + positionId;
       positions += '<li><input id="' + elementId + '" name="positions" type="checkbox" value="' + positionId + '"/><label for="' + elementId + '">' + position + '</label></li>';
     }
     positions += '</ul>';
@@ -116,7 +117,7 @@
         if (person.role) { html += '<span class="role">' + person.role + '</span>'; }
         if (person.position) { html += '<span class="position">' + dariahYearbookData.positions[person.position] + '</span>'; }
         html += '</p>';
-        html += '<button class="show-more" data-complete-profile="' + person.id + '">See More</button><button class="show-less">See Less</button>'
+        html += '<button class="show-more" data-complete-profile="' + person.id + '">See More</button><button class="show-less">See Less</button>';
         html += '</div>';
         html += '<div class="complete">';
         html += '<ul class="tabs">';
@@ -174,7 +175,7 @@
     sortAZ = !sortAZ;
     results = results.reverse();
     _showResults(0, false);
-  }
+  };
 
   var _showResults = function(page, scrolltoTop) {
     jQuery('#results').empty();
@@ -279,24 +280,24 @@
     if (jQuery(event.target).hasClass('show-less')) {
       jQuery("[data-person-id]").removeClass('show-complete');
     }
-  }
+  };
 
   function _onFilters(event) {
     if (jQuery(event.target).hasClass('filter-more')) {
       event.preventDefault();
       event.stopPropagation();
 
-      var section = jQuery(event.target).closest('section');
-      jQuery(section).addClass('all');
-      jQuery(section).find('li:not(".unavailable")').show();
+      var sectionMore = jQuery(event.target).closest('section');
+      jQuery(sectionMore).addClass('all');
+      jQuery(sectionMore).find('li:not(".unavailable")').show();
       updateFilterList();
     }
 
     if (jQuery(event.target).hasClass('filter-less')) {
       event.preventDefault();
       event.stopPropagation();
-      var section = jQuery(event.target).closest('section');
-      jQuery(section).removeClass('all');
+      var sectionLess = jQuery(event.target).closest('section');
+      jQuery(sectionLess).removeClass('all');
       updateFilterList();
     }
   }

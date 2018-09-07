@@ -340,9 +340,10 @@ wp_reset_query();
     </div>
   </div>
   <ul id="mapNav" class="nav">
-    <li>
-			<a href="#" data-type="project">Projects</a>
-		</li><li>
+<!--    <li>-->
+<!--			<a href="#" data-type="project">Projects</a>-->
+<!--		</li>-->
+      <li>
 			<a href="#" data-type="country">Countries</a>
 		</li>
   </ul>

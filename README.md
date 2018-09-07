@@ -1,6 +1,10 @@
-# Dariah WP Theme #
+# DARIAH WordPress Theme
 
 Based on TheFox WP Theme
+
+## Install npm
+
+* `npm install`
 
 ## Gulp
 

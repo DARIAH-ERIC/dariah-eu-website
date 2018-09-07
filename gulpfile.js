@@ -44,7 +44,7 @@ gulp.task('js', function() {
 gulp.task('watch', function() {
   browserSync.init({
     files: ['./**/*.php'],
-    proxy: 'http://local.dariah.eu/',
+    proxy: 'http://dariah.dev/'
   });
   gulp.watch('./sass/**/*.scss', ['sass', reload]);
   gulp.watch('./js/*.js', ['js', reload]);

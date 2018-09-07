@@ -1,0 +1,8 @@
+.page-template-single-wwd {
+  .def_section {
+    padding: 80px 0 90px;
+    background-color: #f9fafb;
+  }
+
+  @include custom-list;
+}

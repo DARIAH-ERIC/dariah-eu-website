@@ -1,0 +1,108 @@
+.events-single,
+.events-archive,
+.events-category {
+    #top_bg .page_title_ctn {
+        background-color: #8e60a9;
+        border-bottom: none;
+    
+        h1,
+        #breadcrumbs,
+        #breadcrumbs #crumbs a,
+        #breadcrumbs #crumbs span {
+          color: white;
+        }
+      }
+}
+
+#tribe-events-content-wrapper {
+    margin: 50px 0;
+}
+
+.tribe-bar-submit,
+.tribe-bar-search-filter {
+    margin-top: 0;
+}
+
+.datepicker.dropdown-menu {
+    z-index: 1000 !important;
+}
+
+#tribe-events .tribe-events-button,
+#tribe-events .tribe-events-button:hover,
+#tribe_events_filters_wrapper input[type=submit], 
+.tribe-events-button, 
+.tribe-events-button.tribe-active:hover, 
+.tribe-events-button.tribe-inactive, 
+.tribe-events-button:hover, 
+.tribe-events-calendar td.tribe-events-present div[id*=tribe-events-daynum-], 
+.tribe-events-calendar td.tribe-events-present div[id*=tribe-events-daynum-]>a {
+    background-color: $homeColor;
+}
+
+#tribe-events-content .tribe-events-tooltip h4, 
+#tribe_events_filters_wrapper .tribe_events_slider_val, 
+.single-tribe_events a.tribe-events-gcal, 
+.single-tribe_events a.tribe-events-ical {
+    color: $homeColor;
+}
+
+#tribe-events {
+    .tribe-events-notices {
+        background: rgba(237, 111, 89, 0.2);
+        border: 1px solid $homeColor;
+        color: $homeColor;
+    }
+}
+
+.type-tribe_events .more {
+    display: none;
+}
+
+@media only screen and (min-width: 769px) {
+    #tribe-events-content .tribe-events-calendar td {
+        font-size: 13px;
+    }
+
+    .tribe-events-tooltip .tribe-events-event-body {
+        font-size: 12px;
+
+        p {
+            line-height: 18px; 
+        }
+    }
+
+    #tribe-events-content .tribe-events-calendar .tribe-events-has-events  {
+        background-color: rgba(237, 111, 89, 0.2);
+
+        &:hover {
+            background-color: rgba(237, 111, 89, 0.2);
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #tribe-events-content .tribe-events-calendar td.tribe-events-present.mobile-active:hover, 
+    .tribe-events-calendar td.tribe-events-present.mobile-active, 
+    .tribe-events-calendar td.tribe-events-present.mobile-active div[id*=tribe-events-daynum-], 
+    .tribe-events-calendar td.tribe-events-present.mobile-active div[id*=tribe-events-daynum-] a,
+    #tribe-events-content .tribe-events-calendar .mobile-active:hover, 
+    #tribe-events-content .tribe-events-calendar td.tribe-events-othermonth.mobile-active, 
+    #tribe-events-content .tribe-events-calendar td.tribe-events-othermonth.mobile-active div[id*=tribe-events-daynum-], 
+    #tribe-events-content .tribe-events-calendar td.tribe-events-othermonth.mobile-active div[id*=tribe-events-daynum-] a, 
+    .tribe-events-calendar .mobile-active div[id*=tribe-events-daynum-], 
+    .tribe-events-calendar .mobile-active div[id*=tribe-events-daynum-] a, 
+    .tribe-events-calendar td.mobile-active {
+        background-color: $homeColor;
+    }
+
+    .tribe-events-sub-nav li a {
+        background-color: transparent;
+    }
+
+    #tribe-events-content .tribe-events-calendar td.tribe-events-present:hover,
+    .tribe-events-calendar td.tribe-events-present,
+    .tribe-events-calendar td.tribe-events-present div[id*=tribe-events-daynum-],
+    .tribe-events-calendar td.tribe-events-present div[id*=tribe-events-daynum-]>a {
+        background-color: #dedede;
+    }
+}

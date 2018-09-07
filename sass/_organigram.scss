@@ -1,0 +1,150 @@
+
+.page-template-single-organigram {
+  svg {
+    width: 1050px;
+    max-width: 100%;
+    height: auto;
+
+    @media screen and (min-width:0\0) {
+      width: auto;
+      height: 100vw;
+    }
+
+
+    margin: 40px auto;
+    #blocs g {
+      cursor: pointer;
+
+      path {
+        transition: opacity 0.2s linear;
+      }
+
+      &:hover path {
+        opacity: 0.7;
+      }
+    }
+  }
+
+  #posts {
+    width: 100%;
+    max-width: none;
+    padding-bottom: 0;
+  }
+
+  #positions {
+    background-color: #f6f6f6;
+    padding: 15px 0 15px;
+    margin-bottom: 40px;
+    font-family: "Lato", Arial, sans-serif;
+    display: none;
+
+    @media only screen and (min-width: 768px) {
+      padding: 60px 0;
+    }
+
+    h2 {
+      font-size: 40px;
+      color: #434343;
+    }
+
+    .description {
+      font-size: 18px;
+      margin: 10px 0 0;
+      width: 100%;
+      max-width: 770px;
+    }
+  }
+
+  .contact-list {
+    width: 100%;
+
+    @media only screen and (min-width: 1034px) {
+      li {
+        display: inline-block;
+        width: calc(50% - 10px);
+      }
+    }
+
+    .dariah-mail {
+      right: 5px;
+
+      @media only screen and (min-width: 768px) {
+        right: 25px;
+      }
+    }
+  }
+
+  .close {
+    position: absolute;
+    top: 0;
+    right: 20px;
+  }
+
+  .contact-complete {
+    margin-top: 40px;
+    text-align: center;
+
+    @media only screen and (min-width: 768px) {
+      margin-top: 20px;
+    }
+
+    .image-container,
+    .content {
+      display: inline-block;
+      vertical-align: top;
+    }
+
+    .image-container {
+      border: 7px solid white;
+      background-size: cover;
+      background-position: center;
+      width: 226px;
+      height: 226px;
+
+      @media only screen and (min-width: 1034px) {
+        width: 326px;
+        height: 326px;
+      }
+    }
+
+    .content {
+      text-align: left;
+      @media only screen and (min-width: 768px) {
+        width: calc(100% - 310px);
+        margin: 0 30px;
+      }
+
+      @media only screen and (min-width: 1034px) {
+        width: calc(100% - 450px);
+        margin: 0 50px;
+      }
+    }
+
+    .position {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .dariah-mail {
+      margin-top: 20px;
+    }
+  }
+
+  .back {
+    background-color: #e4e4e4;
+    border-radius: 2px;
+    padding: 14px 20px;
+    color: #a4a4a4;
+    font-size: 16px;
+    text-transform: uppercase;
+    float: right;
+    bottom: -5px;
+    position: absolute;
+    right: 0;
+
+    @media only screen and (min-width: 768px) {
+      float: left;
+      position: relative;
+    }
+  }
+}

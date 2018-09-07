@@ -1,0 +1,157 @@
+.device-ios body.fixed {
+  position: fixed;
+  overflow: hidden;
+  left: 0;
+  right: 0;
+}
+
+body {
+  &.page,
+  &.category {
+    .nav_type_2 .cart-content:hover,
+    .nav_type_2 #searchtop_img:hover i {
+      color: $mainColor;
+    }
+
+      .child_pages_ctn a:hover {
+        background-color: $homeColor;
+      }
+  }
+
+  #mobile-menu #tf_mb_menu .mobile-ul-open > a,
+  #mobile-menu #tf_mb_menu .mobile-ul-open:after {
+    color: $homeColor !important;
+  }
+}
+
+#posts {
+  p + ul:not(.results):not(.contact-list) {
+    margin-top: -10px;
+    margin-bottom: 10px;
+  }
+
+  ul:not(.results):not(.contact-list) {
+    list-style-type: disc;
+    margin-left: 20px;
+    word-wrap: break-word;
+  }
+}
+
+.widget_tp_widget_recent_tweets {
+  span {
+    color: black;
+
+    a {
+      color: black;
+      font-weight: normal;
+      text-decoration: underline;
+    }
+  }
+
+  #footer & a {
+    color: black;
+  }
+}
+
+.reset {
+  margin: 0;
+  padding: 0;
+}
+
+.dariah-mail {
+  overflow:hidden;
+  text-indent:-9000px;
+  display: block;
+  width: 25px;
+  height: 25px;
+  background: url('images/ico-mail.png') no-repeat;
+  background-size: contain;
+
+  @media only screen and (min-width: 768px) {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+#posts .navigation .pagination {
+  .current,
+  span:hover,
+  a:hover {
+    background: $homeColor;
+    border-color: $homeColor;
+  }
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.content {
+  h2 {
+    margin-top: 15px;
+    margin-bottom: 5px;
+  }
+
+  h3 {
+    margin-top: 15px;
+    margin-bottom: 5px;
+  }
+}
+
+.person-desc {
+  * {
+    color: #434343;
+  }
+
+  .description-full,
+  .skills,
+  .about {
+    display: none;
+  }
+
+  &.full {
+    margin-bottom: 50px;
+
+    .description-excerpt,
+    .see-more {
+      display: none;
+    }
+
+    .description-full,
+    .skills,
+    .about {
+      display: block;
+    }
+  }
+}
+
+
+.point {
+  margin: 20px 0 5px;
+  font-size: 16px;
+  line-height: 18px;
+
+
+  span, a {
+    display: block;
+    font-weight: bold;
+    color: #000000;
+    margin-top: 1px;
+  }
+
+  a {
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.point-featured {
+  margin: 20px 0 5px;
+}
+
+.highlight {
+  font-weight: bold;
+}

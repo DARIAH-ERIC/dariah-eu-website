@@ -1,0 +1,62 @@
+.ico-newsletter,
+.ico-close,
+.ico-contact,
+.ico-login {
+
+  a {
+    position: relative;
+    display: block;
+    background-repeat: no-repeat;
+    background-position: left center;
+  }
+}
+
+.ico-contact {
+  a {
+    background-image: url('images/ico-contact.png');
+    padding-left: 26px;
+  }
+}
+
+.ico-login {
+  a {
+    background-image: url('images/ico-login.png');
+    padding-left: 19px;
+  }
+}
+
+.ico-newsletter {
+  a {
+    background-image: url('images/ico-newsletter.png');
+    padding-left: 25px;
+  }
+}
+
+.ico-marker,
+.ico-person {
+  padding-left: 22px;
+  background-repeat: no-repeat;
+}
+
+.ico-marker {
+  background-image: url('images/ico-marker.png');
+  background-position: 4px center;
+}
+
+.ico-person {
+  background-image: url('images/ico-person.png');
+  background-position: 2px center;
+}
+
+.ico-close {
+  background-image: url('images/ico-close.png');
+  width: 14px;
+  height: 14px;
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  @media only screen and (min-width: 768px) {
+    width: 28px;
+    height: 28px;
+  }
+}

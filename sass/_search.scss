@@ -1,0 +1,45 @@
+.search {
+  .ajax_post {
+    width: 100%;
+  }
+
+  .masonry_post_wrapper {
+    box-shadow: none;
+    border: none;
+  }
+
+  .image-container {
+    display: inline-block;
+    vertical-align: top;
+    width: 170px;
+    height: 170px;
+    overflow: hidden;
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .post-content {
+    display: inline-block;
+    vertical-align: top;
+    width: calc(100% - 200px) !important;
+    margin-left: 20px;
+
+    a:hover {
+      color: $homeColor;
+    }
+  }
+
+  .search_results strong {
+    color: $homeColor;
+  }
+
+  .search_sf .rd_search_sc #search input[type=submit] {
+    background-color: $homeColor !important;
+    border: none;
+
+    &:hover {
+      background-color: #434343 !important;
+    }
+  }
+}

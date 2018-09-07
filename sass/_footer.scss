@@ -1,0 +1,274 @@
+#footer_bg, #footer {
+  #top_bg &, & {
+    background-color: $footerDefaultColor !important;
+
+    .widget h2 {
+      font-size: 20px;
+    }
+
+    .tp_recent_tweets {
+      li {
+        margin-bottom: 18px;
+        background-image: url('images/ico-twitter-quote.png');
+        background-position-y: 2px;
+        border-bottom: 1px solid #44474a;
+
+        &:last-child {
+          border-bottom: none;
+        }
+      }
+
+      span {
+        color: #ffffff;
+      }
+
+      a {
+        color: #0aa9c6;
+
+        &.twitter_time {
+          color: #ffffff;
+          font-size: 12px;
+        }
+      }
+    }
+
+    .widget_tp_widget_recent_tweets {
+      h2 {
+        background: url('images/ico-twitter-footer.png') left center no-repeat;
+        padding-left: 27px;
+        color: #0aa9c6;
+      }
+    }
+
+    .rd_f_blog_widget,
+    .rd_s_blog_widget {
+      h2 {
+        background: url('images/ico-dariah-footer-page.png') left center no-repeat;
+        padding-left: 27px;
+        color: white;
+      }
+
+      h4 {
+        font-size: 15px;
+        line-height: 22px;
+        font-weight: normal;
+        margin: 0;
+        padding: 0;
+
+        a {
+          color: white;
+        }
+      }
+
+      .w_date {
+        color: white
+      }
+
+      .w_excerpt {
+        color: #b1c2cd;
+      }
+    }
+
+    .rd_widget_recent_entries_f,
+    .rd_widget_recent_entries_s {
+      .thumbnail, a:before {
+        width: 70px;
+        height: 70px;
+        line-height: 70px;
+      }
+
+      li {
+        border-bottom: none;
+      }
+
+      .widget_recent_entry {
+        width: calc(100% - 85px)
+      }
+
+      .w_excerpt p {
+        font-size: 15px;
+        line-height: 16px;
+      }
+
+      .w_date {
+        font-size: 12px;
+        color: #ffffff;
+      }
+    }
+
+    h2, h4 {
+      color: $homeColor;
+      font-family: 'Roboto', sans-serif;
+    }
+
+    .widget_mailchimp {
+      color: #ffffff;
+      font-size: 14px;
+      line-height: 20px;
+
+      .mc_merge_var {
+        margin-bottom: 1.0em;
+      }
+
+      .updated {
+        margin-bottom: 10px;
+      }
+
+      .mc_var_label,
+      .mc_interest_label {
+        display: inline-block;
+        padding-top: 4px;
+      }
+
+      .mc_input {
+        float: right;
+        margin-right: 50px;
+        background-color: #27292a;
+        color: darkgrey;
+        border-radius: 4px;
+        border: none;
+        height: auto;
+        padding: 5px 6px;
+      }
+
+      #mc_message {
+        font-weight: bold;
+
+        .success {
+          color: white;
+        }
+
+        .error {
+          color: #cc0000;
+        }
+      }
+
+      #mc_signup_submit {
+        background-color: $homeColor;
+        border-radius: 4px;
+        border: none;
+        margin: 0 auto 1em;
+        width: 130px;
+        color: white;
+
+        -webkit-appearance: none;
+
+        &:disabled {
+          background-color: #27292a;
+          color: grey;
+          pointer-events: none;
+        }
+
+        &:not([disabled]):hover {
+          background-color: white;
+          color: $homeColor;
+        }
+      }
+
+      .mc_signup_submit {
+        text-align: center;
+      }
+    }
+  }
+
+  #footer_coms {
+    padding: 12px 0;
+    background-color: #000000;
+    color: #797979;
+  }
+}
+
+.footer_message {
+  position: relative;
+  padding-left: 65px;
+
+  &:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    display: block;
+    width: 27px;
+    height: 18px;
+
+    background: url('assets/footer_europe.png') no-repeat;
+    background-size: cover;
+
+    @media only screen and (min-width: 768px) {
+      width: 55px;
+      height: 37px;
+    }
+  }
+}
+
+#footer_coms {
+  font-family:"Lato", Arial, sans-serif;
+  font-weight: 300;
+
+  .f_menu_right, .footer_message.f_message_left {
+    line-height: 18px;
+  }
+
+  .footer_message a {
+    color: #a1b1bc;
+    font-weight: normal;
+  }
+
+  .f_menu_right {
+    display: none;
+  }
+
+  .footer_message.f_message_left {
+    text-align: left;
+
+    @media only screen and (max-width: 767px) {
+      padding-left: 35px;
+    }
+  }
+
+  @media only screen and (min-width: 768px) {
+    .f_menu_right, .footer_message.f_message_left {
+      height: 37px;
+      line-height: 37px;
+    }
+
+    .f_menu_right {
+      display: block;
+    }
+  }
+}
+
+.tnp-widget form {
+  label {
+    display: none;
+  }
+
+  .tnp-field {
+    padding-right: 30px;
+  }
+}
+
+#footer {
+  #top_bg .wrapper & {
+    padding-bottom: 0;
+    min-height: 0;
+
+    @media only screen and (max-width: 767px) {
+      padding-top: 20px;
+
+      .widget {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .widget_wrap .widget {
+    h2 {
+      font-weight: 300;
+    }
+  }
+
+  .widget_wrap {
+    margin-bottom: 0;
+    margin-top: 42px;
+  }
+}

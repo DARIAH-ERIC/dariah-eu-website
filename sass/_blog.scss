@@ -1,0 +1,23 @@
+.single-post,
+.category,
+.tag {
+   #top_bg .page_title_ctn {
+    background-color: #8e60a9;
+    border-bottom: none;
+
+    h1,
+    #breadcrumbs,
+    #breadcrumbs #crumbs a,
+    #breadcrumbs #crumbs span {
+      color: white;
+    }
+  }
+
+  .post_single .post-title h2 a,
+  .blog_related_post .post-title h2 a,
+  .logged-in-as a,
+  .post-title h2 a,
+  .entry {
+    color: #434343;
+  }
+}

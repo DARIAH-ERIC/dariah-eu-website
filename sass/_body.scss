@@ -1,0 +1,68 @@
+body #top_bg .page_title_ctn {
+  padding: 32px;
+
+  &.white {
+    h1,
+    #breadcrumbs,
+    #breadcrumbs #crumbs,
+    #breadcrumbs #crumbs a,
+    #breadcrumbs #crumbs span {
+      color: white;
+    }
+  }
+
+  h1 {
+    max-width: 100%;
+
+    @media only screen and (min-width: 1036px) {
+      max-width: 60%;
+    }
+  }
+
+  #breadcrumbs {
+    @media only screen and (min-width: 768px) and (max-width: 1035px) {
+      position: relative;
+      display: inline-block;
+      width: 100%;
+    }
+  }
+}
+
+body {
+  h1,
+  h2,
+  h3,
+  h4,
+  .def_section {
+    color: #434343;
+  }
+
+  .def_section a {
+    color: $homeColor;
+
+    &:hover {
+      color: #434343;
+    }
+  }
+
+  @media only screen and (max-width: 767px) {
+    &.fixed {
+      height: 100%;
+      overflow: hidden;
+    }
+  }
+}
+
+body.page-template {
+  a,
+  .hl_color,
+  #sidebar #search input[type=submit]:hover,
+  .wpb_widgetised_column #search input[type=submit]:hover,
+  .strong_colored strong {
+    color: $homeColor;
+
+    &:hover {
+      color: inherit;
+    }
+  }
+}

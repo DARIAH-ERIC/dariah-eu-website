@@ -1,0 +1,560 @@
+.single-dariah_project,
+.single-dariah_vcc,
+.single-dariah_wg {
+  .page_title_ctn {
+    background-color: $whatWeDoColor;
+  }
+}
+
+.single-dariah_project,
+.page-template-single-yearbook {
+  #posts {
+    padding-top: 50px;
+
+    h2 {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+.page-template-single-wwd {
+  .page_title_ctn {
+    background-color: #a6bf00;;
+  }
+}
+
+#posts {
+  .point {
+    font-size: 14px;
+  }
+}
+
+.project-institutions {
+  h4 {
+    margin: 10px 0 0;
+  }
+}
+
+.page-template-onepage .section_wrapper {
+  padding: 50px 0;
+}
+
+.page,
+.dariah_project-template-default,
+.dariah_vcc-template-default,
+.dariah_wg-template-default,
+.page-template.page-template-single-yearbook #top_bg,
+.page-template.page-template-single-app #top_bg,
+.page-template.page-template-single-map #top_bg,
+.single-dariah_app #top_bg,
+.page.page-template-single-organigram #top_bg,
+.page.page-template-single-wwd #top_bg {
+  .page_title_ctn h1 {
+    color: white;
+  }
+
+  #breadcrumbs {
+    &, #crumbs a, #crumbs span {
+      color: white;
+    }
+  }
+
+  .header_cart_dropdown ul.cart_list li a.remove:hover,
+  .child_pages_ctn a:hover {
+    background-color: $homeColor;
+    color: white !important;
+  }
+}
+
+.post-template-default {
+  .shareicons_icon, blockquote:before {
+    background: $homeColor;
+  }
+
+  .single_post_share_icon .share-box li a:hover {
+    color: $homeColor !important;
+  }
+
+  .blog_related_post .more-link:hover {
+    border-color: $homeColor;
+    background: $homeColor;
+  }
+
+  .next_project {
+    color: #000000;
+
+    &:hover {
+      border-color: $homeColor;
+      background: $homeColor;
+      color: #ffffff;
+    }
+  }
+
+  .previous_project {
+    color: #a1b1bc;
+
+    &:hover {
+      border-color: $homeColor;
+      background: none;
+      color: $homeColor;
+    }
+  }
+
+  a {
+    color: $homeColor;
+
+    &:hover {
+      color: #949aa6;
+    }
+  }
+
+  .tags_icon {
+    background: #666a73;
+  }
+
+  #posts {
+    color: #666a73;
+
+    .post-title h2 a:hover, .post-info a:hover {
+      color: $homeColor;
+    }
+  }
+
+  #add-comment #submit {
+    float: left;
+    background-color: $homeColor;
+    margin-top: 25px;
+
+    &:hover {
+      background: #ffffff;
+      color: $homeColor;
+    }
+  }
+}
+
+.author,
+.search-results,
+.single-post
+.page-template-single-contact ,
+.page-template {
+
+  #top_bg {
+    .page_title_ctn h1 {
+      color: #949aa6;
+    }
+
+    #breadcrumbs {
+      &, #crumbs a, #crumbs span {
+        color: #949aa6;
+      }
+    }
+  }
+}
+
+.archive {
+  #posts {
+    .post {
+      position: relative;
+      width: 100%;
+      @media only screen and (min-width: 768px) {
+        width: calc(100%  - 51px);
+        border-left: 1px solid $homeColor;
+        margin-left: 61px;
+        padding-left: 81px;
+      }
+
+      @media only screen and (min-width: 1380px) {
+        margin-left: 0;
+        padding-left: 100px;
+        width: calc(100%  - 20px);
+      }
+    }
+  }
+
+  @media only screen and (max-width: 1035px) and (min-width: 768px) {
+    .wrapper {
+      width: 90%;
+    }
+  }
+
+  .navigation {
+    border: none;
+  }
+
+  .post .more-link {
+    position: relative;
+    border: none;
+    padding: 0 0 0 15px;
+    text-transform: none;
+
+    &:before {
+      content: '>';
+      position: absolute;
+      left: 0;
+    }
+
+    &:hover {
+      border: none;
+      background: none;
+      color: $homeColor;
+    }
+  }
+}
+
+.dariah_author {
+  position: absolute;
+  background-color: white;
+  top: 0;
+  left: -61px;
+  width: 122px;
+  height: 165px;
+  display: block;
+
+  @media only screen and (max-width: 768px) {
+    display: none;
+  }
+}
+
+.image_container {
+  position: relative;
+  width: 122px;
+  height: 122px;
+  display: block;
+
+  border: 1px solid #ecf0f1;
+  border-radius: 50%;
+
+  img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -38px;
+    margin-left: -38px;
+    width: 76px;
+    height: 76px;
+    display: block;
+    border-radius: 50%;
+  }
+}
+
+.dariah_date {
+  position: absolute;
+  left: -35px;
+  top: 74px;
+
+  display: block;
+  width: 70px;
+  height: 70px;
+  background-color: $homeColor;
+  border-radius: 50%;
+  border: 2px solid white;
+  color: white;
+  text-align: center;
+  padding: 13px;
+
+
+  @media only screen and (max-width: 768px) {
+    z-index: 2;
+    top: 10px;
+    left: 10px;
+  }
+
+  span {
+    display: block;
+    font-size: 24px;
+    text-transform: uppercase;
+    font-family:"Lato", Arial, sans-serif;
+
+    &:last-child {
+      margin-top: 3px;
+      border-top: 1px solid white;
+      font-size: 14px;
+      font-weight: bold;
+    }
+  }
+}
+
+.left_posts.business_posts#posts {
+  width: 100%;
+  max-width: none;
+
+  @media only screen and (max-width: 767px) {
+    min-height: 0 !important;
+  }
+
+  @media only screen and (min-width: 768px) {
+    width: calc(100% - 260px);
+  }
+
+  @media only screen and (min-width: 1036px) {
+    width: calc(100% - 300px);
+  }
+
+  @media only screen and (min-width: 1215px) {
+    width: calc(100% - 410px);
+  }
+}
+
+.dariah_post {
+  position: relative;
+  border: 1px solid #ecf0f1;
+  width: 100%;
+
+  @media only screen and (min-width: 768px) {
+    width: 95%;
+  }
+
+  padding: 20px;
+
+  &:before {
+    position: absolute;
+    content: '';
+    left: 10px;
+    right: -1px;
+    bottom: -10px;
+    height: 10px;
+    border: 1px solid #ecf0f1;
+    border-top: none;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .right_sb {
+    &:after {
+      position: absolute;
+      top: 100px;
+      left: -10px;
+      content: '';
+      width: 23px;
+      height: 23px;
+      display: block;
+      background-color: #f7f7f7;
+      transform: rotate(45deg);
+    }
+  }
+}
+
+.page,
+.search-results,
+.category,
+.single {
+  #sidebar .tagcloud a,
+  .wpb_widgetised_column .tagcloud a,
+  .related_left,
+  .related_right,
+  .upsells_left,
+  .upsells_right {
+    &:hover {
+      border: 1px solid $homeColor;
+      color: #ffffff;
+      background: $homeColor;
+    }
+  }
+
+  #sidebar .w_comment a,
+  #sidebar .widget_recent_entry h4 a,
+  .wpb_widgetised_column .widget_recent_entry h4 a,
+  .wpb_widgetised_column .w_comment a {
+    &:hover {
+      color: $homeColor;
+    }
+  }
+
+  .rd_widget_recent_entries .thumbnail a,
+  .port_tn a,
+  .rd_widget_recent_entries_f .thumbnail a {
+    &:before {
+      background: $homeColor;
+    }
+  }
+}
+
+.category {
+    .post-title h2 a {
+      &:hover {
+        color: $homeColor;
+      }
+    }
+}
+
+.dariah-head {
+  background-color: white;
+  padding: 64px 20px;
+
+  @media only screen and (min-width: 1036px) {
+    padding: 64px;
+  }
+
+  border-bottom: 1px solid #ecf0f1;
+
+  .excerpt,
+  .content {
+    display: inline-block;
+    vertical-align: top;
+    @media only screen and (min-width: 1036px) {
+      padding-right: 3.8%;
+    }
+    max-width: 100%;
+    color: #2c3e50;
+    font-family:"Lato", Arial, sans-serif;
+  }
+
+  @media only screen and (min-width: 1036px) {
+    .excerpt {
+      width: 40.6%;
+    }
+
+    .content {
+      width: 55%;
+    }
+  }
+}
+
+.contact-list {
+  margin: 20px 0;
+  width: 100%;
+
+  .image-container,
+  .content {
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  .image-container {
+    position: relative;
+    width: 70px;
+    height: 70px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    &.default {
+      background-size: contain;
+      background-color: $homeColor;
+    }
+
+    &:before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        content: '+';
+        text-align: center;
+        color: #ffffff;
+        line-height: 70px;
+        font-size: 50px;
+        background-color: #ed6f59;
+        z-index: 2;
+        opacity: 0;
+        -webkit-transition: opacity 0.2s linear;
+        transition: opacity 0.2s linear;
+    }
+  }
+
+  .content {
+    font-family:"Lato", Arial, sans-serif;
+    font-size: 15px;
+    color: #999999;
+    margin-left: 5px;
+    max-width: calc(100% - 80px);
+    padding-top: 5px;
+  }
+
+  span {
+    display: block;
+  }
+
+  .name {
+    font-size: 18px;
+    line-height: 17px;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 0;
+    padding-right: 60px;
+    margin-bottom: 5px;
+  }
+
+  .position {
+    font-size: 16px;
+    line-height: 17px;
+    color: #000000;
+    margin-bottom: 5px;
+    padding-right: 60px;
+  }
+
+  .description {
+    margin-bottom: 10px;
+  }
+
+  .description-exercpt,
+  .description-full {
+    margin-top: 5px;
+    font-size: 15px;
+    line-height: 17px;
+  }
+
+  .dariah-mail {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  li {
+    margin: 20px 0 0;
+    position: relative;
+    padding: 0;
+
+    &:hover {
+      background-color: $homeColor;
+      .name,
+      .position,
+      .skills,
+      .description-exercpt,
+      .description-full,
+      .title,
+      .link {
+        color: white;
+      }
+
+      .image-container:before {
+        opacity: 0.85;
+      }
+    }
+  }
+
+  span.title {
+    font-weight: bold;
+    margin: 15px 0 0;
+    padding: 0;
+    line-height: 10px;
+  }
+
+  @media only screen and (min-width: 1034px) {
+    width: 600px;
+  }
+
+  @media only screen and (min-width: 768px) {
+    .content {
+      margin-left: 35px;
+      max-width: calc(100% - 185px);
+    }
+
+    .image-container {
+      width: 140px;
+      height: 140px;
+
+      &:before {
+        line-height: 140px;
+      }
+    }
+
+    li {
+      margin-right: 10px;
+      padding-right: 50px;
+    }
+
+    .name, .position {
+      padding-right: 0;
+    }
+  }
+}

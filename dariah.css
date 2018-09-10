@@ -1081,7 +1081,7 @@ body.page-template .strong_colored strong {
     padding-right: 60px; }
   .contact-list .description {
     margin-bottom: 10px; }
-  .contact-list .description-exercpt,
+  .contact-list .description-excerpt,
   .contact-list .description-full {
     margin-top: 5px;
     font-size: 15px;
@@ -1099,7 +1099,7 @@ body.page-template .strong_colored strong {
       .contact-list li:hover .name,
       .contact-list li:hover .position,
       .contact-list li:hover .skills,
-      .contact-list li:hover .description-exercpt,
+      .contact-list li:hover .description-excerpt,
       .contact-list li:hover .description-full,
       .contact-list li:hover .title,
       .contact-list li:hover .link {

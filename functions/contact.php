@@ -38,7 +38,7 @@
             <p class="position" itemprop="jobTitle"><?php echo $custom['position'][0]; ?></p>
           <?php } ?>
           </p>
-          <p class="description-exercpt"><?php echo $excerpt; ?></p>
+          <p class="description-excerpt"><?php echo $excerpt; ?></p>
           <p class="description-full" itemprop="description"><?php echo $stripedContent; ?></p>
 
           <?php if ($isSkills) { ?>

@@ -399,7 +399,7 @@ if(get_post_meta($post->ID, 'rd_show_slider', true) == 'yes') {
     </div>
      <!-- .title END-->
      <!-- post-info-top -->
-    <div class="post-info"><?php echo __('By','thefoxwp') ?> <schema itemprop="author" itemscope itemtype="http://schema.org/Person"><schema itemprop="name"><?php the_author_posts_link(); ?></schema></schema>    |    <?php the_category(', '); ?> </div>
+    <div class="post-info"><?php echo __('By','thefoxwp') ?> <schema itemprop="author" itemscope itemtype="http://schema.org/Person"><schema itemprop="name"><?php the_author_posts_link(); ?></schema></schema>    |    <?php the_category(', '); if ( in_category('news') ) { ?>    |    <?php the_date(); } ?> </div>
     <!-- post-info END-->
     <!-- .entry -->
     <div class="entry" itemprop="text">

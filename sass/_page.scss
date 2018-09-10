@@ -328,6 +328,7 @@
       height: 23px;
       display: block;
       background-color: #f7f7f7;
+      -webkit-transform: rotate(45deg);
       transform: rotate(45deg);
     }
   }
@@ -486,7 +487,7 @@
     margin-bottom: 10px;
   }
 
-  .description-exercpt,
+  .description-excerpt,
   .description-full {
     margin-top: 5px;
     font-size: 15px;
@@ -509,7 +510,7 @@
       .name,
       .position,
       .skills,
-      .description-exercpt,
+      .description-excerpt,
       .description-full,
       .title,
       .link {

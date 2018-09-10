@@ -11,7 +11,7 @@
 
   var handleClick = function(event) {
     displayPopup(event.target, content);
-  }
+  };
 
   function displayPopup(target, text) {
     target.openPopup();

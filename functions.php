@@ -15,6 +15,8 @@
   add_filter('wp_insert_post_data' , 'modify_post_title' , '99', 1 );
   add_action('save_post', 'on_post_saved');
 
+  remove_filter('template_redirect', 'redirect_canonical');
+
   function register_my_menu() {
     register_nav_menu('home-menu',__( 'Home Menu' ));
   }

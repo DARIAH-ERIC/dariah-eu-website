@@ -229,7 +229,8 @@
     jQuery(dariahWindow).find('h1').html(selectedCountry.name + '<span>(' + selectedCountry.statusName + ')</span>');
     jQuery(dariahWindow).find('li:nth-child(1) a').html('National<br />Coordinating<br />Institution');
     jQuery(dariahWindow).find('li:nth-child(2) a').html('Partner<br />Institutions');
-    jQuery(dariahWindow).find('li:nth-child(3) a').text('Projects');
+    jQuery(dariahWindow).find('li:nth-child(3) a').html('Cooperating<br />Partners');
+    // jQuery(dariahWindow).find('li:nth-child(3) a').text('Projects');
 
     var _selectedTab;
     if (selectedCountry.entities.length === 0 && !selectedCountry.national.persons && !selectedCountry.national.institutions && selectedCountry.nationalInstitutions.length === 0 && !selectedCountry.coordinator) {
@@ -412,14 +413,14 @@
         selectInstitutionMarker(_institutions.map(function(institution) { return institution.id; }));
         break;
       case 3:
-        html += '<h2>Projects:</h2>';
+        var _cooperatingInstitutions = dariahMapData.institutions
+          .filter(function(institution) { return selectedCountry.cooperatingInstitutions.indexOf(institution.id) !== -1; })
+          .sort(sortByName);
+        html += '<h2>Cooperating partners:</h2>';
         html += '<ul class="list">';
-        html += dariahMapData.projects
-          .filter(function(project) { return selectedCountry.projects.indexOf(project.id) !== -1; })
-          .sort(sortByName)
-          .map(function(project) {
-            var li = project.link !== '' ? '<a href="' + project.link + '">' + project.name + '</a>' : project.name;
-            return '<li>' + li + '</li>';
+        html += _cooperatingInstitutions.map(function(institution) {
+              var li = institution.website ? '<a href="' + institution.website + '">' + institution.name + '</a>' : institution.name;
+              return '<li>' + li + '</li>';
           }).join('');
         html += '</ul>';
         selectInstitutionMarker([]);

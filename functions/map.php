@@ -113,6 +113,7 @@
         $jsonCountry->national->institutions = strlen($representativeInstitutions) !== 0 ? explode(',', $representativeInstitutions) : null;
 
         $_partnerInstitutions = array();
+        $_cooperatingInstitutions = array();
         $_nationalInstitutions = array();
         $_projects = array();
         for ($pi = 0; $pi < count($mapData->institutions); $pi++) {
@@ -121,6 +122,8 @@
               array_push($_partnerInstitutions, $mapData->institutions[$pi]->id);
             } else if ($mapData->institutions[$pi]->role == 'national-coordinating-institution') {
               array_push($_nationalInstitutions, $mapData->institutions[$pi]->id);
+            } else if ($mapData->institutions[$pi]->role == 'cooperating-partner') {
+              array_push($_cooperatingInstitutions, $mapData->institutions[$pi]->id);
             }
 
             for ($pp = 0; $pp < count($mapData->projects); $pp++) {
@@ -132,6 +135,7 @@
         }
         $jsonCountry->partnerInstitutions = $_partnerInstitutions;
         $jsonCountry->nationalInstitutions = $_nationalInstitutions;
+        $jsonCountry->cooperatingInstitutions = $_cooperatingInstitutions;
         $jsonCountry->projects = $_projects;
 
         $countries[$jsonCountry->code] = $jsonCountry;

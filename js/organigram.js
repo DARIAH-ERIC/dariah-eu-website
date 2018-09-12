@@ -60,8 +60,8 @@
     jQuery('#positions .contact-list').empty();
 
     if (event.currentTarget.id !== 'working-groups') {
-      for (var key in position.persons) {
-        var person = position.persons[key];
+      for (var personKey = 0; personKey < position.persons.length; personKey++) {
+        var person = position.persons[personKey];
 
         var _html = '<li><div class="person-desc">';
         _html += '<div class="' + person.imageClasses + '" style="background-image: url(' + person.image + ');"></div>';
@@ -70,7 +70,7 @@
 
         if (person.position) { _html += '<p class="position">' + person.position + '</p>'; }
         _html += '<p class="description-excerpt">' + person.excerpt + '</p>';
-        if (person.displayMore) { _html += '<a href="#" class="link see-more" data-id="' + person.id + '">See more</a>'; }
+        if (person.displayMore) { _html += '<a href="#" class="link see-more" data-id="' + personKey + '">See more</a>'; }
         if (person.email) { _html += '<a href="mailto:' + person.email + '" class="dariah-mail">Email</a>'; }
         _html += "</div></div></li>";
 

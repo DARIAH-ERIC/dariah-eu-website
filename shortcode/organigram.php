@@ -5,7 +5,10 @@ function organigram_func( $atts ){
     foreach ( $person_positions as $person_position ) {
       $person_position_query = new WP_Query( array(
           'post_type' => 'dariah_person',
-          'orderby' => 'date',
+          'meta_key' => 'lastname',
+          'orderby' => 'meta_value',
+          'order' => 'ASC',
+//          'orderby' => 'date',
           'nopaging' => true,
           'tax_query' => array(
               array(
@@ -56,7 +59,7 @@ function organigram_func( $atts ){
         if (strlen(trim($custom['position'][0])) != 0) { $personObject->position = $custom['position'][0]; }
         if ($isLink) { $personObject->link = $person->link; }
         if ($isSkills) { $personObject->skills = $person->skills; }
-        $persons[$personObject->id] = $personObject;
+        $persons[] = $personObject;
       }
       $position = new stdClass();
       $position->name = $person_position->name;

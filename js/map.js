@@ -122,9 +122,14 @@
 
       mapEnable();
       selectType(selectedType);
+      window.location.hash = "";
     });
 
-    selectType(PROJECT_TYPE);
+    selectType(COUNTRY_TYPE);
+
+    if(window.location.hash) {
+        onCountryAnchor(window.location.hash.substring(1).toUpperCase());
+    }
   };
 
   function onTabClick(event) {
@@ -158,7 +163,16 @@
       deleteCountryMarker();
       countryMarker = L.marker([country.capital.latitude, country.capital.longitude], {icon: countryIcon}).addTo(map);
       selectCountry([iso3]);
+      window.location.hash = "#" + iso3.toLowerCase();
     }
+  }
+
+  function onCountryAnchor(iso3) {
+    var country = dariahMapData.countries[iso3];
+    displayCountryInformation(country);
+    deleteCountryMarker();
+    countryMarker = L.marker([country.capital.latitude, country.capital.longitude], {icon: countryIcon}).addTo(map);
+    selectCountry([iso3]);
   }
 
   function centerTo(latlng) {
@@ -517,7 +531,7 @@
 
     jQuery('#mapNav li').each(function() {
       jQuery(this).removeClass();
-      if (jQuery(this).find('a').data('type') == selectedType) {
+      if (jQuery(this).find('a').data('type') === selectedType) {
         jQuery(this).addClass('selected');
       }
     });

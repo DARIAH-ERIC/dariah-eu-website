@@ -26,6 +26,25 @@
   }
 
   var _initFilters = function() {
+      var positions = '<section>';
+      positions += '<h4>Administrative positions</h4>';
+      positions += '<ul>';
+      var sortedPositions = sortObject(dariahYearbookData.positions);
+      for (var sortedPositionId in sortedPositions) {
+          var positionId = sortedPositions[sortedPositionId];
+          var position = dariahYearbookData.positions[positionId];
+          elementId = 'position' + positionId;
+          positions += '<li><input id="' + elementId + '" name="positions" type="checkbox" value="' + positionId + '"/><label for="' + elementId + '">' + position + '</label></li>';
+      }
+      positions += '</ul>';
+      positions += '<div class="more-less">';
+      positions += '<a href="#" class="filter-more">+ More</a>';
+      positions += '<a href="#" class="filter-less">- Less</a>';
+      positions += '</div>';
+      positions += '</section>';
+
+      jQuery('#filters').append(positions);
+
     var countries = '<section>';
     countries += '<h4>Countries</h4>';
     countries += '<ul>';
@@ -45,44 +64,6 @@
     countries += '</section>';
 
     jQuery('#filters').append(countries);
-
-    var institutions = '<section>';
-    institutions += '<h4>Institutions</h4>';
-    institutions += '<ul>';
-    var sortedInstitutions = sortObject(dariahYearbookData.institutions);
-    for (var sortedInstitutionId in sortedInstitutions) {
-      var institutionId = sortedInstitutions[sortedInstitutionId];
-      var institution = dariahYearbookData.institutions[institutionId];
-      elementId = 'institution' + institutionId;
-      institutions += '<li><input id="' + elementId + '" name="institutions" type="checkbox" value="' + institutionId + '"/><label for="' + elementId + '">' + institution.name + '</label></li>';
-    }
-    institutions += '</ul>';
-    institutions += '<div class="more-less">';
-    institutions += '<a href="#" class="filter-more">+ More</a>';
-    institutions += '<a href="#" class="filter-less">- Less</a>';
-    institutions += '</div>';
-    institutions += '</section>';
-
-    jQuery('#filters').append(institutions);
-
-    var positions = '<section>';
-    positions += '<h4>Administrative positions</h4>';
-    positions += '<ul>';
-    var sortedPositions = sortObject(dariahYearbookData.positions);
-    for (var sortedPositionId in sortedPositions) {
-      var positionId = sortedPositions[sortedPositionId];
-      var position = dariahYearbookData.positions[positionId];
-      elementId = 'position' + positionId;
-      positions += '<li><input id="' + elementId + '" name="positions" type="checkbox" value="' + positionId + '"/><label for="' + elementId + '">' + position + '</label></li>';
-    }
-    positions += '</ul>';
-    positions += '<div class="more-less">';
-    positions += '<a href="#" class="filter-more">+ More</a>';
-    positions += '<a href="#" class="filter-less">- Less</a>';
-    positions += '</div>';
-    positions += '</section>';
-
-    jQuery('#filters').append(positions);
 
     jQuery('#filters input[type="checkbox"]').change(_onFilter);
     updateFilterList();

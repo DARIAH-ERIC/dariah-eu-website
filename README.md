@@ -21,3 +21,6 @@ For creating json file:
 * Don't forget to minify result
 
 You can find country iso3 code [here](http://www.nationsonline.org/oneworld/country_code_list.htm)
+
+The mandatory `dynamic-data.json` file is created/updated when you create/edit a country, an institution, a person or
+ a project.

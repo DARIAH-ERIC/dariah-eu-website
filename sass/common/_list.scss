@@ -40,6 +40,17 @@
         }
       }
 
+      @media only screen and (min-width: 1036px) and (max-width: 1214px) {
+        margin-right: 0;
+
+        &:nth-child(3n + 1) {
+          margin-right: 30px;
+        }
+        &:nth-child(3n + 2) {
+          margin-right: 30px;
+        }
+      }
+
       &:hover {
         background-color: #ed6f59;
 

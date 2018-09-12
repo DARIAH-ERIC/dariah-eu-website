@@ -388,7 +388,8 @@
   border-bottom: 1px solid #ecf0f1;
 
   .excerpt,
-  .content {
+  .content,
+  .full-content {
     display: inline-block;
     vertical-align: top;
     @media only screen and (min-width: 1036px) {

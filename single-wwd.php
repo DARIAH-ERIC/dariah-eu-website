@@ -317,20 +317,13 @@ if($title !== 'no'){  ?>
 do_action( '__after_page_title' );
 	global $more;
 	$tempMore = $more;
-	$more = false;
-	$content_cut = get_the_content( '' );
-	$more = true;
-	$content_full = get_the_content();
-	$content_diff = str_replace( $content_cut, '', $content_full );
+    $content_full = get_the_content();
 
 ?>
 <div class="dariah-head">
 	<div class="wrapper table_wrapper">
-		<div class="excerpt">
-			<?php echo $content_cut;  ?>
-		</div>
-		<div class="content">
-			<?php echo $content_diff;  ?>
+		<div class="full-content">
+			<?php echo $content_full;  ?>
 		</div>
 	</div>
 </div>

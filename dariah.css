@@ -1008,7 +1008,8 @@ body.page-template .strong_colored strong {
     .dariah-head {
       padding: 64px; } }
   .dariah-head .excerpt,
-  .dariah-head .content {
+  .dariah-head .content,
+  .dariah-head .full-content {
     display: inline-block;
     vertical-align: top;
     max-width: 100%;
@@ -1016,7 +1017,8 @@ body.page-template .strong_colored strong {
     font-family: "Lato", Arial, sans-serif; }
     @media only screen and (min-width: 1036px) {
       .dariah-head .excerpt,
-      .dariah-head .content {
+      .dariah-head .content,
+      .dariah-head .full-content {
         padding-right: 3.8%; } }
   @media only screen and (min-width: 1036px) {
     .dariah-head .excerpt {

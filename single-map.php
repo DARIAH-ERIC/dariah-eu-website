@@ -343,7 +343,7 @@ wp_reset_query();
 <!--    <li>-->
 <!--			<a href="#" data-type="project">Projects</a>-->
 <!--		</li>-->
-      <li>
+      <li class="selected">
 			<a href="#" data-type="country">Countries</a>
 		</li>
   </ul>

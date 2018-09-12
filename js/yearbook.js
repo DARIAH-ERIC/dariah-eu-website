@@ -27,7 +27,7 @@
 
   var _initFilters = function() {
       var positions = '<section>';
-      positions += '<h4>Administrative positions</h4>';
+      positions += '<h4>DARIAH bodies</h4>';
       positions += '<ul>';
       var sortedPositions = sortObject(dariahYearbookData.positions);
       for (var sortedPositionId in sortedPositions) {

@@ -92,8 +92,7 @@ switch (get_post_type()) {
 		break;
 	default:
 }
-
-$schemaOrg = $schema ? 'itemscope itemtype="' . $schema . '"' : '';
+$schemaOrg = isset($schema) ? 'itemscope itemtype="' . $schema . '"' : '';
 
 ?>
 <div id="top_bg" <?php if($rd_data['rd_boxed'] == false) { echo 'class="menu_slide"'; } ?> <?php echo $schemaOrg; ?>>

@@ -65,7 +65,7 @@
 			return;
 		}
 
-    if ( 'dariah_app' == $_POST['post_type'] ) {
+    if ( isset($_POST['post_type']) && 'dariah_app' == $_POST['post_type'] ) {
   		update_post_meta( $post->ID, "link", $_POST["link"] );
   		update_post_meta( $post->ID, "author", $_POST["author"] );
   		update_post_meta( $post->ID, "website", $_POST["website"] );

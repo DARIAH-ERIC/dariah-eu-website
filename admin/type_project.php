@@ -142,7 +142,7 @@
 			return;
 		}
 
-    if ( 'dariah_project' == $_POST['post_type'] ) {
+    if ( isset($_POST['post_type']) && 'dariah_project' == $_POST['post_type'] ) {
   		update_post_meta( $post->ID, "fullname", $_POST["fullname"] );
   		update_post_meta( $post->ID, "website", $_POST["website"] );
   		update_post_meta( $post->ID, "coordinator", $_POST["coordinator"] );

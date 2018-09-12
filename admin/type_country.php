@@ -151,7 +151,7 @@
 			return;
 		}
 
-    if ( 'dariah_country' == $_POST['post_type'] ) {
+    if ( isset($_POST['post_type']) && 'dariah_country' == $_POST['post_type'] ) {
 	    update_post_meta( $post->ID, "coordinator", $_POST["coordinator"] );
 	    update_post_meta( $post->ID, "repPersons", implode(',', $_POST["repPersons"]) );
 	    update_post_meta( $post->ID, "repInstitutions", implode(',', $_POST["repInstitutions"]) );

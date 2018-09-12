@@ -100,7 +100,7 @@
 		if ( defined('DOING_AUTOSAVE') && DOING_AUTOSAVE ) {
 			return;
 		}
-		if ( 'dariah_person' == $_POST['post_type'] ) {
+		if ( isset($_POST['post_type']) && 'dariah_person' == $_POST['post_type'] ) {
 			update_post_meta( $post->ID, "email", $_POST["email"] );
 			update_post_meta( $post->ID, "twitter", $_POST["twitter"] );
 			update_post_meta( $post->ID, "firstname", $_POST["firstname"] );

@@ -72,7 +72,7 @@
 			return;
 		}
 
-    if ( 'dariah_wg' == $_POST['post_type'] ) {
+    if ( isset($_POST['post_type']) && 'dariah_wg' == $_POST['post_type'] ) {
   		update_post_meta( $post->ID, "leaders", implode(',', $_POST["leaders"]) );
     }
 	}

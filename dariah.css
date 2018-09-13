@@ -1710,6 +1710,25 @@ span.wpcf7-not-valid-tip {
       fill: #138fd7; }
     #dariahMap path.selected {
       fill: #076fac !important; }
+  #dariahMap div.legend {
+    line-height: 25px;
+    color: #555;
+    padding: 6px 8px;
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    border-radius: 5px; }
+    #dariahMap div.legend i {
+      width: 18px;
+      height: 18px;
+      float: left;
+      margin-right: 8px;
+      opacity: 0.7; }
+      #dariahMap div.legend i.members {
+        background-color: #046eab; }
+      #dariahMap div.legend i.collaborating-partners {
+        background-color: #0aa9c6; }
+      #dariahMap div.legend i.cooperating-partner {
+        background-color: #138fd7; }
 
 #dariahWindow {
   overflow: hidden;

@@ -69,11 +69,15 @@
     updateFilterList();
   };
 
-  var _setResults = function(countries, institutions, positions) {
+  var _setResults = function(countries, institutions, positions, searchResults) {
     if (countries || institutions || positions) {
       jQuery('#filters input[type="checkbox"]').parent().addClass('unavailable');
     }
-    results = dariahYearbookData.persons
+    var peopleWeUse = dariahYearbookData.persons;
+    if(searchResults) {
+        peopleWeUse = searchResults;
+    }
+    results = peopleWeUse
       .filter(function(person) {
         if (
           (countries && countries.indexOf(person.country) === -1) ||
@@ -85,6 +89,12 @@
         return true;
       })
       .map(function(person) {
+        jQuery('#country' + person.country).parent().removeClass('unavailable');
+        jQuery('#institution' + person.institution).parent().removeClass('unavailable');
+        person.positions.forEach(function(entry) {
+            jQuery('#position' + entry).parent().removeClass('unavailable');
+        });
+
         var html = '<li data-person-id="' + person.id + '">';
         html += '<div class="header">';
         html += '<div class="thumb"><img src="' + person.avatar + '" /></div>';
@@ -219,7 +229,8 @@
     _setResults(
       countries.length > 0 ? countries : null,
       institutions.length > 0 ? institutions : null,
-      positions.length > 0 ? positions : null
+      positions.length > 0 ? positions : null,
+      searchInJSON()
     );
     updateFilterList();
   };
@@ -314,10 +325,10 @@
     });
   }
 
-  function searchInJSON(source, name) { // Use like console.log(searchInJSON(data, "Yoann"));
+  function searchInJSON() {
       var results;
-      name = name.toUpperCase();
-      results = jQuery.map(source.persons, function(entry) {
+      var name = jQuery('#name-search-input').val().toUpperCase();
+      results = jQuery.map(dariahYearbookData.persons, function(entry) {
           var match = (entry.firstname.toUpperCase().indexOf(name) !== -1 || entry.lastname.toUpperCase().indexOf(name) !== -1);
           return match ? entry : null;
       });
@@ -333,6 +344,10 @@
         jQuery('#pagination').on('click', _onPagination);
         jQuery('#results').on('click', _onResults);
         jQuery('#filters').on('click', _onFilters);
+
+          jQuery('#name-search-input').keyup(function() {
+              _onFilter();
+          });
       });
     }
   });

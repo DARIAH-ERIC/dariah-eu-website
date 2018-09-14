@@ -299,6 +299,12 @@ do_action( '__after_page_title' );
      </div>
    </div>
    <div id="sidebar" class="right_sb business_sidebar">
+       <div class="sb_widget widget_rss">
+           <h3>Search</h3>
+           <div id="name-search-form">
+               <input type="text" title="Search" name="name-search-input" id="name-search-input" value="" />
+           </div>
+       </div>
      <div class="sb_widget widget_rss">
        <h3>Filter people by</h3>
        <div id="filters"></div>

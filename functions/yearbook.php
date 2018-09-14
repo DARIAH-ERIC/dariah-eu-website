@@ -71,8 +71,14 @@
         $jsonPerson->role = $person->position;
         $jsonPerson->institution = intval($custom['institution'][0]);
         if (count($position) > 0) {
-          $jsonPerson->position = $position[0]->term_id;
-          $filterPositions[$jsonPerson->position] = $positions[$jsonPerson->position];
+          $positionsOfPerson = array();
+          for($i = 0; $i < sizeof($position); $i++) {
+	          $positionsOfPerson[] = $position[$i]->term_id;
+	          $filterPositions[$position[$i]->term_id] = $positions[$position[$i]->term_id];
+          }
+          $jsonPerson->positions = $positionsOfPerson;
+//          error_log($jsonPerson->firstname);
+//          error_log(print_r($positionsOfPerson, TRUE));
         }
         if ($jsonPerson->institution) {
           $jsonPerson->country = intval($institutions[$jsonPerson->institution]->country);
@@ -88,6 +94,11 @@
         }
 
         array_push($persons, $jsonPerson);
+
+        $positionsHtmlText[] = array();
+        for($i = 0; $i < sizeof($jsonPerson->positions); $i++) {
+            $positionsHtmlText[] = (new \Html2Text\Html2Text($jsonPerson->positions[$i]))->getText();
+        }
         array_push($csv_data,
           array(
             (new \Html2Text\Html2Text($jsonPerson->firstname))->getText(),
@@ -95,14 +106,14 @@
             (new \Html2Text\Html2Text($institutions[$jsonPerson->institution]->name))->getText(),
             (new \Html2Text\Html2Text($jsonPerson->identifiant))->getText(),
             (new \Html2Text\Html2Text($jsonPerson->email))->getText(),
-            (new \Html2Text\Html2Text($positions[$jsonPerson->position]))->getText(),
+//            (new \Html2Text\Html2Text($positions[$jsonPerson->position]))->getText(),
             (new \Html2Text\Html2Text($countries[$jsonPerson->country]))->getText(),
             (new \Html2Text\Html2Text($jsonPerson->twitter))->getText(),
             (new \Html2Text\Html2Text($jsonPerson->link))->getText(),
             (new \Html2Text\Html2Text($jsonPerson->about))->getText(),
             (new \Html2Text\Html2Text($jsonPerson->role))->getText(),
             (new \Html2Text\Html2Text($jsonPerson->skills))->getText()
-          )
+          ), $positionsHtmlText
         );
       }
       $data->persons = $persons;

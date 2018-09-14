@@ -73,30 +73,34 @@
     if (countries || institutions || positions) {
       jQuery('#filters input[type="checkbox"]').parent().addClass('unavailable');
     }
-
     results = dariahYearbookData.persons
       .filter(function(person) {
         if (
           (countries && countries.indexOf(person.country) === -1) ||
           (institutions && institutions.indexOf(person.institution) === -1) ||
-          (positions && positions.indexOf(person.position) === -1) )  {
+          (positions && positions.filter(function(item){ return person.positions.indexOf(item) > -1;}).length < 1) )  {
           return false;
         }
 
         return true;
       })
       .map(function(person) {
-        jQuery('#country' + person.country).parent().removeClass('unavailable');
-        jQuery('#institution' + person.institution).parent().removeClass('unavailable');
-        jQuery('#position' + person.position).parent().removeClass('unavailable');
-
         var html = '<li data-person-id="' + person.id + '">';
         html += '<div class="header">';
         html += '<div class="thumb"><img src="' + person.avatar + '" /></div>';
         html += '<p>';
         html += '<span class="name">' + person.firstname + ' ' + person.lastname + '</span>';
         if (person.role) { html += '<span class="role">' + person.role + '</span>'; }
-        if (person.position) { html += '<span class="position">' + dariahYearbookData.positions[person.position] + '</span>'; }
+        if (person.positions) {
+          html += '<span class="position">';
+          for(var i=0; i<person.positions.length; i++) {
+              html += dariahYearbookData.positions[person.positions[i]];
+              if(i !== person.positions.length - 1) {
+                  html += ", ";
+              }
+          }
+          html += '</span>';
+        }
         html += '</p>';
         html += '<button class="show-more" data-complete-profile="' + person.id + '">See More</button><button class="show-less">See Less</button>';
         html += '</div>';
@@ -113,7 +117,16 @@
         html += '<ul class="list">';
         if (person.identifiant) { html += '<li>Researcher ID : <span>' + person.identifiant + '</span></li>';}
         if (person.role) { html += '<li>Role : <span>' + person.role + '</span></li>';}
-        if (person.position) { html += '<li>Administrative position : <span>' + dariahYearbookData.positions[person.position] + '</span></li>';}
+        if (person.positions) {
+            html += '<li>Administrative position : <span>';
+            for(var j=0; j<person.positions.length; j++) {
+                html += dariahYearbookData.positions[person.positions[j]];
+                if(j !== person.positions.length - 1) {
+                    html += ", ";
+                }
+            }
+            html += '</span></li>';
+        }
         if (person.institution) { html += '<li>Institution : <span>' + dariahYearbookData.institutions[person.institution].name + '</span></li>';}
         if (person.country) { html += '<li>Country : <span>' + dariahYearbookData.countries[person.country] + '</span></li>';}
         html += '</ul>';

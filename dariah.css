@@ -728,29 +728,42 @@ body.page-template .strong_colored strong {
   background-color: #ed6f59;
   color: white !important; }
 
-.page .section ul,
-.dariah_project-template-default .section ul,
-.dariah_vcc-template-default .section ul,
-.dariah_wg-template-default .section ul,
-.page-template.page-template-single-yearbook #top_bg .section ul,
-.page-template.page-template-single-app #top_bg .section ul,
-.page-template.page-template-single-map #top_bg .section ul,
-.single-dariah_app #top_bg .section ul,
-.page.page-template-single-organigram #top_bg .section ul,
-.page.page-template-single-wwd #top_bg .section ul {
+.page .section #posts ul,
+.dariah_project-template-default .section #posts ul,
+.dariah_vcc-template-default .section #posts ul,
+.dariah_wg-template-default .section #posts ul,
+.page-template.page-template-single-yearbook #top_bg .section #posts ul,
+.page-template.page-template-single-app #top_bg .section #posts ul,
+.page-template.page-template-single-map #top_bg .section #posts ul,
+.single-dariah_app #top_bg .section #posts ul,
+.page.page-template-single-organigram #top_bg .section #posts ul,
+.page.page-template-single-wwd #top_bg .section #posts ul {
   list-style-type: disc;
   margin: 0 0 15px 20px; }
 
-.page .section ol,
-.dariah_project-template-default .section ol,
-.dariah_vcc-template-default .section ol,
-.dariah_wg-template-default .section ol,
-.page-template.page-template-single-yearbook #top_bg .section ol,
-.page-template.page-template-single-app #top_bg .section ol,
-.page-template.page-template-single-map #top_bg .section ol,
-.single-dariah_app #top_bg .section ol,
-.page.page-template-single-organigram #top_bg .section ol,
-.page.page-template-single-wwd #top_bg .section ol {
+.page .section #posts ul.results,
+.dariah_project-template-default .section #posts ul.results,
+.dariah_vcc-template-default .section #posts ul.results,
+.dariah_wg-template-default .section #posts ul.results,
+.page-template.page-template-single-yearbook #top_bg .section #posts ul.results,
+.page-template.page-template-single-app #top_bg .section #posts ul.results,
+.page-template.page-template-single-map #top_bg .section #posts ul.results,
+.single-dariah_app #top_bg .section #posts ul.results,
+.page.page-template-single-organigram #top_bg .section #posts ul.results,
+.page.page-template-single-wwd #top_bg .section #posts ul.results {
+  list-style-type: none;
+  margin: 0; }
+
+.page .section #posts ol,
+.dariah_project-template-default .section #posts ol,
+.dariah_vcc-template-default .section #posts ol,
+.dariah_wg-template-default .section #posts ol,
+.page-template.page-template-single-yearbook #top_bg .section #posts ol,
+.page-template.page-template-single-app #top_bg .section #posts ol,
+.page-template.page-template-single-map #top_bg .section #posts ol,
+.single-dariah_app #top_bg .section #posts ol,
+.page.page-template-single-organigram #top_bg .section #posts ol,
+.page.page-template-single-wwd #top_bg .section #posts ol {
   list-style-type: decimal; }
 
 .post-template-default .shareicons_icon, .post-template-default blockquote:before {

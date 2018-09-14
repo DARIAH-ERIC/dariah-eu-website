@@ -65,13 +65,18 @@
     color: white !important;
   }
 
-  .section {
+  .section #posts {
+    ol {
+      list-style-type: decimal;
+    }
     ul {
       list-style-type: disc;
       margin: 0 0 15px 20px;
     }
-    ol {
-      list-style-type: decimal;
+    // We need this so the style does not appear on the annuary page
+    ul.results, ol.results {
+      list-style-type: none;
+      margin: 0;
     }
   }
 }

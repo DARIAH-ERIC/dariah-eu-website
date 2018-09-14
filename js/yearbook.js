@@ -174,8 +174,7 @@
   var _showResults = function(page, scrolltoTop) {
     jQuery('#results').empty();
     var index = page * itemPerPage;
-    var text =  (index + 1) + ' - ' + Math.min(index+itemPerPage, results.length) + ' of ' + results.length;
-    text += results.length > 1 ? ' peoples' : ' people';
+    var text =  (index + 1) + ' - ' + Math.min(index+itemPerPage, results.length) + ' of ' + results.length + ' people';
     var sortText = 'Sort by ' + (sortAZ ? 'Z-A' : 'A-Z');
     var persons = '<div class="head">' + text + '<a href="#" data-sort="true" class="right">' + sortText + '</a></div>';
     persons += '<ul class="results">';
@@ -313,6 +312,16 @@
         }).hide();
       }
     });
+  }
+
+  function searchInJSON(source, name) { // Use like console.log(searchInJSON(data, "Yoann"));
+      var results;
+      name = name.toUpperCase();
+      results = jQuery.map(source.persons, function(entry) {
+          var match = (entry.firstname.toUpperCase().indexOf(name) !== -1 || entry.lastname.toUpperCase().indexOf(name) !== -1);
+          return match ? entry : null;
+      });
+      return results;
   }
 
   jQuery(window).ready(function() {

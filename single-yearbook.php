@@ -292,7 +292,7 @@ do_action( '__after_page_title' );
 <div class="section def_section" id="dariahYearbook">
   <div  class="wrapper section_wrapper">
    <div id="posts" class="left_posts business_posts">
-     <h2>We are Dariah Team</h2>
+     <h2>We are the DARIAH team</h2>
      <div class="container">
        <div id="results"></div>
        <div id="pagination"></div>

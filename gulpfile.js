@@ -40,6 +40,13 @@ gulp.task('js', function() {
   .pipe(gulp.dest('.'));
 });
 
+//Europe map
+gulp.task('europeMap', function() {
+    return gulp.src(['./map/europe-panes.js'])
+        .pipe(uglify())
+        .pipe(gulp.dest('./map/'));
+});
+
 // Watch
 gulp.task('watch', function() {
   browserSync.init({

@@ -36,7 +36,8 @@
     var data = {
       firstname: jQuery('#mc_mv_FNAME').val(),
       lastname: jQuery('#mc_mv_LNAME').val(),
-      email: jQuery('#mc_mv_EMAIL').val()
+      email: jQuery('#mc_mv_EMAIL').val(),
+      institution: jQuery('#mc_mv_INSTITUTION').val()
     };
     jQuery.post(jQuery(this).attr('action'), data)
       .done(function(data) {

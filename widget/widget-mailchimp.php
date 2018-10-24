@@ -15,7 +15,7 @@ class dariah_mailchimp extends WP_Widget {
     extract( $args );
 ?>
   <div class="widget widget_mailchimp">
-    <h2>Subscribe to DARIAH’s Newsletter</h2>
+    <h2>Subscribe to our mailing list and newsletter</h2>
     <div id="mc_signup">
       <form method="post" action="<?php echo get_stylesheet_directory_uri() . "/widget/ajax-newsletter.php"; ?>" id="mc_signup_form">
         <div class="mc_form_inside">
@@ -24,13 +24,17 @@ class dariah_mailchimp extends WP_Widget {
             <input type="text" size="18" placeholder="" name="mc_mv_EMAIL" id="mc_mv_EMAIL" class="mc_input">
           </div><!-- /mc_merge_var -->
           <div class="mc_merge_var">
-            <label for="mc_mv_FNAME" class="mc_var_label mc_header mc_header_text">First Name</label>
+            <label for="mc_mv_FNAME" class="mc_var_label mc_header mc_header_text">First Name<span class="mc_required">*</span></label>
             <input type="text" size="18" placeholder="" name="mc_mv_FNAME" id="mc_mv_FNAME" class="mc_input">
           </div><!-- /mc_merge_var -->
           <div class="mc_merge_var">
-            <label for="mc_mv_LNAME" class="mc_var_label mc_header mc_header_text">Last Name</label>
+            <label for="mc_mv_LNAME" class="mc_var_label mc_header mc_header_text">Last Name<span class="mc_required">*</span></label>
             <input type="text" size="18" placeholder="" name="mc_mv_LNAME" id="mc_mv_LNAME" class="mc_input">
           </div><!-- /mc_merge_var -->
+            <div class="mc_merge_var">
+                <label for="mc_mv_INSTITUTION" class="mc_var_label mc_header mc_header_text">Institution</label>
+                <input type="text" size="18" placeholder="" name="mc_mv_INSTITUTION" id="mc_mv_INSTITUTION" class="mc_input">
+            </div><!-- /mc_merge_var -->
           <div id="mc-indicates-required">* = required field</div><!-- /mc-indicates-required -->
           <div class="updated" id="mc_message"></div><!-- /mc_message -->
           <div class="mc_signup_submit">

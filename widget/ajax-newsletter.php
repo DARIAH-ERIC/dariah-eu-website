@@ -5,11 +5,12 @@
   $fname = $_POST['firstname'];
   $lname = $_POST['lastname'];
   $email = $_POST['email'];
+  $institution = $_POST['institution'];
   $ref = parse_url($_SERVER['HTTP_REFERER'], PHP_URL_HOST);
-  if(!empty($email) && !filter_var($email, FILTER_VALIDATE_EMAIL) === false && strpos($ref, 'dariah')){
+  if(!empty($email) && !filter_var($email, FILTER_VALIDATE_EMAIL) === false){// && strpos($ref, 'dariah')){
       // MailChimp API credentials
-      $apiKey = '529b40a9433edd171f9ed60786b4bc72-us12';
-      $listID = 'c5ffd91f07';
+      $apiKey = 'bfe2322cbdd0faddefb8cdf39494c8ee-us18';
+      $listID = '50ab35cfde';
 
       // MailChimp API URL
       $memberID = md5(strtolower($email));
@@ -22,7 +23,8 @@
           'status'        => 'pending',
           'merge_fields'  => [
               'FNAME'     => $fname,
-              'LNAME'     => $lname
+              'LNAME'     => $lname,
+              'MMERGE3'   => $institution
           ]
       ]);
 

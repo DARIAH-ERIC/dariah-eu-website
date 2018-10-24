@@ -7,7 +7,7 @@
   $email = $_POST['email'];
   $institution = $_POST['institution'];
   $ref = parse_url($_SERVER['HTTP_REFERER'], PHP_URL_HOST);
-  if(!empty($email) && !filter_var($email, FILTER_VALIDATE_EMAIL) === false){// && strpos($ref, 'dariah')){
+  if(!empty($email) && !filter_var($email, FILTER_VALIDATE_EMAIL) === false && strpos($ref, 'dariah')){
       // MailChimp API credentials
       $apiKey = 'bfe2322cbdd0faddefb8cdf39494c8ee-us18';
       $listID = '50ab35cfde';

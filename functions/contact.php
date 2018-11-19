@@ -20,10 +20,12 @@
         $stripedContent = wp_strip_all_tags($item->post_content);
         $excerpt = wp_trim_words($stripedContent, 15, '');
         $displayMore = strlen($excerpt) >= strlen($stripedContent) ? FALSE : TRUE;
+        $displayLess = strlen($excerpt) >= strlen($stripedContent) ? FALSE : TRUE;
         $isSkills = strlen(trim($custom['skills'][0])) != 0;
         $isLink = strlen(trim($custom['link'][0])) != 0;
         if (($isSkills || $isLink) && strlen($excerpt) > 100) {
           $displayMore = true;
+          $displayLess = true;
         }
         if ($displayMore) {
           $excerpt .= '...';
@@ -51,6 +53,9 @@
 
           <?php if ($displayMore) { ?>
             <a href="#" class="link see-more">See more</a>
+          <?php } ?>
+          <?php if ($displayLess) { ?>
+            <a href="#" class="link see-less">See less</a>
           <?php } ?>
 
           <?php if(strlen(trim($item->email)) != 0) { ?>

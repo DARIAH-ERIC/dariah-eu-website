@@ -160,6 +160,7 @@ body #mobile-menu #tf_mb_menu .mobile-ul-open:after {
   color: #434343; }
 
 .person-desc .description-full,
+.person-desc .see-less,
 .person-desc .skills,
 .person-desc .about {
   display: none; }
@@ -170,6 +171,7 @@ body #mobile-menu #tf_mb_menu .mobile-ul-open:after {
   .person-desc.full .see-more {
     display: none; }
   .person-desc.full .description-full,
+  .person-desc.full .see-less,
   .person-desc.full .skills,
   .person-desc.full .about {
     display: block; }

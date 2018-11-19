@@ -60,6 +60,11 @@
 
     jQuery(this).closest('.person-desc').addClass('full');
   };
+  var onSeeLessClick = function(event) {
+      event.preventDefault();
+      event.stopPropagation();
+      jQuery(this).closest('.person-desc').removeClass('full');
+  };
 
   jQuery(window).ready(function() {
     checkGA();
@@ -73,6 +78,7 @@
     if (html.classList) html.classList.add.apply(html.classList, classNames);
     
     jQuery('.person-desc .see-more').on('click', onSeeMoreClick);
+    jQuery('.person-desc .see-less').on('click', onSeeLessClick);
     jQuery('#mc_signup_form').on('submit', onMailChimpSignup);
   });
 })(jQuery);

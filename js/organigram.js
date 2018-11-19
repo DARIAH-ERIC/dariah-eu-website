@@ -46,7 +46,11 @@
   };
 
   var onPathClick = function(event) {
-    var position = dariahPositionsData[event.currentTarget.id];
+    moveIntoPosition(event.currentTarget.id);
+  };
+
+  function moveIntoPosition(positionIdentifier) {
+    var position = dariahPositionsData[positionIdentifier];
     if (!position) {
       jQuery('#positions').hide();
       selectedArea = null;
@@ -59,7 +63,7 @@
     jQuery('#positions .description').html(position.description);
     jQuery('#positions .contact-list').empty();
 
-    if (event.currentTarget.id !== 'working-groups') {
+    if (positionIdentifier !== 'working-groups') {
       for (var personKey = 0; personKey < position.persons.length; personKey++) {
         var person = position.persons[personKey];
 
@@ -77,14 +81,20 @@
         jQuery('#positions .contact-list').append(_html);
       }
     }
+    window.location.hash = "#" + positionIdentifier;
 
     jQuery('#positions .see-more').on('click', onSeeMore);
     jQuery('#positions').show();
     jQuery("html, body").animate({ scrollTop: jQuery('#positions').offset().top - 50 }, 1000);
-  };
+  }
+
 
   jQuery(window).ready(function() {
     jQuery('svg #blocs g').on('click', onPathClick);
     jQuery('#positions .close').on('click', onCloseClick);
+    if(window.location.hash) {
+      moveIntoPosition(window.location.hash.substring(1).toLowerCase());
+    }
+
   });
 })(jQuery);

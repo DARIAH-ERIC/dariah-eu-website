@@ -755,25 +755,43 @@ body.page-template .strong_colored strong {
   list-style-type: disc;
   margin: 0 0 15px 20px; }
 
-.page .section #posts ul.results, .page .section #posts ol.results,
+.page .section #posts ul.results, .page .section #posts ol.results, .page .section #posts ul.contact-list, .page .section #posts ol.contact-list,
 .dariah_project-template-default .section #posts ul.results,
 .dariah_project-template-default .section #posts ol.results,
+.dariah_project-template-default .section #posts ul.contact-list,
+.dariah_project-template-default .section #posts ol.contact-list,
 .dariah_vcc-template-default .section #posts ul.results,
 .dariah_vcc-template-default .section #posts ol.results,
+.dariah_vcc-template-default .section #posts ul.contact-list,
+.dariah_vcc-template-default .section #posts ol.contact-list,
 .dariah_wg-template-default .section #posts ul.results,
 .dariah_wg-template-default .section #posts ol.results,
+.dariah_wg-template-default .section #posts ul.contact-list,
+.dariah_wg-template-default .section #posts ol.contact-list,
 .page-template.page-template-single-yearbook #top_bg .section #posts ul.results,
 .page-template.page-template-single-yearbook #top_bg .section #posts ol.results,
+.page-template.page-template-single-yearbook #top_bg .section #posts ul.contact-list,
+.page-template.page-template-single-yearbook #top_bg .section #posts ol.contact-list,
 .page-template.page-template-single-app #top_bg .section #posts ul.results,
 .page-template.page-template-single-app #top_bg .section #posts ol.results,
+.page-template.page-template-single-app #top_bg .section #posts ul.contact-list,
+.page-template.page-template-single-app #top_bg .section #posts ol.contact-list,
 .page-template.page-template-single-map #top_bg .section #posts ul.results,
 .page-template.page-template-single-map #top_bg .section #posts ol.results,
+.page-template.page-template-single-map #top_bg .section #posts ul.contact-list,
+.page-template.page-template-single-map #top_bg .section #posts ol.contact-list,
 .single-dariah_app #top_bg .section #posts ul.results,
 .single-dariah_app #top_bg .section #posts ol.results,
+.single-dariah_app #top_bg .section #posts ul.contact-list,
+.single-dariah_app #top_bg .section #posts ol.contact-list,
 .page.page-template-single-organigram #top_bg .section #posts ul.results,
 .page.page-template-single-organigram #top_bg .section #posts ol.results,
+.page.page-template-single-organigram #top_bg .section #posts ul.contact-list,
+.page.page-template-single-organigram #top_bg .section #posts ol.contact-list,
 .page.page-template-single-wwd #top_bg .section #posts ul.results,
-.page.page-template-single-wwd #top_bg .section #posts ol.results {
+.page.page-template-single-wwd #top_bg .section #posts ol.results,
+.page.page-template-single-wwd #top_bg .section #posts ul.contact-list,
+.page.page-template-single-wwd #top_bg .section #posts ol.contact-list {
   list-style-type: none;
   margin: 0; }
 

@@ -328,16 +328,16 @@ do_action( '__after_page_title' );
 
 ?>
 <div class="section def_section">
-	<div id="contactMap"></div>
   <div class="wrapper section_wrapper">
     <div class="row-col-2">
       <div class="col">
-        <?php echo do_shortcode('[contact-form-7 id="123" title="Contact form 1"]'); ?>
+        <?php echo do_shortcode( '[contact-helpdesk]' ); ?>
       </div>
       <div class="col">
-				<?php the_content();?>
+        <?php the_content(); ?>
       </div>
     </div>
   </div>
+  <div id="contactMap"></div>
 </div>
 <?php get_footer(); ?>

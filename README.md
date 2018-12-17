@@ -2,6 +2,11 @@
 
 Based on TheFox WP Theme
 
+## Collaboration
+### Git branches (using [git flow](https://nvie.com/posts/a-successful-git-branching-model/))
+* ```master``` for production server
+* ```develop```/```release branches``` for development server
+
 ## Install npm
 
 * `npm install`
@@ -29,3 +34,8 @@ You can find country iso3 code [here](http://www.nationsonline.org/oneworld/coun
 
 The mandatory `dynamic-data.json` file is created/updated when you create/edit a country, an institution, a person or
  a project.
+ 
+## Mandatory automatically created files
+In addition to the `dynamic-data.json` files that is created/updated when creating/editing a country,
+an institution, a person or a project, the files `build/yearbook.csv` and `build/yearbook.json` are as well. You 
+might have to `mkdir build` to create the `build` directory if it is the first time you run the theme.

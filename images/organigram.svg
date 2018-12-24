@@ -577,22 +577,16 @@ A45.86,45.86,0,0,1,215,584.08
 h415.33
 a45.86,45.86,0,0,1,45.86,45.86
 Z"/>
-            <text class="cls-28" transform="translate(212.24 620.71)">
+            <text class="cls-28" transform="translate(212.24 626.71)">
                 <tspan class="cls-29">DARIAH COORDINATION</tspan>
-                <tspan x="37.13" y="14">OFFICE (DCO)</tspan>
-                <tspan class="cls-33">
-                    <tspan x="45.90" y="30">Secretary General</tspan>
-                </tspan>
+                <tspan x="34.13" y="19">OFFICE - DCO</tspan>
             </text>
         </g>
         <g id="cio-t">
             <path id="background-8" data-name="background" class="cls-126"
                   d="M664.08,629.95a35.86,35.86,0,0,1-35.86,35.86H468.91A35.86,35.86,0,0,1,433,629.95h0a35.86,35.86,0,0,1,35.86-35.86H628.22a35.86,35.86,0,0,1,35.86,35.86Z"/>
-            <text class="cls-28" transform="translate(529.53 627.37)">
-                <tspan class="cls-43">CIO-T</tspan>
-                <tspan class="cls-46">
-                    <tspan x="-35.6" y="16">Chief Integration Team</tspan>
-                </tspan>
+            <text class="cls-28" transform="translate(517.53 633.37)">
+                <tspan class="cls-43">CIO - Team</tspan>
             </text>
         </g>
         <g id="vcc1">
@@ -637,17 +631,7 @@ Z"/>
         <g id="senior-management-team">
             <path id="background-13" data-name="background" class="cls-83"
                   d="M664.08,237.53a35.86,35.86,0,0,1-35.86,35.86H215a35.86,35.86,0,0,1-35.86-35.86h0A35.86,35.86,0,0,1,215,201.67h413.2a35.86,35.86,0,0,1,35.86,35.86Z"/>
-            <text class="cls-84" transform="translate(312.6 225.83)">SENIOR MANAGEMENT TEAM
-                <tspan class="cls-86">
-                    <tspan x="32.62" y="13">Chair &amp; Vice Chair NCC &amp; JRC</tspan>
-                </tspan>
-                <tspan class="cls-95">
-                    <tspan x="69.49" y="25">Officers &amp; DCO</tspan>
-                </tspan>
-                <tspan class="cls-86">
-                    <tspan x="80.73" y="37">Chair of SB</tspan>
-                </tspan>
-            </text>
+            <text class="cls-84" transform="translate(282.6 240.83)">SENIOR MANAGEMENT TEAM - SMT</text>
         </g>
     </g>
     <g id="pointillés">

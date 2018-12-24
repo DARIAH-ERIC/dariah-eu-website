@@ -326,15 +326,25 @@ if($title !== 'no'){  ?>
 
 do_action( '__after_page_title' );
 
+global $more;
+$tempMore = $more;
+$more = false;
+$content_cut = get_the_content( '' );
+$more = true;
+$content_full = get_the_content();
+$content_diff = str_replace( $content_cut, '', $content_full );
+$content_full = get_the_content();
+
 ?>
 <div class="section def_section">
   <div class="wrapper section_wrapper">
     <div class="row-col-2">
       <div class="col">
+        <?php echo $content_cut; ?>
         <?php echo do_shortcode( '[contact-helpdesk]' ); ?>
       </div>
       <div class="col">
-        <?php the_content(); ?>
+	    <?php echo $content_diff; ?>
       </div>
     </div>
   </div>

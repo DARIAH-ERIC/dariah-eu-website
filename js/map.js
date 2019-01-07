@@ -257,7 +257,7 @@
     if (selectedCountry.partnerInstitutions.length === 0) { jQuery(dariahWindow).find('li:nth-child(2)').hide(); }
     else { jQuery(dariahWindow).find('li:nth-child(2)').show(); _selectedTab = _selectedTab ? _selectedTab : 2; }
 
-    if (selectedCountry.projects.length === 0) { jQuery(dariahWindow).find('li:nth-child(3)').hide(); }
+    if (selectedCountry.cooperatingInstitutions.length === 0) { jQuery(dariahWindow).find('li:nth-child(3)').hide(); }
     else { jQuery(dariahWindow).find('li:nth-child(3)').show(); _selectedTab = _selectedTab ? _selectedTab : 3; }
 
     selectTab(_selectedTab);

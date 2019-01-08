@@ -101,7 +101,7 @@
     map.setView(viewCenter, window.innerWidth <=768 ? 3 : 4);
     map.on('popupopen', bindPopupClick);
     map.on('popupclose', unbindPopupClick);
-    L.tileLayer('http://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}.png').addTo(map);
+    L.tileLayer('https://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}.png').addTo(map);
 
     geoCountries = L.geoJson(euCountries, { onEachFeature: onEachFeature}).addTo(map);
     createMarkers();

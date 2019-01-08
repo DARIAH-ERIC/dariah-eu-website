@@ -43,7 +43,7 @@
       minZoom: 4,
       maxZoom: 18
     });
-    L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png').addTo(map);
+    L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png').addTo(map);
     var marker;
     var array = [];
     for (var i = 0; i < dco.length; i++) {

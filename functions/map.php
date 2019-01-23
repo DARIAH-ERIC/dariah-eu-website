@@ -115,6 +115,7 @@
         $_partnerInstitutions = array();
         $_cooperatingInstitutions = array();
         $_nationalInstitutions = array();
+        $_otherInstitutions = array();
         $_projects = array();
         for ($pi = 0; $pi < count($mapData->institutions); $pi++) {
           if ($mapData->institutions[$pi]->country == $country->ID) {
@@ -124,6 +125,8 @@
               array_push($_nationalInstitutions, $mapData->institutions[$pi]->id);
             } else if ($mapData->institutions[$pi]->role == 'cooperating-partner') {
               array_push($_cooperatingInstitutions, $mapData->institutions[$pi]->id);
+            } else if ($mapData->institutions[$pi]->role == 'other') {
+              array_push($_otherInstitutions, $mapData->institutions[$pi]->id);
             }
 
             for ($pp = 0; $pp < count($mapData->projects); $pp++) {
@@ -136,6 +139,7 @@
         $jsonCountry->partnerInstitutions = $_partnerInstitutions;
         $jsonCountry->nationalInstitutions = $_nationalInstitutions;
         $jsonCountry->cooperatingInstitutions = $_cooperatingInstitutions;
+        $jsonCountry->otherInstitutions = $_otherInstitutions;
         $jsonCountry->projects = $_projects;
 
         $countries[$jsonCountry->code] = $jsonCountry;

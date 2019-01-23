@@ -117,7 +117,7 @@
         array(
           'taxonomy' => 'dariah_institution_country_role',
           'field'    => 'slug',
-          'terms'    => array('partner-institutions', 'national-coordinating-institution')
+          'terms'    => array('partner-institutions', 'national-coordinating-institution', 'cooperating-partner', 'other')
         )
       ),
     ));

@@ -50,7 +50,10 @@
   };
 
   function moveIntoPosition(positionIdentifier) {
-    var position = dariahPositionsData[positionIdentifier];
+    var position = false;
+    if(typeof dariahPositionsData !== 'undefined') {
+        position = dariahPositionsData[positionIdentifier];
+    }
     if (!position) {
       jQuery('#positions').hide();
       selectedArea = null;

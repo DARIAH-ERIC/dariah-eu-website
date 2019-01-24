@@ -82,7 +82,9 @@
         if (
           (countries && countries.indexOf(person.country) === -1) ||
           (institutions && institutions.indexOf(person.institution) === -1) ||
-          (positions && positions.filter(function(item){ return person.positions.indexOf(item) > -1;}).length < 1) )  {
+          (positions && positions.filter(function(item){
+            if(person.positions !== undefined) {return person.positions.indexOf(item) > -1;} return false;
+          }).length < 1) )  {
           return false;
         }
 
@@ -91,9 +93,11 @@
       .map(function(person) {
         jQuery('#country' + person.country).parent().removeClass('unavailable');
         jQuery('#institution' + person.institution).parent().removeClass('unavailable');
-        person.positions.forEach(function(entry) {
-            jQuery('#position' + entry).parent().removeClass('unavailable');
-        });
+        if(person.positions !== undefined) {
+          person.positions.forEach(function(entry) {
+              jQuery('#position' + entry).parent().removeClass('unavailable');
+          });
+        }
 
         var html = '<li data-person-id="' + person.id + '">';
         html += '<div class="header">';

@@ -136,6 +136,7 @@
 
       mapEnable();
       selectType(selectedType);
+      jQuery('#dariahIntro').show();
       window.location.hash = "";
     });
 

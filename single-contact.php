@@ -328,14 +328,21 @@ do_action( '__after_page_title' );
 
 global $more;
 $tempMore = $more;
+$more = false;
+$content_cut = get_the_content( '' );
+$more = true;
 $content_full = get_the_content();
+$content_diff = str_replace( $content_cut, '', $content_full );
 
 ?>
 <div class="section def_section">
   <div class="wrapper section_wrapper">
+      <div class="full-content">
+          <?php echo $content_cut; ?>
+      </div>
     <div class="row-col-2">
         <div class="col">
-	        <?php echo $content_full; ?>
+	        <?php echo $content_diff; ?>
         </div>
         <div class="col" id="contactMap"></div>
     </div>

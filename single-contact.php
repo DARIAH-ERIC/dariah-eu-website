@@ -333,10 +333,12 @@ $content_full = get_the_content();
 ?>
 <div class="section def_section">
   <div class="wrapper section_wrapper">
-    <div class="full-content">
-        <?php echo $content_full; ?>
+    <div class="row-col-2">
+        <div class="col">
+	        <?php echo $content_full; ?>
+        </div>
+        <div class="col" id="contactMap"></div>
     </div>
   </div>
-  <div id="contactMap"></div>
 </div>
 <?php get_footer(); ?>

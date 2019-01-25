@@ -1377,7 +1377,6 @@ body.page-template .strong_colored strong {
   vertical-align: top; }
 
 #contactMap {
-  width: 100%;
   height: 500px; }
   #contactMap .leaflet-popup-content-wrapper {
     border-radius: 0;

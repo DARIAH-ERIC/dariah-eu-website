@@ -38,3 +38,20 @@ The mandatory `dynamic-data.json` file is created/updated when you create/edit a
 In addition to the `dynamic-data.json` files that is created/updated when creating/editing a country,
 an institution, a person or a project, the files `build/yearbook.csv` and `build/yearbook.json` are as well. You 
 might have to `mkdir build` to create the `build` directory if it is the first time you run the theme.
+
+## Helpdesk
+In order to use the [Helpdesk](https://github.com/DARIAH-ERIC/contact-helpdesk), you can either use the full 
+shortcode in the page edition:
+```html
+This is the helpdesk
+<!--more-->
+[contact-helpdesk]
+```
+Or add the queue identifier you want to you use in the code:
+```html
+This is the helpdesk
+<!--more-->
+[contact-helpdesk page="%page%"]
+```
+If you leave ```%page%```, it will try to be rewritten with the HTML query string ```?page=``` becoming 
+```[contact-helpdesk page="12"]]``` for a request ot the page ```/helpdesk?page=12```

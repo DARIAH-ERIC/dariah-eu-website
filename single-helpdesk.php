@@ -340,7 +340,9 @@ $content_diff = str_replace( $content_cut, '', $content_full );
 		<div class="full-content">
 			<?php
 			echo $content_cut;
-			echo do_shortcode( $content_diff );
+			$page_helpdesk = get_query_var( 'page', false );
+			$shortcode = str_replace("%page%", $page_helpdesk, $content_diff);
+			echo do_shortcode( $shortcode );
 			?>
 		</div>
 	</div>

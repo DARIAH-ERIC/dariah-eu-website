@@ -306,6 +306,7 @@ do_action( '__after_page_title' );
 
 			if (count($query->posts) > 0) {
 		?>
+            <p>&nbsp;</p>
 			<h2>Contacts</h2>
       <?php dariah_contact($query->posts); ?>
 		<?php } ?>

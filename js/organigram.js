@@ -4,7 +4,10 @@
   var onBackToList = function(event) {
     event.preventDefault();
     event.stopPropagation();
+    backToList();
+  };
 
+  var backToList = function() {
     jQuery('#positions .contact-list').show();
     jQuery('#positions .contact-complete').hide();
     jQuery('#positions .contact-complete').empty();
@@ -84,6 +87,7 @@
         jQuery('#positions .contact-list').append(_html);
       }
     }
+    backToList();
     window.location.hash = "#" + positionIdentifier;
 
     jQuery('#positions .see-more').on('click', onSeeMore);

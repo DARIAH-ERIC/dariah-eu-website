@@ -198,6 +198,12 @@ body {
 .highlight {
   font-weight: bold; }
 
+.warning_not_production {
+  background-color: #D76F6F;
+  text-align: center;
+  color: white;
+  font-weight: bold; }
+
 #breadcrumbs, #breadcrumbs #crumbs a, #breadcrumbs #crumbs span {
   color: white; }
 

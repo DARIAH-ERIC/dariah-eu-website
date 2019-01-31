@@ -4,7 +4,10 @@
   var onBackToList = function(event) {
     event.preventDefault();
     event.stopPropagation();
+    backToList();
+  };
 
+  var backToList = function() {
     jQuery('#positions .contact-list').show();
     jQuery('#positions .contact-complete').hide();
     jQuery('#positions .contact-complete').empty();
@@ -50,7 +53,10 @@
   };
 
   function moveIntoPosition(positionIdentifier) {
-    var position = dariahPositionsData[positionIdentifier];
+    var position = false;
+    if(typeof dariahPositionsData !== 'undefined') {
+        position = dariahPositionsData[positionIdentifier];
+    }
     if (!position) {
       jQuery('#positions').hide();
       selectedArea = null;
@@ -81,6 +87,7 @@
         jQuery('#positions .contact-list').append(_html);
       }
     }
+    backToList();
     window.location.hash = "#" + positionIdentifier;
 
     jQuery('#positions .see-more').on('click', onSeeMore);

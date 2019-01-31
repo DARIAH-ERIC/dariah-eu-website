@@ -100,7 +100,10 @@ $schemaOrg = isset($schema) ? 'itemscope itemtype="' . $schema . '"' : '';
 
 
 do_action( '__before_header' );
-
+if( get_site_url() != "https://www.dariah.eu" ) { ?>
+    <div id="not_production" class="warning_not_production" onclick="this.style.display='none';">NOT PRODUCTION
+        SERVER! (click to hide)</div>
+<?php }
 
 //Set top bar
 

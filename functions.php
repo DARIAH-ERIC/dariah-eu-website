@@ -7,6 +7,7 @@
   include("functions/encode-email.php");
   include("functions/map.php");
   include("functions/yearbook.php");
+  include("functions/rd-child-pages-dariah.php");
   include("shortcode/organigram.php");
 
   add_action('admin_head', 'admin_enqueue');

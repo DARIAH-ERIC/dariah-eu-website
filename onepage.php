@@ -305,9 +305,9 @@ if($title !== 'no'){  ?>
 <div class="page_title_ctn <?php if($titlebg_color !== ''){ echo 'white'; } ?>"> 
   <div class="wrapper table_wrapper">
   <h1><?php the_title(); ?></h1>
-  <?php if($bc !== 'no') { echo wpb_list_child_pages();  ?>     
+  <?php if($bc !== 'no') { echo wpb_list_child_pages_dariah();  ?>
 <div id="breadcrumbs">
-  <?php if (function_exists('dimox_breadcrumbs')) dimox_breadcrumbs(); ?>
+  <?php if (function_exists('dimox_breadcrumbs')) dimox_breadcrumbs(); //Shouldn't it be dariah_breadcrumbs instead? ?>
 </div>
 <?php } ?> 
 </div>

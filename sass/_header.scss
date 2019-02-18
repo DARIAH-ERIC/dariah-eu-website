@@ -125,6 +125,14 @@
     }
   }
 
+  & > li:nth-child(5) {
+    & > a:hover,
+    .sub-menu {
+      border-top-color: #19b391;
+      color: #19b391;
+    }
+  }
+
   .sub-menu .sub-menu {
     border-top: none;
     position: relative;

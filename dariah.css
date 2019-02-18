@@ -290,6 +290,11 @@ body {
   border-top-color: #8e60a9;
   color: #8e60a9; }
 
+#menu-main > li:nth-child(5) > a:hover,
+#menu-main > li:nth-child(5) .sub-menu {
+  border-top-color: #19b391;
+  color: #19b391; }
+
 #menu-main .sub-menu .sub-menu {
   border-top: none;
   position: relative;

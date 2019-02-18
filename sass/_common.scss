@@ -154,6 +154,10 @@ body {
   }
 }
 
+.big-squares {
+  @include custom-list;
+}
+
 .point-featured {
   margin: 20px 0 5px;
 }

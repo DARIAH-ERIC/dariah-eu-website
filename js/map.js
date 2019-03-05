@@ -193,7 +193,11 @@
     selectedCountry = country;
     jQuery(dariahWindow).removeClass();
     jQuery(dariahWindow).addClass(COUNTRY_TYPE);
-    jQuery(dariahWindow).find('h1').html(selectedCountry.name + '<span>(' + selectedCountry.statusName + ')</span>');
+    var logo = "";
+    if(selectedCountry.countryLogo != null) {
+      logo = '<img width="100" height="20" src="' + selectedCountry.countryLogo + '" alt="Logo"/>';
+    }
+    jQuery(dariahWindow).find('h1').html(selectedCountry.name + logo + '<span>(' + selectedCountry.statusName + ')</span>');
     jQuery(dariahWindow).find('li:nth-child(1) a').html('National<br />Coordinating<br />Institution');
     jQuery(dariahWindow).find('li:nth-child(2) a').html('Partner<br />Institutions');
     jQuery(dariahWindow).find('li:nth-child(3) a').html('Cooperating<br />Partners');

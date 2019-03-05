@@ -138,6 +138,7 @@
         $jsonCountry->cooperatingInstitutions = $_cooperatingInstitutions;
         $jsonCountry->projects = $_projects;
         $jsonCountry->countryDescription = $country->post_content;
+        $jsonCountry->countryLogo = wp_get_attachment_image_src( get_post_thumbnail_id( $country->ID ), 'single-post-thumbnail' )[0];
 
         $countries[$jsonCountry->code] = $jsonCountry;
       }

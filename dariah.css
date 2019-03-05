@@ -1968,10 +1968,10 @@ span.wpcf7-not-valid-tip {
         top: 157px; } }
   #dariahWindow .content {
     position: absolute;
-    top: 25px;
-    bottom: 25px;
-    left: 25px;
-    right: 20px;
+    top: 10px;
+    bottom: 10px;
+    left: 30px;
+    right: 30px;
     padding-right: 30px;
     overflow-y: scroll;
     color: #000000;
@@ -1979,9 +1979,9 @@ span.wpcf7-not-valid-tip {
     line-height: 16px; }
     @media only screen and (min-width: 1035px) {
       #dariahWindow .content {
-        top: 55px;
-        bottom: 55px;
-        left: 50px;
+        top: 25px;
+        bottom: 25px;
+        left: 30px;
         right: 20px; } }
     #dariahWindow .content h2 {
       font-size: 26px;

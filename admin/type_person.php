@@ -41,7 +41,7 @@
 
 		$taxonomyPosition = array (
 			'hierarchical'      => true,
-			'label'             => 'Administrative position',
+			'label'             => 'Role in DARIAH',
 			'query_var'         => true
 		);
 

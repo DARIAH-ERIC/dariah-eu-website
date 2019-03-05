@@ -137,6 +137,7 @@
         $jsonCountry->nationalInstitutions = $_nationalInstitutions;
         $jsonCountry->cooperatingInstitutions = $_cooperatingInstitutions;
         $jsonCountry->projects = $_projects;
+        $jsonCountry->countryDescription = $country->post_content;
 
         $countries[$jsonCountry->code] = $jsonCountry;
       }

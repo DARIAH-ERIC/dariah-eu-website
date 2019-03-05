@@ -213,9 +213,9 @@
     if (selectedCountry.cooperatingInstitutions.length === 0) { jQuery(dariahWindow).find('li:nth-child(3)').hide(); }
     else { jQuery(dariahWindow).find('li:nth-child(3)').show(); _selectedTab = _selectedTab ? _selectedTab : 3; }
 
-    // if (selectedCountry.description.length === 0) { jQuery(dariahWindow).find('li:nth-child(4)').hide(); }
-    // else { jQuery(dariahWindow).find('li:nth-child(4)').show(); _selectedTab = _selectedTab ? _selectedTab : 4; }
-    jQuery(dariahWindow).find('li:nth-child(4)').hide();
+    if (selectedCountry.countryDescription.length === 0) { jQuery(dariahWindow).find('li:nth-child(4)').hide(); }
+    else { jQuery(dariahWindow).find('li:nth-child(4)').show(); _selectedTab = _selectedTab ? _selectedTab : 4; }
+    // jQuery(dariahWindow).find('li:nth-child(4)').hide();
 
     selectTab(_selectedTab);
   }
@@ -332,6 +332,10 @@
               return '<li>' + li + '</li>';
           }).join('');
         html += '</ul>';
+        selectInstitutionMarker([]);
+        break;
+      case 4:
+        html += selectedCountry.countryDescription;
         selectInstitutionMarker([]);
         break;
     }

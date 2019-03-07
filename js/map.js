@@ -193,11 +193,8 @@
     selectedCountry = country;
     jQuery(dariahWindow).removeClass();
     jQuery(dariahWindow).addClass(COUNTRY_TYPE);
-    var logo = "";
-    if(selectedCountry.countryLogo != null) {
-      logo = '<img width="100" height="20" src="' + selectedCountry.countryLogo + '" alt="Logo"/>';
-    }
-    jQuery(dariahWindow).find('h1').html(selectedCountry.name + logo + '<span>(' + selectedCountry.statusName + ')</span>');
+
+    jQuery(dariahWindow).find('h1').html(selectedCountry.name + '<span>(' + selectedCountry.statusName + ')</span>');
     jQuery(dariahWindow).find('li:nth-child(1) a').html('National<br />Coordination');
     jQuery(dariahWindow).find('li:nth-child(2) a').html('Partner<br />Institutions');
     jQuery(dariahWindow).find('li:nth-child(3) a').html('Cooperating<br />Partners');
@@ -267,6 +264,12 @@
     var html= '';
     switch (id) {
       case 1:
+        var logo = "";
+        if(selectedCountry.countryLogo != null) {
+          logo = '<img width="100" height="20" src="' + selectedCountry.countryLogo + '" alt="Logo"/>';
+          html += logo;
+        }
+
         if (selectedCountry.entities.length !== 0) {
           html += '<p class="reset">Representing Entity:</p>';
           html += selectedCountry.entities.map(function(entity) { return '<h2>' + entity.name + '</h2>'; }).join('');

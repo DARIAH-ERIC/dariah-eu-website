@@ -51,6 +51,8 @@
     switch ($type) {
       case 'dariah_app':
       case 'dariah_country':
+      case 'dariah_document':
+      case 'dariah_initiative':
       case 'dariah_institution':
       case 'dariah_person':
       case 'dariah_project':
@@ -66,6 +68,8 @@
     $type = get_post_type( $post );
     switch($type) {
       case 'dariah_country':
+      case 'dariah_document':
+      case 'dariah_initiative':
       case 'dariah_institution':
       case 'dariah_person':
       case 'dariah_project':
@@ -84,6 +88,8 @@
 
   include( 'admin/type_app.php' );
   include( 'admin/type_country.php' );
+  include( 'admin/type_document.php' );
+  include( 'admin/type_initiative.php' );
   include( 'admin/type_institution.php' );
   include( 'admin/type_person.php' );
   include( 'admin/type_project.php' );

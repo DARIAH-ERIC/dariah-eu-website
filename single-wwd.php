@@ -338,6 +338,10 @@ do_action( '__after_page_title' );
 				$postType = 'dariah_project';
 			} else  if (strpos(strtolower($title), 'working') !== FALSE) {
 				$postType = 'dariah_wg';
+			} else  if (strpos(strtolower($title), 'document') !== FALSE) {
+				$postType = 'dariah_document';
+			} else  if (strpos(strtolower($title), 'initiative') !== FALSE) {
+				$postType = 'dariah_initiative';
 			}
 
 			if ($postType == 'dariah_project') {

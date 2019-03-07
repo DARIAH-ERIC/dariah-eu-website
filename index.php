@@ -113,7 +113,8 @@ echo !empty( $custom_blog_css ) ? $custom_blog_css : '';
 				echo $thisCat->cat_name;
 			}
 			?>
-      <?php if ($rd_data['rd_breadcrumbs'] == true){ ?>
+    </h1>
+    <?php if ($rd_data['rd_breadcrumbs'] == true){ ?>
     <div id="breadcrumbs">
       <?php if (function_exists('dariah_breadcrumbs')) dariah_breadcrumbs(); ?>
     </div>

@@ -130,19 +130,19 @@
         html += '<li class="position">';
         html += '<ul class="list">';
         if (person.identifiant) { html += '<li>Researcher ID : <span>' + person.identifiant + '</span></li>';}
-        if (person.role) { html += '<li>Role : <span>' + person.role + '</span></li>';}
-        if (person.positions) {
-            html += '<li>Role in DARIAH : <span>';
-            for(var j=0; j<person.positions.length; j++) {
-                html += dariahYearbookData.positions[person.positions[j]];
-                if(j !== person.positions.length - 1) {
-                    html += ", ";
-                }
-            }
-            html += '</span></li>';
-        }
+        if (person.role) { html += '<li>Position : <span>' + person.role + '</span></li>';}
         if (person.institution) { html += '<li>Institution : <span>' + dariahYearbookData.institutions[person.institution].name + '</span></li>';}
         if (person.country) { html += '<li>Country : <span>' + dariahYearbookData.countries[person.country] + '</span></li>';}
+        if (person.positions) {
+          html += '<li>Role in DARIAH : <span>';
+          for(var j=0; j<person.positions.length; j++) {
+            html += dariahYearbookData.positions[person.positions[j]];
+            if(j !== person.positions.length - 1) {
+              html += ", ";
+            }
+          }
+          html += '</span></li>';
+        }
         html += '</ul>';
         html += '</li>';
         html += '<li class="fields">' + person.skills + '</li>';

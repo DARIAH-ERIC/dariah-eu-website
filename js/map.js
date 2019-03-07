@@ -198,10 +198,10 @@
       logo = '<img width="100" height="20" src="' + selectedCountry.countryLogo + '" alt="Logo"/>';
     }
     jQuery(dariahWindow).find('h1').html(selectedCountry.name + logo + '<span>(' + selectedCountry.statusName + ')</span>');
-    jQuery(dariahWindow).find('li:nth-child(1) a').html('National<br />Coordinating<br />Institution');
+    jQuery(dariahWindow).find('li:nth-child(1) a').html('National<br />Coordination');
     jQuery(dariahWindow).find('li:nth-child(2) a').html('Partner<br />Institutions');
     jQuery(dariahWindow).find('li:nth-child(3) a').html('Cooperating<br />Partners');
-    jQuery(dariahWindow).find('li:nth-child(4) a').html('Description');
+    jQuery(dariahWindow).find('li:nth-child(4) a').html('DARIAH<br/>nationally');
 
     var _selectedTab;
     if (selectedCountry.entities.length === 0 && !selectedCountry.national.persons && !selectedCountry.national.institutions && selectedCountry.nationalInstitutions.length === 0 && !selectedCountry.coordinator) {

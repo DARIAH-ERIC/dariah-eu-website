@@ -340,7 +340,7 @@ do_action( '__after_page_title' );
 				case 'dariah_app':
 					$custom = get_post_custom(get_the_id());
 
-					if (count($custom['link']) > 0 && strlen(trim($custom['link'][0])) != Ø) {
+					if (count($custom['link']) > 0 && strlen(trim($custom['link'][0])) != 0) {
 						echo '<p class="point">Website: <a href="' . $custom['link'][0] . '" target="_blank" itemprop="installUrl">' . $custom['link'][0] . '</a></p>';
 					}
 					if (count($custom['author']) > 0 && strlen(trim($custom['author'][0])) != 0) {

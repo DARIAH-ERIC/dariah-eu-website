@@ -36,7 +36,7 @@ The mandatory `dynamic-data.json` file is created/updated when you create/edit a
  
 ## Mandatory automatically created files
 In addition to the `dynamic-data.json` files that is created/updated when creating/editing a country,
-an institution, a person or a project, the files `build/yearbook.csv` and `build/yearbook.json` are as well. You 
+an institution, a person or a project, the file `build/yearbook.json` are as well. You 
 might have to `mkdir build` to create the `build` directory if it is the first time you run the theme.
 
 ## Helpdesk

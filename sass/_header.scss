@@ -169,39 +169,6 @@
         width: 230px;
         border: none;
       }
-  //
-  //    .sub-menu {
-  //      z-index: 9999;
-  //      display: none !important;
-  //      visibility: unset !important;
-  //      //border: 1px #D76F6F dashed;
-  //
-  //      li {
-  //        display: none !important;
-  //        visibility: hidden !important;
-  //      }
-  //    }
-  //
-  //    &:hover {
-  //      .sub-menu {
-  //        display: block !important;
-  //        visibility: visible !important;
-  //        //border: 1px #0aa9c6 dashed;
-  //
-  //        li {
-  //          display: block !important;
-  //          visibility: visible !important;
-  //          //border: 1px #D76F6F dashed;
-  //          a {
-  //            display: block;
-  //            left: 250px;
-  //            width: 210px;
-  //            //border: 1px #5b568e dashed;
-  //            border: none;
-  //          }
-  //        }
-  //      }
-  //    }
     }
   }
 
@@ -213,8 +180,6 @@
   & > li > .sub-menu > li > .sub-menu > li,
   & > li > .sub-menu > li > .sub-menu > li > a {
     float: left;
-    //margin-left: 20px;
-    //background-color: #ddd;
   }
 
   & > li > .sub-menu > li > .sub-menu > li {
@@ -230,7 +195,6 @@
     position: absolute;
     left: 250px;
     width: 250px;
-    //top: -100px;
     top: 90%;
     padding: 0;
     margin: 0;
@@ -242,28 +206,9 @@
 
   & > li > .sub-menu > li > .sub-menu > li ul li {
     float: none;
-    //height: 35px;
-    //min-width: 100px;
-    //line-height: 35px;
-    //border-right: 0;
     display: block;
     border-bottom: 1px solid #ecf0f1;
   }
-
-  //& > li > .sub-menu > li > .sub-menu > li > ul > li > ul {
-  //  display: none;
-  //  margin: 0;
-  //  width: 100px;
-  //  z-index: 9999;
-  //  float: left !important;
-  //  //background-color: black;
-  //  //border: 1px #D76F6F dashed;
-  //}
-  //
-  //& > li > .sub-menu > li > .sub-menu > li > ul > li:hover > ul {
-  //  left: 250px;
-  //  top: 0;
-  //}
 
   li li a:after {
     content: '' !important;

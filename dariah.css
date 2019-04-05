@@ -358,6 +358,7 @@ body {
 
 #menu-main > li:nth-child(2) > a:hover,
 #menu-main > li:nth-child(2) > .sub-menu {
+  border-top-color: #a6bf00;
   color: #a6bf00; }
   #menu-main > li:nth-child(2) > a:hover .sub-menu,
   #menu-main > li:nth-child(2) > .sub-menu .sub-menu {
@@ -381,6 +382,7 @@ body {
 
 #menu-main > li:nth-child(5) > a:hover,
 #menu-main > li:nth-child(5) > .sub-menu {
+  border-top-color: #19b391;
   color: #19b391; }
   #menu-main > li:nth-child(5) > a:hover .sub-menu,
   #menu-main > li:nth-child(5) > .sub-menu .sub-menu {

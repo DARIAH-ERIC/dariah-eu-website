@@ -208,7 +208,7 @@ body {
     width: 270px;
     margin-right: 30px;
     margin-bottom: 30px;
-    font-family: "Lato", Arial, sans-serif;
+    font-family: "Roboto", Arial, sans-serif;
     font-size: 14px; }
     .big-squares .item-list li:nth-child(4n) {
       margin-right: 0; }
@@ -442,7 +442,7 @@ body {
   text-align: left !important; }
 
 #header_container {
-  font-family: "Lato", Arial, sans-serif; }
+  font-family: "Roboto", Arial, sans-serif; }
   @media only screen and (max-width: 1214px) and (min-width: 1036px) {
     #header_container .nav_type_2 ul li a {
       margin: 0 10px; } }
@@ -617,7 +617,7 @@ body {
         height: 37px; } }
 
 #footer_coms {
-  font-family: "Lato", Arial, sans-serif;
+  font-family: "Roboto", Arial, sans-serif;
   font-weight: 300; }
   #footer_coms .f_menu_right, #footer_coms .footer_message.f_message_left {
     line-height: 18px; }
@@ -711,7 +711,7 @@ body {
     font-size: 16px;
     text-align: justify;
     padding: 30px;
-    font-family: "Lato", Arial, sans-serif;
+    font-family: "Roboto", Arial, sans-serif;
     font-weight: 300;
     /*
     overflow: hidden;
@@ -1087,7 +1087,7 @@ body.page-template .strong_colored strong {
     display: block;
     font-size: 24px;
     text-transform: uppercase;
-    font-family: "Lato", Arial, sans-serif; }
+    font-family: "Roboto", Arial, sans-serif; }
     .dariah_date span:last-child {
       margin-top: 3px;
       border-top: 1px solid white;
@@ -1218,7 +1218,7 @@ body.page-template .strong_colored strong {
     vertical-align: top;
     max-width: 100%;
     color: #2c3e50;
-    font-family: "Lato", Arial, sans-serif; }
+    font-family: "Roboto", Arial, sans-serif; }
     @media only screen and (min-width: 1036px) {
       .dariah-head .excerpt,
       .dariah-head .content,
@@ -1263,7 +1263,7 @@ body.page-template .strong_colored strong {
       opacity: 0;
       transition: opacity 0.2s linear; }
   .contact-list .content {
-    font-family: "Lato", Arial, sans-serif;
+    font-family: "Roboto", Arial, sans-serif;
     font-size: 15px;
     color: #999999;
     margin-left: 5px;
@@ -1391,7 +1391,7 @@ body.page-template .strong_colored strong {
     width: 270px;
     margin-right: 30px;
     margin-bottom: 30px;
-    font-family: "Lato", Arial, sans-serif;
+    font-family: "Roboto", Arial, sans-serif;
     font-size: 14px; }
     .page-template-single-app .item-list li:nth-child(4n) {
       margin-right: 0; }
@@ -1453,12 +1453,12 @@ body.page-template .strong_colored strong {
     color: #434343; }
 
 .page-template-single-app h2 {
-  font-family: "Lato", Arial, sans-serif;
+  font-family: "Roboto", Arial, sans-serif;
   font-size: 30px;
   text-transform: uppercase; }
   .page-template-single-app h2 + p {
     margin-bottom: 0;
-    font-family: "Lato", Arial, sans-serif;
+    font-family: "Roboto", Arial, sans-serif;
     font-size: 16px;
     color: #434343; }
 
@@ -1515,7 +1515,7 @@ body.page-template .strong_colored strong {
   height: 500px; }
   #contactMap .leaflet-popup-content-wrapper {
     border-radius: 0;
-    font-family: "Lato", Arial, sans-serif;
+    font-family: "Roboto", Arial, sans-serif;
     font-size: 14px; }
     #contactMap .leaflet-popup-content-wrapper .title {
       font-weight: bold;
@@ -1532,7 +1532,7 @@ body.page-template .strong_colored strong {
   margin-top: 2px; }
 
 .wpcf7 .wpcf7-form label {
-  font-family: "Lato", Arial, sans-serif;
+  font-family: "Roboto", Arial, sans-serif;
   font-weight: bold;
   color: #000000;
   font-size: 14px;
@@ -1560,7 +1560,7 @@ span.wpcf7-not-valid-tip {
   color: #ed6f59; }
 
 .adresses {
-  font-family: "Lato", Arial, sans-serif;
+  font-family: "Roboto", Arial, sans-serif;
   font-size: 14px;
   color: #434343;
   margin-left: 20px; }
@@ -1769,7 +1769,7 @@ span.wpcf7-not-valid-tip {
       border-top: 5px solid #aaaaaa;
       z-index: 1;
       font-size: 18px;
-      font-family: "Lato", Arial, sans-serif;
+      font-family: "Roboto", Arial, sans-serif;
       color: #aaaaaa;
       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
       .page-template-single-map .section.def_section .nav li:last-child {
@@ -1855,7 +1855,7 @@ span.wpcf7-not-valid-tip {
   background-color: white;
   border-radius: 5px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  font-family: "Lato", Arial, sans-serif; }
+  font-family: "Roboto", Arial, sans-serif; }
   @media only screen and (min-width: 600px) {
     #dariahWindow {
       left: 70px;
@@ -2033,7 +2033,7 @@ span.wpcf7-not-valid-tip {
     #dariahWindow .content h2 {
       font-size: 26px;
       line-height: 24px;
-      font-family: "Lato", Arial, sans-serif;
+      font-family: "Roboto", Arial, sans-serif;
       font-weight: normal;
       margin-bottom: 10px;
       color: #000000; }
@@ -2048,7 +2048,7 @@ span.wpcf7-not-valid-tip {
         margin-left: -1em; }
     #dariahWindow .content .list li {
       font-size: 14px;
-      font-family: "Lato", Arial, sans-serif;
+      font-family: "Roboto", Arial, sans-serif;
       font-weight: bold; }
     #dariahWindow .content a {
       color: #ed6f59;
@@ -2087,7 +2087,7 @@ span.wpcf7-not-valid-tip {
     padding: 0; }
   .content #wp-content .leaflet-popup-content {
     margin: 0 0 10px;
-    font-family: "Lato", Arial, sans-serif;
+    font-family: "Roboto", Arial, sans-serif;
     font-size: 16px;
     text-align: center; }
     .content #wp-content .leaflet-popup-content p {
@@ -2114,7 +2114,7 @@ span.wpcf7-not-valid-tip {
   bottom: 30%;
   width: 360px;
   left: 20%;
-  font-family: "Lato", Arial, sans-serif;
+  font-family: "Roboto", Arial, sans-serif;
   font-size: 16px;
   color: #434343;
   pointer-events: none; }
@@ -2153,7 +2153,7 @@ span.wpcf7-not-valid-tip {
   background-color: #f6f6f6;
   padding: 15px 0 15px;
   margin-bottom: 40px;
-  font-family: "Lato", Arial, sans-serif;
+  font-family: "Roboto", Arial, sans-serif;
   display: none; }
   @media only screen and (min-width: 768px) {
     .page-template-single-organigram #positions {
@@ -2289,7 +2289,7 @@ span.wpcf7-not-valid-tip {
           vertical-align: middle; } }
     #dariahYearbook .header p {
       margin: 0 0 0 35px;
-      font-family: "Lato", Arial, sans-serif;
+      font-family: "Roboto", Arial, sans-serif;
       max-width: 55%; }
       #dariahYearbook .header p span {
         display: block; }
@@ -2435,7 +2435,7 @@ span.wpcf7-not-valid-tip {
     vertical-align: middle;
     height: 1.5em;
     color: #333333;
-    font-family: "Lato", Arial, sans-serif;
+    font-family: "Roboto", Arial, sans-serif;
     font-size: 14px; }
   #dariahYearbook #filters .all .filter-more {
     display: none; }
@@ -2558,7 +2558,7 @@ span.wpcf7-not-valid-tip {
     width: 270px;
     margin-right: 30px;
     margin-bottom: 30px;
-    font-family: "Lato", Arial, sans-serif;
+    font-family: "Roboto", Arial, sans-serif;
     font-size: 14px; }
     .page-template-single-wwd .item-list li:nth-child(4n) {
       margin-right: 0; }

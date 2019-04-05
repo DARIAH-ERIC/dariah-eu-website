@@ -17,7 +17,7 @@
             }
 
             .cls-10, .cls-106, .cls-28, .cls-3, .cls-84 {
-            font-family: Lato-Regular, Lato;
+            font-family: Roboto-Regular, Roboto;
             }
 
             .cls-3 {
@@ -229,7 +229,7 @@
             }
 
             .cls-55 {
-            font-family: Lato-Bold, Lato;
+            font-family: Roboto-Bold, Roboto;
             font-weight: 700;
             }
 

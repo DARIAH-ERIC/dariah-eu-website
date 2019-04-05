@@ -425,7 +425,7 @@ body {
   width: 250px;
   top: 90%;
   padding: 0;
-  margin: 0; }
+  margin: 3px 0 0 0; }
 
 #menu-main > li > .sub-menu > li > .sub-menu > li:hover > ul {
   display: block; }

@@ -343,13 +343,6 @@ do_action( '__after_page_title' );
 
   </div>
 </div>
-    <div class="menu-home-container"><ul id="menu-home" class="menu">
-            <li id="menu-item-1337" class="blue menu-item menu-item-type-post_type menu-item-object-page"
-                itemscope="" itemtype="http://schema.org/Article"><?php the_widget( 'WP_Widget_Recent_Posts' ); ?></li>
-            <li id="menu-item-108" class="green menu-item menu-item-type-post_type menu-item-object-page" itemscope="" itemtype="http://schema.org/Article"><div class="image" style="background-image: url(https://www-dev.dariah.eu/wp-content/uploads/2017/05/bearbeitetetes-presse-bild-612x460.jpg);"><a title="People in DARIAH provide digital tools and share data as well as know-how. They organize learning opportunities for digital research methods, like workshops and summer schools, and offer training materials for Digital Humanities." href="https://www-dev.dariah.eu/activities/" itemprop="url">Event</a></div><div class="description" itemprop="text" style="height: 156px;">People in DARIAH provide digital tools and share data as well as know-how. They organize learning opportunities for digital research methods, like workshops and summer schools, and offer training materials for Digital Humanities.</div></li>
-            <li id="menu-item-1337" class="pink menu-item menu-item-type-post_type menu-item-object-page" itemscope="" itemtype="http://schema.org/Article"><div class="image" style="background-image: url(https://www-dev.dariah.eu/wp-content/uploads/2017/05/20170426_152210-612x319.jpg);"><a title="The third part of the table." href="https://www-dev.dariah.eu/about/" itemprop="url">Twitter</a></div><div class="description" itemprop="text" style="height: 156px;">The third part of the table.</div></li>
-        </ul></div>
-
 <?php
 	wp_nav_menu(array(
 		'theme_location' => 'home-menu',

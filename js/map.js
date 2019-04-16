@@ -271,7 +271,7 @@
         }
 
         if (selectedCountry.entities.length !== 0) {
-          html += '<p class="reset">Representing Entity:';
+          html += '<p class="point">Representing Entity:';
           html += selectedCountry.entities.map(function(entity) { return '<span>' + entity.name + '</span>'; }).join('');
           html += '</p>';
         }

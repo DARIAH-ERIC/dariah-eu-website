@@ -344,36 +344,8 @@ do_action( '__after_page_title' );
   </div>
 </div>
 <?php
-    wp_nav_menu(array(
-        'menu' => 'home-double-menu',
-        'walker' => new Home_Walker_Nav_Menu()
-    ));
-?>
-    <div class="menu-home-triple-menu-container">
-        <ul id="menu-home-triple-menu" class="menu">
-            <li class="menu-item menu-item-type-post_type menu-item-object-page">
-	            <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("WidgetAreaRecentPosts") ) : ?>
-	            <?php endif;?>
-            </li>
-            <li class="menu-item menu-item-type-post_type menu-item-object-page">
-	            <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("WidgetAreaEvents") ) : ?>
-	            <?php endif;?>
-            </li>
-            <li class="menu-item menu-item-type-post_type menu-item-object-page">
-	            <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("WidgetAreaTwitter") ) : ?>
-	            <?php endif;?>
-            </li>
-        </ul>
-    </div>
-    <div style="background-color: #e9eced; text-align: center;">
-        <div style="background-color: #ffffff; padding: 20px 100px 20px 100px; margin: 20px 100px 20px 100px;">
-            <h2>Тhe Arts and Humanities are anchored at the centre of a technologically evolving knowledge society.</h2>
-        </div>
-    </div>
-<?php
-    wp_nav_menu(array(
-        'menu' => 'home-quadruple-menu',
-        'walker' => new Home_Walker_Nav_Menu()
-    ));
-?>
+	wp_nav_menu(array(
+		'theme_location' => 'home-menu',
+		'walker' => new Home_Walker_Nav_Menu()
+	)); ?>
 <?php get_footer(); ?>

@@ -5,19 +5,19 @@
 
   function create_type_country() {
     $labels = array(
-			'name'               => __( 'Countrys' ),
+			'name'               => __( 'Countries' ),
 			'singular_name'      => __( 'Country' ),
-			'menu_name'          => __( 'Countrys' ),
+			'menu_name'          => __( 'Countries' ),
 			'name_admin_bar'     => __( 'Country' ),
 			'add_new'            => __( 'Add Country' ),
 			'add_new_item'       => __( 'Add Country' ),
 			'new_item'           => __( 'New Country' ),
 			'edit_item'          => __( 'Edit Country' ),
 			'view_item'          => __( 'View Country' ),
-			'all_items'          => __( 'All Countrys' ),
+			'all_items'          => __( 'All Countries' ),
 			'search_items'       => __( 'Search Country' ),
-			'not_found'          => __( 'No Countrys found.' ),
-			'not_found_in_trash' => __( 'No Countrys found in trash.' ),
+			'not_found'          => __( 'No Countries found.' ),
+			'not_found_in_trash' => __( 'No Countries found in trash.' ),
 		);
 
 		$args = array(

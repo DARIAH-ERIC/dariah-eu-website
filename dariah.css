@@ -868,6 +868,83 @@ body.page-template .strong_colored strong {
 .page-template-single-initiatives .page_title_ctn {
   background-color: #0aa9c6; }
 
+.page-template-single-initiatives .list-category {
+  padding-bottom: 45px;
+  margin-bottom: 35px;
+  border-bottom: 1px solid #ecf0f1; }
+  .page-template-single-initiatives .list-category h2 {
+    margin-bottom: 25px; }
+
+.page-template-single-initiatives .item-list {
+  font-size: 0; }
+  .page-template-single-initiatives .item-list li {
+    vertical-align: top;
+    display: inline-block;
+    background-color: #ffffff;
+    width: 270px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    font-family: "Roboto", Arial, sans-serif;
+    font-size: 14px; }
+    .page-template-single-initiatives .item-list li:nth-child(4n) {
+      margin-right: 0; }
+    @media only screen and (max-width: 767px) {
+      .page-template-single-initiatives .item-list li {
+        width: 100%;
+        margin-right: 0; } }
+    @media only screen and (min-width: 768px) and (max-width: 1035px) {
+      .page-template-single-initiatives .item-list li {
+        width: 49%;
+        margin-right: 0; }
+        .page-template-single-initiatives .item-list li:nth-child(2n + 1) {
+          margin-right: 2%; } }
+    @media only screen and (min-width: 1036px) and (max-width: 1214px) {
+      .page-template-single-initiatives .item-list li {
+        margin-right: 0; }
+        .page-template-single-initiatives .item-list li:nth-child(3n + 1) {
+          margin-right: 30px; }
+        .page-template-single-initiatives .item-list li:nth-child(3n + 2) {
+          margin-right: 30px; } }
+    .page-template-single-initiatives .item-list li:hover {
+      background-color: #ed6f59; }
+      .page-template-single-initiatives .item-list li:hover .title,
+      .page-template-single-initiatives .item-list li:hover .description {
+        color: #ffffff;
+        border-bottom-color: #eb7a67; }
+      .page-template-single-initiatives .item-list li:hover .image-container:before {
+        opacity: 0.85; }
+  .page-template-single-initiatives .item-list .title {
+    padding: 18px;
+    border-bottom: 1px solid #eeeff0;
+    font-size: 18px;
+    color: #2c3e50;
+    font-weight: bold; }
+  .page-template-single-initiatives .item-list .image-container {
+    position: relative;
+    width: 100%;
+    height: 270px;
+    background-size: cover;
+    background-position: center; }
+    .page-template-single-initiatives .item-list .image-container:before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      content: '+';
+      text-align: center;
+      color: #ffffff;
+      line-height: 270px;
+      font-size: 150px;
+      font-weight: 100;
+      background-color: #ed6f59;
+      z-index: 2;
+      opacity: 0;
+      transition: opacity 0.2s linear; }
+  .page-template-single-initiatives .item-list .description {
+    padding: 18px;
+    color: #434343; }
+
 #posts .point {
   font-size: 14px; }
 

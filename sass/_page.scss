@@ -33,6 +33,8 @@
   .page_title_ctn {
     background-color: #0aa9c6;
   }
+
+  @include custom-list;
 }
 
 #posts {

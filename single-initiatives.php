@@ -2,7 +2,7 @@
 
 /*
 
-Template Name: Dariah What We Do
+Template Name: Dariah Initiatives and Documents
 
 */
 

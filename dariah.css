@@ -660,75 +660,144 @@ body {
   margin-bottom: 0;
   margin-top: 42px; }
 
-.menu-home-container {
+.menu-home-container, .menu-home-double-menu-container,
+.menu-home-triple-menu-container, .menu-home-quadruple-menu-container {
   background-color: #e9eced;
   text-align: center; }
 
-#menu-home {
+#menu-home, #menu-home-double-menu,
+#menu-home-triple-menu, #menu-home-quadruple-menu {
   padding: 6px 6px;
   max-width: 1658px;
   margin: 0 auto; }
-  #menu-home li {
+  #menu-home > li, #menu-home-double-menu > li,
+  #menu-home-triple-menu > li, #menu-home-quadruple-menu > li {
     display: block;
-    margin: 6px;
     width: calc(100% - 12px);
     background-color: white;
     vertical-align: top;
     text-align: left; }
-    #menu-home li.orange a {
+    #menu-home > li.orange a, #menu-home-double-menu > li.orange a,
+    #menu-home-triple-menu > li.orange a, #menu-home-quadruple-menu > li.orange a {
       background-image: url("assets/home-menu-orange.png"); }
-    #menu-home li.green a {
+    #menu-home > li.green a, #menu-home-double-menu > li.green a,
+    #menu-home-triple-menu > li.green a, #menu-home-quadruple-menu > li.green a {
       background-image: url("assets/home-menu-green.png"); }
-    #menu-home li.purple a {
+    #menu-home > li.purple a, #menu-home-double-menu > li.purple a,
+    #menu-home-triple-menu > li.purple a, #menu-home-quadruple-menu > li.purple a {
       background-image: url("assets/home-menu-purple.png"); }
-    #menu-home li.blue a {
+    #menu-home > li.blue a, #menu-home-double-menu > li.blue a,
+    #menu-home-triple-menu > li.blue a, #menu-home-quadruple-menu > li.blue a {
       background-image: url("assets/home-menu-blue.png"); }
-    #menu-home li.pink a {
+    #menu-home > li.pink a, #menu-home-double-menu > li.pink a,
+    #menu-home-triple-menu > li.pink a, #menu-home-quadruple-menu > li.pink a {
       background-image: url("assets/home-menu-pink.png"); }
-    @media (min-width: 768px) {
-      #menu-home li {
-        display: inline-block;
+    #menu-home > li > div.image, #menu-home-double-menu > li > div.image,
+    #menu-home-triple-menu > li > div.image, #menu-home-quadruple-menu > li > div.image {
+      position: relative;
+      width: 100%;
+      height: 201px;
+      background-size: cover;
+      background-position: center; }
+      #menu-home > li > div.image > a, #menu-home-double-menu > li > div.image > a,
+      #menu-home-triple-menu > li > div.image > a, #menu-home-quadruple-menu > li > div.image > a {
+        position: absolute;
+        display: block;
+        font-size: 30px;
+        color: #ffffff;
+        font-weight: bold;
+        padding: 20px 30px;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background-repeat: repeat-y; }
+    #menu-home > li > div.description, #menu-home-double-menu > li > div.description,
+    #menu-home-triple-menu > li > div.description, #menu-home-quadruple-menu > li > div.description {
+      color: #434343;
+      font-size: 16px;
+      text-align: justify;
+      padding: 30px;
+      font-family: "Roboto", Arial, sans-serif;
+      font-weight: 300; }
+    #menu-home > li > .widgetizedArea, #menu-home-double-menu > li > .widgetizedArea,
+    #menu-home-triple-menu > li > .widgetizedArea, #menu-home-quadruple-menu > li > .widgetizedArea {
+      margin: 10px; }
+      #menu-home > li > .widgetizedArea a, #menu-home-double-menu > li > .widgetizedArea a,
+      #menu-home-triple-menu > li > .widgetizedArea a, #menu-home-quadruple-menu > li > .widgetizedArea a {
+        color: #ed6f59; }
+      #menu-home > li > .widgetizedArea > h2, #menu-home-double-menu > li > .widgetizedArea > h2,
+      #menu-home-triple-menu > li > .widgetizedArea > h2, #menu-home-quadruple-menu > li > .widgetizedArea > h2 {
+        padding: 0;
+        font-family: "Roboto", Arial, sans-serif;
+        font-size: 16px;
+        font-weight: bold; }
+      #menu-home > li > .widgetizedArea > ul, #menu-home > li > .widgetizedArea > ol, #menu-home-double-menu > li > .widgetizedArea > ul, #menu-home-double-menu > li > .widgetizedArea > ol,
+      #menu-home-triple-menu > li > .widgetizedArea > ul,
+      #menu-home-triple-menu > li > .widgetizedArea > ol, #menu-home-quadruple-menu > li > .widgetizedArea > ul, #menu-home-quadruple-menu > li > .widgetizedArea > ol {
+        height: 100%; }
+        #menu-home > li > .widgetizedArea > ul > li, #menu-home > li > .widgetizedArea > ol > li, #menu-home-double-menu > li > .widgetizedArea > ul > li, #menu-home-double-menu > li > .widgetizedArea > ol > li,
+        #menu-home-triple-menu > li > .widgetizedArea > ul > li,
+        #menu-home-triple-menu > li > .widgetizedArea > ol > li, #menu-home-quadruple-menu > li > .widgetizedArea > ul > li, #menu-home-quadruple-menu > li > .widgetizedArea > ol > li {
+          display: block;
+          width: 100%; }
+    #menu-home > li .tp_recent_tweets li, #menu-home-double-menu > li .tp_recent_tweets li,
+    #menu-home-triple-menu > li .tp_recent_tweets li, #menu-home-quadruple-menu > li .tp_recent_tweets li {
+      display: block;
+      width: 90%;
+      margin-bottom: 18px;
+      background-image: url("images/ico-twitter-quote.png");
+      background-position-y: 2px;
+      border-bottom: 1px solid #44474a; }
+      #menu-home > li .tp_recent_tweets li:last-child, #menu-home-double-menu > li .tp_recent_tweets li:last-child,
+      #menu-home-triple-menu > li .tp_recent_tweets li:last-child, #menu-home-quadruple-menu > li .tp_recent_tweets li:last-child {
+        border-bottom: none; }
+    #menu-home > li .tp_recent_tweets span, #menu-home-double-menu > li .tp_recent_tweets span,
+    #menu-home-triple-menu > li .tp_recent_tweets span, #menu-home-quadruple-menu > li .tp_recent_tweets span {
+      color: #000000; }
+    #menu-home > li .tp_recent_tweets a, #menu-home-double-menu > li .tp_recent_tweets a,
+    #menu-home-triple-menu > li .tp_recent_tweets a, #menu-home-quadruple-menu > li .tp_recent_tweets a {
+      color: #0aa9c6; }
+      #menu-home > li .tp_recent_tweets a.twitter_time, #menu-home-double-menu > li .tp_recent_tweets a.twitter_time,
+      #menu-home-triple-menu > li .tp_recent_tweets a.twitter_time, #menu-home-quadruple-menu > li .tp_recent_tweets a.twitter_time {
+        color: #000000;
+        font-size: 12px; }
+    #menu-home > li .widget_tp_widget_recent_tweets h3, #menu-home-double-menu > li .widget_tp_widget_recent_tweets h3,
+    #menu-home-triple-menu > li .widget_tp_widget_recent_tweets h3, #menu-home-quadruple-menu > li .widget_tp_widget_recent_tweets h3 {
+      background: url("images/ico-twitter-footer.png") left center no-repeat;
+      padding-left: 27px;
+      color: #0aa9c6; }
+
+#menu-home li {
+  margin: 6px; }
+  @media (min-width: 768px) {
+    #menu-home li {
+      display: inline-block;
+      width: calc(33% - 12px); } }
+
+#menu-home-double-menu li {
+  margin: 6px; }
+  @media (min-width: 768px) {
+    #menu-home-double-menu li {
+      display: inline-block; }
+      #menu-home-double-menu li:nth-child(1) {
+        width: calc(66% - 12px); }
+      #menu-home-double-menu li:nth-child(2) {
         width: calc(33% - 12px); } }
-  #menu-home a {
-    position: absolute;
-    display: block;
-    font-size: 30px;
-    color: #ffffff;
-    font-weight: bold;
-    padding: 20px 30px;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    background-repeat: repeat-y; }
-  #menu-home .image {
-    position: relative;
-    width: 100%;
-    height: 201px;
-    background-size: cover;
-    background-position: center; }
-  #menu-home .description {
-    color: #434343;
-    font-size: 16px;
-    text-align: justify;
-    padding: 30px;
-    font-family: "Roboto", Arial, sans-serif;
-    font-weight: 300;
-    /*
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    */ }
 
-/*
-.button-container {
-  padding: 13px 15px;
-}
+#menu-home-triple-menu li {
+  margin: 6px; }
+  @media (min-width: 768px) {
+    #menu-home-triple-menu li {
+      display: inline-block;
+      width: calc(33% - 12px); } }
 
-.rev-btn {
-  background-color: $homeColor !important;
-  border-radius: 4px !important;
-}
-*/
+#menu-home-quadruple-menu li {
+  margin: 4px; }
+  @media (min-width: 768px) {
+    #menu-home-quadruple-menu li {
+      display: inline-block;
+      width: calc(25% - 12px); } }
+
 body #top_bg .page_title_ctn {
   padding: 32px; }
   body #top_bg .page_title_ctn.white h1,

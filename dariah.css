@@ -862,6 +862,12 @@ body.page-template .strong_colored strong {
 .page-template-single-wwd .page_title_ctn {
   background-color: #ed6da0; }
 
+.page-template-single-yearbook .page_title_ctn {
+  background-color: #a6bf00; }
+
+.page-template-single-initiatives .page_title_ctn {
+  background-color: #0aa9c6; }
+
 #posts .point {
   font-size: 14px; }
 
@@ -1740,7 +1746,8 @@ span.wpcf7-not-valid-tip {
     background-color: #dedede; } }
 
 .page-template-single-map .page_title_ctn {
-  border-bottom: none; }
+  border-bottom: none;
+  background-color: #a6bf00; }
 
 .page-template-single-map #mapContainer {
   z-index: 3; }

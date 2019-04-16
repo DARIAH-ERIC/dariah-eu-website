@@ -16,6 +16,36 @@
   add_filter('wp_insert_post_data' , 'modify_post_title' , '99', 1 );
   add_action('save_post', 'on_post_saved');
 
+  if ( function_exists('register_sidebar') ) {
+    register_sidebar( array(
+            'name'          => 'WidgetAreaRecentPosts',
+            'id'            => 'WidgetAreaRecentPosts',
+            'before_widget' => '<div class = "widgetizedArea">',
+            'after_widget'  => '</div>',
+            'before_title'  => '<h3>',
+            'after_title'   => '</h3>',
+        )
+    );
+    register_sidebar( array(
+            'name'          => 'WidgetAreaEvents',
+            'id'            => 'WidgetAreaEvents',
+            'before_widget' => '<div class = "widgetizedArea">',
+            'after_widget'  => '</div>',
+            'before_title'  => '<h3>',
+            'after_title'   => '</h3>',
+        )
+    );
+    register_sidebar( array(
+            'name'          => 'WidgetAreaTwitter',
+            'id'            => 'WidgetAreaTwitter',
+            'before_widget' => '<div class = "widgetizedArea">',
+            'after_widget'  => '</div>',
+            'before_title'  => '<h3>',
+            'after_title'   => '</h3>',
+        )
+    );
+  }
+
   function register_my_menu() {
     register_nav_menu('home-menu',__( 'Home Menu' ));
   }

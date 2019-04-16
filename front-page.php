@@ -344,8 +344,47 @@ do_action( '__after_page_title' );
   </div>
 </div>
 <?php
-	wp_nav_menu(array(
-		'theme_location' => 'home-menu',
-		'walker' => new Home_Walker_Nav_Menu()
-	)); ?>
+    wp_nav_menu(array(
+        'menu' => 'home-double-menu',
+        'walker' => new Home_Walker_Nav_Menu()
+    ));
+?>
+    <div class="menu-home-triple-menu-container">
+        <ul id="menu-home-triple-menu" class="menu">
+            <li id="menu-item-1337" class="menu-item menu-item-type-post_type menu-item-object-page"
+                itemscope="" itemtype="http://schema.org/Article">
+<!--                --><?php //the_widget( 'WP_Widget_Recent_Posts', array( 'number' => 5, 'title' => 'News (Recent posts)' ) ); ?>
+	            <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("WidgetAreaRecentPosts") ) : ?>
+	            <?php endif;?>
+            </li>
+            <li id="menu-item-108" class="green menu-item menu-item-type-post_type menu-item-object-page" itemscope="" itemtype="http://schema.org/Article">
+<!--                <div class="image" style="background-image: url(https://www-dev.dariah.eu/wp-content/uploads/2017/05/bearbeitetetes-presse-bild-612x460.jpg);"><a title="People in DARIAH provide digital tools and share data as well as know-how. They organize learning opportunities for digital research methods, like workshops and summer schools, and offer training materials for Digital Humanities." href="https://www-dev.dariah.eu/activities/" itemprop="url">Event</a></div><div class="description" itemprop="text" style="height: 156px;">People in DARIAH provide digital tools and share data as well as know-how. They organize learning opportunities for digital research methods, like workshops and summer schools, and offer training materials for Digital Humanities.</div>-->
+	            <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("WidgetAreaEvents") ) : ?>
+	            <?php endif;?>
+            </li>
+            <li id="menu-item-1337" class="menu-item menu-item-type-post_type menu-item-object-page"
+                itemscope="" itemtype="http://schema.org/Article">
+	            <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("WidgetAreaTwitter") ) : ?>
+	            <?php endif;?>
+<!--                --><?php //the_widget( 'tp_widget_recent_tweets' ); ?>
+<!--                <div class="widget widget_tp_widget_recent_tweets"><h2>@DARIAHeu</h2><div class="sc_small_line widget_line"><span class="small_l_left"></span></div>-->
+<!--                    <div class="tp_recent_tweets">-->
+<!--                        <ul><li><span>RT <a href="http://twitter.com/PROVIDEDH" title="Follow PROVIDEDH" target="_blank">@PROVIDEDH</a>: Delighted to have been accepted to present at <a href="http://twitter.com/DARIAHeu" title="Follow DARIAHeu" target="_blank">@DARIAHeu</a> Annual Event in Warsaw (15-17 May 2019).-->
+<!---->
+<!--Our paper is entitled: 'P…</span><a class="twitter_time" target="_blank" href="http://twitter.com/@DARIAHeu/statuses/1117746050209599494">4 hours ago</a></li><li><span>Congratulations to <a href="http://twitter.com/OPERASEU" title="Follow OPERASEU" target="_blank">@OPERASEU</a> <a href="http://twitter.com/GOFAIRofficial" title="Follow GOFAIRofficial" target="_blank">@GOFAIRofficial</a> and to our very own <a href="http://twitter.com/Suzdum" title="Follow Suzdum" target="_blank">@Suzdum</a>, <a href="https://twitter.com/search?q=DARIAH" title="Search #DARIAH" target="_blank">#DARIAH</a>'s Partnernships&amp;Public Affairs Of… <a href="https://t.co/WgyDdKZ8pB" target="_blank">https://t.co/WgyDdKZ8pB</a></span><a class="twitter_time" target="_blank" href="http://twitter.com/@DARIAHeu/statuses/1117739502502666240">4 hours ago</a></li>-->
+<!--                        </ul></div></div>-->
+            </li>
+        </ul>
+    </div>
+    <div style="background-color: #e9eced; text-align: center;">
+        <div style="background-color: #ffffff; padding: 20px 100px 20px 100px; margin: 20px 100px 20px 100px;">
+            <h2>Тhe Arts and Humanities are anchored at the centre of a technologically evolving knowledge society.</h2>
+        </div>
+    </div>
+<?php
+    wp_nav_menu(array(
+        'menu' => 'home-quadruple-menu',
+        'walker' => new Home_Walker_Nav_Menu()
+    ));
+?>
 <?php get_footer(); ?>

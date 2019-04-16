@@ -271,8 +271,9 @@
         }
 
         if (selectedCountry.entities.length !== 0) {
-          html += '<p class="reset">Representing Entity:</p>';
-          html += selectedCountry.entities.map(function(entity) { return '<h2>' + entity.name + '</h2>'; }).join('');
+          html += '<p class="reset">Representing Entity:';
+          html += selectedCountry.entities.map(function(entity) { return '<span>' + entity.name + '</span>'; }).join('');
+          html += '</p>';
         }
         if (selectedCountry.national.persons || selectedCountry.national.institutions) {
           html += '<p class="point">National Representative:';
@@ -289,8 +290,8 @@
               return htmlInstitution;
             }).join('');
           }
+          html += '</p>';
         }
-        html += '</p>';
         var nationalCoordinating = dariahMapData.institutions
           .filter(function(institution) { return selectedCountry.nationalInstitutions.indexOf(institution.id) !== -1; })
           .sort(sortByName);

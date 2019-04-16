@@ -850,7 +850,7 @@ body.page-template .strong_colored strong {
 .single-dariah_project .page_title_ctn,
 .single-dariah_vcc .page_title_ctn,
 .single-dariah_wg .page_title_ctn {
-  background-color: #A6B700; }
+  background-color: #ed6da0; }
 
 .single-dariah_project #posts,
 .page-template-single-yearbook #posts {
@@ -860,7 +860,7 @@ body.page-template .strong_colored strong {
     margin-bottom: 30px; }
 
 .page-template-single-wwd .page_title_ctn {
-  background-color: #a6bf00; }
+  background-color: #ed6da0; }
 
 #posts .point {
   font-size: 14px; }
@@ -1439,7 +1439,8 @@ body.page-template .strong_colored strong {
     background-color: #434343 !important; }
 
 .page-template-single-app .page_title_ctn {
-  border-bottom: none; }
+  border-bottom: none;
+  background-color: #8e60a9; }
 
 .page-template-single-app .def_section {
   padding: 80px 0 60px; }
@@ -1531,13 +1532,10 @@ body.page-template .strong_colored strong {
     font-size: 16px;
     color: #434343; }
 
-.dariah_app-template-default .page_title_ctn {
-  background-color: #ed6da0; }
-
 .single-post #top_bg .page_title_ctn,
 .category #top_bg .page_title_ctn,
 .tag #top_bg .page_title_ctn {
-  background-color: #8e60a9;
+  background-color: #19b391;
   border-bottom: none; }
   .single-post #top_bg .page_title_ctn h1,
   .single-post #top_bg .page_title_ctn #breadcrumbs,
@@ -1657,7 +1655,7 @@ span.wpcf7-not-valid-tip {
 .events-single #top_bg .page_title_ctn,
 .events-archive #top_bg .page_title_ctn,
 .events-category #top_bg .page_title_ctn {
-  background-color: #8e60a9;
+  background-color: #19b391;
   border-bottom: none; }
   .events-single #top_bg .page_title_ctn h1,
   .events-single #top_bg .page_title_ctn #breadcrumbs,

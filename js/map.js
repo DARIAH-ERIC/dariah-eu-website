@@ -194,7 +194,7 @@
     jQuery(dariahWindow).removeClass();
     jQuery(dariahWindow).addClass(COUNTRY_TYPE);
 
-    jQuery(dariahWindow).find('h1').html(selectedCountry.name + '<span>(' + selectedCountry.statusName + ')</span>');
+    jQuery(dariahWindow).find('h1').html(selectedCountry.name + '<span>' + selectedCountry.statusName + '</span>');
     jQuery(dariahWindow).find('li:nth-child(1) a').html('National<br />Coordination');
     jQuery(dariahWindow).find('li:nth-child(2) a').html('Partner<br />Institutions');
     jQuery(dariahWindow).find('li:nth-child(3) a').html('Cooperating<br />Partners');

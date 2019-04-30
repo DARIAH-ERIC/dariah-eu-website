@@ -2081,7 +2081,8 @@ span.wpcf7-not-valid-tip {
       #dariahWindow .header h1 span {
         display: block;
         font-size: 10px;
-        line-height: 12px; }
+        line-height: 12px;
+        margin-top: 3px; }
       #dariahWindow .header h1:before {
         content: '';
         position: absolute;
@@ -2228,7 +2229,8 @@ span.wpcf7-not-valid-tip {
         line-height: 30px; }
         #dariahWindow .header h1 span {
           font-size: 14px;
-          line-height: 15px; }
+          line-height: 15px;
+          margin-top: 3px; }
         #dariahWindow .header h1:before {
           width: 33px;
           height: 40px; }
@@ -2293,7 +2295,7 @@ span.wpcf7-not-valid-tip {
 
 .page-template-single-organigram .page_title_ctn {
   border-bottom: none;
-  background-color: #0aa9c6; }
+  background-color: #43A9C6; }
 
 .page-template-single-organigram svg {
   width: 1050px;

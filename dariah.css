@@ -2286,6 +2286,9 @@ span.wpcf7-not-valid-tip {
   @media only screen and (max-width: 767px) {
     #dariahIntro {
       display: none; } }
+  @media only screen and (max-height: 767px) {
+    #dariahIntro {
+      display: none; } }
   #dariahIntro h1 {
     font-family: 'Roboto', sans-serif;
     font-size: 35px; }

@@ -470,12 +470,12 @@
       }
     }
 
-    a {
+    a:not(.ico-marker, .ico-person) {
       padding-top: 15px;
       min-height: 58px;
 
       @media only screen and (min-width: 1035px) {
-        padding-left: 15px 20px 7px;
+        padding: 15px 20px 7px;
       }
     }
 

@@ -2156,12 +2156,12 @@ span.wpcf7-not-valid-tip {
           height: 32px; } }
   #dariahWindow.country li.selected {
     color: #0870ac; }
-  #dariahWindow.country a {
+  #dariahWindow.country a:not(.ico-marker, .ico-person) {
     padding-top: 15px;
     min-height: 58px; }
     @media only screen and (min-width: 1035px) {
-      #dariahWindow.country a {
-        padding-left: 15px 20px 7px; } }
+      #dariahWindow.country a:not(.ico-marker, .ico-person) {
+        padding: 15px 20px 7px; } }
   #dariahWindow.country .content a, #dariahWindow.country .content li:before, #dariahWindow.country .content li a {
     color: #0870ac; }
   #dariahWindow .content-wrapper {
@@ -2290,6 +2290,10 @@ span.wpcf7-not-valid-tip {
   #dariahIntro p {
     line-height: 20px;
     width: 90%; }
+
+.page-template-single-organigram .page_title_ctn {
+  border-bottom: none;
+  background-color: #0aa9c6; }
 
 .page-template-single-organigram svg {
   width: 1050px;

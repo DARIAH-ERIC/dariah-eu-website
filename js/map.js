@@ -55,6 +55,7 @@
       minZoom: 3,
       maxZoom: 16
     });
+    map.scrollWheelZoom.disable();
     var viewCenter = {
       lat: window.innerWidth < 768 ? 55 : 50,
       lng: window.innerWidth < 768 ? 4 : -18
@@ -398,6 +399,7 @@
     map._handlers.forEach(function(handler) {
       handler.enable();
     });
+    map.scrollWheelZoom.disable();
   }
 
   function sortByName(a, b) {

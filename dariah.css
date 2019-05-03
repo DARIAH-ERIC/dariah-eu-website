@@ -1985,7 +1985,7 @@ span.wpcf7-not-valid-tip {
     stroke-width: 1; }
     #dariahMap path.members {
       fill: #046eab; }
-    #dariahMap path.cooperating-partner {
+    #dariahMap path.cooperating-partners {
       fill: #138fd7; }
     #dariahMap path.selected {
       fill: #076fac !important; }
@@ -2003,7 +2003,7 @@ span.wpcf7-not-valid-tip {
       margin-right: 8px; }
       #dariahMap div.legend i.members {
         background-color: #046eab; }
-      #dariahMap div.legend i.cooperating-partner {
+      #dariahMap div.legend i.cooperating-partners {
         background-color: #138fd7; }
 
 #dariahWindow {

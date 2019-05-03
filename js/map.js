@@ -5,7 +5,7 @@
   var map;
   var selectedObject;
   var layerMarker;
-  var insitutionsMarker = [];
+  var institutionsMarker = [];
   var countryMarker;
   var dariahMapData;
   var popup;
@@ -20,14 +20,14 @@
         if (institution.latitude === '' || institution.longitude === '') {
           return;
         }
-        insitutionsMarker.push(
+        institutionsMarker.push(
           L.marker([institution.latitude, institution.longitude], {
             icon: projectIcon,
             institution: institution
           }).on('click', onMarkerClick)
         );
       });
-    layerMarker = L.layerGroup(insitutionsMarker).addTo(map);
+    layerMarker = L.layerGroup(institutionsMarker).addTo(map);
 
     setTimeout(function() {
       jQuery('#mapContainer .loader').fadeOut('300', function() {
@@ -69,7 +69,7 @@
     legend.onAdd = function (map) {
         var div = L.DomUtil.create('div', 'info legend'),
             colors = ["Member Countries", "Cooperating Partners"],
-            labels = ["members", "cooperating-partner"];
+            labels = ["members", "cooperating-partners"];
 
         // loop through our density intervals and generate a label with a colored square for each interval
         for (var i = 0; i < colors.length; i++) {
@@ -352,7 +352,7 @@
   }
 
   function selectInstitutionMarker(institutionIDs) {
-    insitutionsMarker.map(function (marker) {
+    institutionsMarker.map(function (marker) {
       if (!institutionIDs) {
         if (marker.options.institution.coordinators) {
           layerMarker.addLayer(marker);

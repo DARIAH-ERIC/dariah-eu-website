@@ -122,7 +122,7 @@
               array_push($_partnerInstitutions, $mapData->institutions[$pi]->id);
             } else if ($mapData->institutions[$pi]->role == 'national-coordinating-institution') {
               array_push($_nationalInstitutions, $mapData->institutions[$pi]->id);
-            } else if ($mapData->institutions[$pi]->role == 'cooperating-partner') {
+            } else if ($mapData->institutions[$pi]->role == 'cooperating-partners') {
               array_push($_cooperatingInstitutions, $mapData->institutions[$pi]->id);
             }
 

@@ -2,9 +2,6 @@
   if (!function_exists('dariah_create_json_for_yearbook')) {
     function dariah_create_json_for_yearbook() {
       $data = new stdClass();
-      $csv_data = array(
-        array('Firstname', 'Lastname', 'Institution', 'Identifiant', 'Email', 'Position', 'Country', 'Twitter', 'Link', 'About', 'Role', 'Skills')
-      );
 
       $queryInstitutions = new WP_Query(array(
         'post_type' => 'dariah_institution',
@@ -77,8 +74,8 @@
 	          $filterPositions[$position[$i]->term_id] = $positions[$position[$i]->term_id];
           }
           $jsonPerson->positions = $positionsOfPerson;
-//          error_log($jsonPerson->firstname);
-//          error_log(print_r($positionsOfPerson, TRUE));
+        } else {
+          $jsonPerson->positions = [];
         }
         if ($jsonPerson->institution) {
           $jsonPerson->country = intval($institutions[$jsonPerson->institution]->country);
@@ -99,22 +96,6 @@
         for($i = 0; $i < sizeof($jsonPerson->positions); $i++) {
             $positionsHtmlText[] = (new \Html2Text\Html2Text($jsonPerson->positions[$i]))->getText();
         }
-        array_push($csv_data,
-          array(
-            (new \Html2Text\Html2Text($jsonPerson->firstname))->getText(),
-            (new \Html2Text\Html2Text($jsonPerson->lastname))->getText(),
-            (new \Html2Text\Html2Text($institutions[$jsonPerson->institution]->name))->getText(),
-            (new \Html2Text\Html2Text($jsonPerson->identifiant))->getText(),
-            (new \Html2Text\Html2Text($jsonPerson->email))->getText(),
-//            (new \Html2Text\Html2Text($positions[$jsonPerson->position]))->getText(),
-            (new \Html2Text\Html2Text($countries[$jsonPerson->country]))->getText(),
-            (new \Html2Text\Html2Text($jsonPerson->twitter))->getText(),
-            (new \Html2Text\Html2Text($jsonPerson->link))->getText(),
-            (new \Html2Text\Html2Text($jsonPerson->about))->getText(),
-            (new \Html2Text\Html2Text($jsonPerson->role))->getText(),
-            (new \Html2Text\Html2Text($jsonPerson->skills))->getText()
-          ), $positionsHtmlText
-        );
       }
       $data->persons = $persons;
       $data->countries = $filterCountries;
@@ -126,12 +107,6 @@
       fwrite($json_file, $json_data);
       fclose($json_file);
       wp_reset_query();
-      
-      $csv_file = fopen(__DIR__ . "/../build/yearbook.csv", "w") or die("Unable to open file!");
-      foreach ($csv_data as $fields) {
-          fputcsv($csv_file, $fields);
-      }
-      fclose($csv_file);
     }
   }
 ?>

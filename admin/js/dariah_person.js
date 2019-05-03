@@ -1,11 +1,4 @@
 jQuery(document).ready(function($) {
-  jQuery('.wrap .page-title-action').after('<a id="dl-csv" class="add-new-h2">Export CSV</a>')
-  jQuery('#dl-csv').click(function(event) {
-    event.preventDefault();
-    event.stopPropagation();
-
-    window.open('/wp-content/themes/thefox-child/build/yearbook.csv');
-  });
   jQuery('.post-type-dariah_person input[name="post_title"]')
     .attr('placeholder', 'Enter firstname and lastname in fields below')
     .attr('disabled', 'disabled');

@@ -7,6 +7,7 @@
   include("functions/encode-email.php");
   include("functions/map.php");
   include("functions/yearbook.php");
+  include("functions/rd-child-pages-dariah.php");
   include("shortcode/organigram.php");
 
   add_action('admin_head', 'admin_enqueue');
@@ -14,6 +15,36 @@
   add_action('init', 'register_my_menu' );
   add_filter('wp_insert_post_data' , 'modify_post_title' , '99', 1 );
   add_action('save_post', 'on_post_saved');
+
+  if ( function_exists('register_sidebar') ) {
+    register_sidebar( array(
+            'name'          => 'WidgetAreaRecentPosts',
+            'id'            => 'WidgetAreaRecentPosts',
+            'before_widget' => '<div class = "widgetizedArea">',
+            'after_widget'  => '</div>',
+            'before_title'  => '<h3>',
+            'after_title'   => '</h3>',
+        )
+    );
+    register_sidebar( array(
+            'name'          => 'WidgetAreaEvents',
+            'id'            => 'WidgetAreaEvents',
+            'before_widget' => '<div class = "widgetizedArea">',
+            'after_widget'  => '</div>',
+            'before_title'  => '<h3>',
+            'after_title'   => '</h3>',
+        )
+    );
+    register_sidebar( array(
+            'name'          => 'WidgetAreaTwitter',
+            'id'            => 'WidgetAreaTwitter',
+            'before_widget' => '<div class = "widgetizedArea widget_tp_widget_recent_tweets">',
+            'after_widget'  => '</div>',
+            'before_title'  => '<h3>',
+            'after_title'   => '</h3>',
+        )
+    );
+  }
 
   function register_my_menu() {
     register_nav_menu('home-menu',__( 'Home Menu' ));
@@ -50,6 +81,8 @@
     switch ($type) {
       case 'dariah_app':
       case 'dariah_country':
+      case 'dariah_document':
+      case 'dariah_initiative':
       case 'dariah_institution':
       case 'dariah_person':
       case 'dariah_project':
@@ -65,6 +98,8 @@
     $type = get_post_type( $post );
     switch($type) {
       case 'dariah_country':
+      case 'dariah_document':
+      case 'dariah_initiative':
       case 'dariah_institution':
       case 'dariah_person':
       case 'dariah_project':
@@ -83,6 +118,8 @@
 
   include( 'admin/type_app.php' );
   include( 'admin/type_country.php' );
+  include( 'admin/type_document.php' );
+  include( 'admin/type_initiative.php' );
   include( 'admin/type_institution.php' );
   include( 'admin/type_person.php' );
   include( 'admin/type_project.php' );

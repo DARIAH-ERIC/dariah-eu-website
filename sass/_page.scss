@@ -19,8 +19,22 @@
 
 .page-template-single-wwd {
   .page_title_ctn {
-    background-color: #a6bf00;;
+    background-color: #ed6da0;
   }
+}
+
+.page-template-single-yearbook {
+  .page_title_ctn {
+    background-color: #a6bf00;
+  }
+}
+
+.page-template-single-initiatives {
+  .page_title_ctn {
+    background-color: #0aa9c6;
+  }
+
+  @include custom-list;
 }
 
 #posts {
@@ -48,7 +62,8 @@
 .page-template.page-template-single-map #top_bg,
 .single-dariah_app #top_bg,
 .page.page-template-single-organigram #top_bg,
-.page.page-template-single-wwd #top_bg {
+.page.page-template-single-wwd #top_bg,
+.page.page-template-single-initiatives #top_bg{
   .page_title_ctn h1 {
     color: white;
   }
@@ -278,7 +293,7 @@
     display: block;
     font-size: 24px;
     text-transform: uppercase;
-    font-family:"Lato", Arial, sans-serif;
+    font-family:"Roboto", Arial, sans-serif;
 
     &:last-child {
       margin-top: 3px;
@@ -412,7 +427,7 @@
     }
     max-width: 100%;
     color: #2c3e50;
-    font-family:"Lato", Arial, sans-serif;
+    font-family:"Roboto", Arial, sans-serif;
   }
 
   @media only screen and (min-width: 1036px) {
@@ -469,7 +484,7 @@
   }
 
   .content {
-    font-family:"Lato", Arial, sans-serif;
+    font-family:"Roboto", Arial, sans-serif;
     font-size: 15px;
     color: #999999;
     margin-left: 5px;

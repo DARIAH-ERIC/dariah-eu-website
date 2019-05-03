@@ -1,16 +1,17 @@
-.menu-home-container {
+.menu-home-container, .menu-home-double-menu-container,
+.menu-home-triple-menu-container, .menu-home-quadruple-menu-container {
   background-color: #e9eced;
   text-align: center;
 }
 
-#menu-home {
+#menu-home, #menu-home-double-menu,
+#menu-home-triple-menu, #menu-home-quadruple-menu {
   padding: 6px 6px;
   max-width: 1658px;
   margin: 0 auto;
 
-  li {
+  & > li {
     display: block;
-    margin: 6px;
     width: calc(100% - 12px);
     background-color: white;
     vertical-align: top;
@@ -36,56 +37,138 @@
       background-image: url('assets/home-menu-pink.png');
     }
 
+    & > div.image {
+      position: relative;
+      width: 100%;
+      height: 201px;
+      background-size: cover;
+      background-position: center;
+
+      & > a {
+        position: absolute;
+        display: block;
+        font-size: 30px;
+        color: #ffffff;
+        font-weight: bold;
+        padding: 20px 30px;
+        left: 0;
+        bottom: 0;
+        right: 0;
+
+        background-repeat: repeat-y;
+      }
+    }
+
+    & > div.description {
+      color: #434343;
+      font-size: 16px;
+      text-align: justify;
+      padding: 30px;
+
+      font-family:"Roboto", Arial, sans-serif;
+      font-weight: 300;
+    }
+
+    & > .widgetizedArea {
+      margin: 10px;
+      & a {
+        color: #ed6f59;
+      }
+      & > h2 {
+        padding: 0;
+        font-family: "Roboto", Arial, sans-serif;
+        font-size: 16px;
+        font-weight: bold;
+      }
+      & > ul, & > ol {
+        height: 100%;
+        & > li {
+          display: block;
+          width: 100%;
+        }
+      }
+    }
+
+    .tp_recent_tweets {
+      li {
+        display: block;
+        width: 90%;
+        margin-bottom: 18px;
+        background-image: url('images/ico-twitter-quote.png');
+        background-position-y: 2px;
+        border-bottom: 1px solid #44474a;
+
+        &:last-child {
+          border-bottom: none;
+        }
+      }
+
+      span {
+        color: #000000;
+      }
+
+      a {
+        color: #0aa9c6;
+
+        &.twitter_time {
+          color: #000000;
+          font-size: 12px;
+        }
+      }
+    }
+
+    .widget_tp_widget_recent_tweets {
+      h3 {
+        background: url('images/ico-twitter-footer.png') left center no-repeat;
+        padding-left: 27px;
+        color: #0aa9c6;
+      }
+    }
+
+  }
+}
+
+#menu-home {
+  li {
+    margin: 6px;
     @include mintablet {
       display: inline-block;
       width: calc(33% - 12px);
     }
   }
-
-  a {
-    position: absolute;
-    display: block;
-    font-size: 30px;
-    color: #ffffff;
-    font-weight: bold;
-    padding: 20px 30px;
-    left: 0;
-    bottom: 0;
-    right: 0;
-
-    background-repeat: repeat-y;
-  }
-
-  .image {
-    position: relative;
-    width: 100%;
-    height: 201px;
-    background-size: cover;
-    background-position: center;
-  }
-
-  .description {
-    color: #434343;
-    font-size: 16px;
-    text-align: justify;
-    padding: 30px;
-
-    font-family:"Lato", Arial, sans-serif;
-    font-weight: 300;
-    /*
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    */
-  }
-}
-/*
-.button-container {
-  padding: 13px 15px;
 }
 
-.rev-btn {
-  background-color: $homeColor !important;
-  border-radius: 4px !important;
+#menu-home-double-menu {
+  li {
+    margin: 6px;
+    @include mintablet {
+      display: inline-block;
+      &:nth-child(1) {
+        width: calc(66% - 12px);
+      }
+      &:nth-child(2) {
+        width: calc(33% - 12px);
+      }
+    }
+  }
 }
-*/
+
+#menu-home-triple-menu {
+  li {
+    margin: 6px;
+    @include mintablet {
+      display: inline-block;
+      width: calc(33% - 12px);
+    }
+  }
+}
+
+#menu-home-quadruple-menu {
+  li {
+    margin: 4px;
+    @include mintablet {
+      display: inline-block;
+      width: calc(25% - 12px);
+    }
+  }
+}

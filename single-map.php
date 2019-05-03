@@ -339,14 +339,6 @@ wp_reset_query();
       <img class="pre_dummy_img" src="<?php echo get_template_directory_uri(); ?>/images/loader.gif"/>
     </div>
   </div>
-  <ul id="mapNav" class="nav">
-<!--    <li>-->
-<!--			<a href="#" data-type="project">Projects</a>-->
-<!--		</li>-->
-      <li class="selected">
-			<a href="#" data-type="country">Countries</a>
-		</li>
-  </ul>
   <div id="dariahMap"></div>
   <div id="dariahIntro" itemprop="about"><?php echo the_content(); ?></div>
   <div id="dariahWindow">
@@ -359,8 +351,10 @@ wp_reset_query();
 				</li><li>
 					<a href="#" data-tab-id="2"></a>
 				</li><li>
-					<a href="#" data-tab-id="3"></a>
-				</li>
+                    <a href="#" data-tab-id="3"></a>
+                </li><li>
+                    <a href="#" data-tab-id="4"></a>
+                </li>
 			</ul>
     </div>
 		<div class="content-wrapper">

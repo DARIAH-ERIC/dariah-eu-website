@@ -714,7 +714,7 @@ ul.partners {
 }
 .pricetable .pricetable-feature {
 	position: relative;
-	font: 12px "Lato";
+	font: 12px "Roboto";
 	margin: 0 15px;
 	padding: 10px 0;
 }
@@ -2531,7 +2531,7 @@ width: 65%;
 	text-transform:uppercase;
 	text-align:center;
 	min-width:200px;
-	font-family:"Lato";
+	font-family:"Roboto";
 }
 .slider_button:hover {
 	background:#21c2f8;
@@ -3400,7 +3400,7 @@ width: 65%;
 	font-size: 14px;
 	text-shadow:none;
 	right:0!important;
-	font-family: "Lato";
+	font-family: "Roboto";
 }
 .rd_pb_1 .pb_ctn {
 	margin-top:5px;
@@ -3445,7 +3445,7 @@ width: 65%;
 	font-size: 14px;
 	right:0!important;
 	text-shadow:none;
-	font-family: "Lato";
+	font-family: "Roboto";
 }
 .rd_pb_2 .pb_ctn {
 	margin-top:5px;
@@ -3517,7 +3517,7 @@ width: 65%;
 	height: 10px;
 	text-shadow: none;
 	border: 1px solid #fff;
-	font-family: "Lato";
+	font-family: "Roboto";
 	transform: rotate(45deg);
 	-ms-transform: rotate(45deg);
 	-webkit-transform: rotate(45deg);
@@ -3667,7 +3667,7 @@ border-radius: 5px;
 	font-size: 14px;
 	right:0!important;
 	text-shadow:none;
-	font-family: "Lato";
+	font-family: "Roboto";
 }
 .rd_pb_6 .pb_ctn {
 	margin-top:5px;
@@ -3713,7 +3713,7 @@ border-radius: 5px;
 	font-size: 14px;
 	right:0!important;
 	text-shadow:none;
-	font-family: "Lato";
+	font-family: "Roboto";
 	font-weight:bold;
 }
 .rd_pb_7 .pb_ctn {
@@ -3801,7 +3801,7 @@ border-radius: 5px;
 	height: 10px;
 	text-shadow: none;
 	border: 1px solid #fff;
-	font-family: "Lato";
+	font-family: "Roboto";
 	transform: rotate(45deg);
 	-ms-transform: rotate(45deg);
 	-webkit-transform: rotate(45deg);
@@ -3900,7 +3900,7 @@ border-radius: 5px;
 	height: 10px;
 	text-shadow: none;
 	border: 1px solid #fff;
-	font-family: "Lato";
+	font-family: "Roboto";
 	transform: rotate(45deg);
 	-ms-transform: rotate(45deg);
 	-webkit-transform: rotate(45deg);
@@ -12095,7 +12095,7 @@ height:5px;
 }
 #jprePercentage {
 	color: #a1b1bc;
-	font-family: "Lato";
+	font-family: "Roboto";
 	font-weight: normal;
 	text-align: center;
 	left: 15px;

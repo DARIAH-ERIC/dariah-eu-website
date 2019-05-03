@@ -1,5 +1,9 @@
-
 .page-template-single-organigram {
+  .page_title_ctn {
+    border-bottom: none;
+    background-color: #43A9C6;
+  }
+
   svg {
     width: 1050px;
     max-width: 100%;
@@ -35,7 +39,7 @@
     background-color: #f6f6f6;
     padding: 15px 0 15px;
     margin-bottom: 40px;
-    font-family: "Lato", Arial, sans-serif;
+    font-family: "Roboto", Arial, sans-serif;
     display: none;
 
     @media only screen and (min-width: 768px) {

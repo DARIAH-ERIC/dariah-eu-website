@@ -311,7 +311,7 @@ if($ctbg !== ''){
 /// Check title style
 
 $isEventPage = strpos($wp->request, "event");
-$pageTitle = $isEventPage === 0 ? "Dates" : get_the_title();
+$pageTitle = $isEventPage === 0 ? "Events Calendar" : get_the_title();
 if (strpos($wp->request, "event/") === 0) { $p_sidebar = 'right'; }
 if($title !== 'no'){  ?>
 <div class="page_title_ctn <?php if($titlebg_color !== ''){ echo 'white'; } ?>">

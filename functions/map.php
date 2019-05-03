@@ -122,7 +122,7 @@
               array_push($_partnerInstitutions, $mapData->institutions[$pi]->id);
             } else if ($mapData->institutions[$pi]->role == 'national-coordinating-institution') {
               array_push($_nationalInstitutions, $mapData->institutions[$pi]->id);
-            } else if ($mapData->institutions[$pi]->role == 'cooperating-partner') {
+            } else if ($mapData->institutions[$pi]->role == 'cooperating-partners') {
               array_push($_cooperatingInstitutions, $mapData->institutions[$pi]->id);
             }
 
@@ -137,6 +137,8 @@
         $jsonCountry->nationalInstitutions = $_nationalInstitutions;
         $jsonCountry->cooperatingInstitutions = $_cooperatingInstitutions;
         $jsonCountry->projects = $_projects;
+        $jsonCountry->countryDescription = $country->post_content;
+        $jsonCountry->countryLogo = wp_get_attachment_image_src( get_post_thumbnail_id( $country->ID ), 'single-post-thumbnail' )[0];
 
         $countries[$jsonCountry->code] = $jsonCountry;
       }

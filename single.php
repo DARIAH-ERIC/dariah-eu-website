@@ -346,11 +346,6 @@ do_action( '__after_page_title' );
 					if (count($custom['author']) > 0 && strlen(trim($custom['author'][0])) != 0) {
 						echo '<p class="point" itemprop="author" itemscope itemtype="http://schema.org/Person">Author: <span itemprop="name">' . $custom['author'][0] . '</span></p>';
 					}
-
-					$image_url = wp_get_attachment_image_src(get_post_thumbnail_id(get_the_id()), 'medium' );
-		      if (!empty( $image_url[0])) {
-						echo '<img class="point-featured" src="' .  $image_url[0] . '" itemprop="screenshot"/>';
-		      }
 					break;
 			}
 

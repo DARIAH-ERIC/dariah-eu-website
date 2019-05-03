@@ -1,6 +1,7 @@
 .page-template-single-map {
   .page_title_ctn {
     border-bottom: none;
+    background-color: #a6bf00;
   }
 
   #mapContainer {
@@ -142,7 +143,7 @@
         z-index: 1;
 
         font-size: 18px;
-        font-family: "Lato", Arial, sans-serif;
+        font-family: "Roboto", Arial, sans-serif;
         color: #aaaaaa;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
@@ -226,7 +227,7 @@
       fill: #046eab;
     }
 
-    &.cooperating-partner {
+    &.cooperating-partners {
       fill: #138fd7;
     }
 
@@ -253,7 +254,7 @@
         &.members {
           background-color: #046eab;
         }
-        &.cooperating-partner {
+        &.cooperating-partners {
           background-color: #138fd7;
         }
       }
@@ -311,7 +312,7 @@
   border-radius: 5px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
-  font-family: "Lato", Arial, sans-serif;
+  font-family: "Roboto", Arial, sans-serif;
 
   img.featured {
     width: 300px;
@@ -358,6 +359,7 @@
         display: block;
         font-size: 10px;
         line-height: 12px;
+        margin-top: 3px;
       }
 
       &:before {
@@ -469,12 +471,12 @@
       }
     }
 
-    a {
+    a:not(.ico-marker, .ico-person) {
       padding-top: 15px;
       min-height: 58px;
 
       @media only screen and (min-width: 1035px) {
-        padding-left: 15px 20px 7px;
+        padding: 15px 20px 7px;
       }
     }
 
@@ -502,10 +504,10 @@
 
   .content {
     position: absolute;
-    top: 25px;
-    bottom: 25px;
-    left: 25px;
-    right: 20px;
+    top: 10px;
+    bottom: 10px;
+    left: 30px;
+    right: 30px;
     padding-right: 30px;
     overflow-y: scroll;
     color: #000000;
@@ -513,16 +515,16 @@
     line-height: 16px;
 
     @media only screen and (min-width: 1035px) {
-      top: 55px;
-      bottom: 55px;
-      left: 50px;
+      top: 25px;
+      bottom: 25px;
+      left: 30px;
       right: 20px;
     }
 
     h2 {
       font-size: 26px;
       line-height: 24px;
-      font-family: "Lato", Arial, sans-serif;
+      font-family: "Roboto", Arial, sans-serif;
       font-weight: normal;
       margin-bottom: 10px;
       color: #000000;
@@ -543,7 +545,7 @@
 
     .list li {
       font-size: 14px;
-      font-family: "Lato", Arial, sans-serif;
+      font-family: "Roboto", Arial, sans-serif;
       font-weight: bold;
     }
 
@@ -570,6 +572,7 @@
         span {
           font-size: 14px;
           line-height: 15px;
+          margin-top: 3px;
         }
 
         &:before {
@@ -607,7 +610,7 @@
 
   .leaflet-popup-content {
     margin: 0 0 10px;
-    font-family: "Lato", Arial, sans-serif;
+    font-family: "Roboto", Arial, sans-serif;
     font-size: 16px;
     text-align: center;
 
@@ -649,13 +652,16 @@
   width: 360px;
   left: 20%;
 
-  font-family: "Lato", Arial, sans-serif;
+  font-family: "Roboto", Arial, sans-serif;
   font-size: 16px;
   color: #434343;
 
   pointer-events: none;
 
   @media only screen and (max-width: 767px) {
+    display: none;
+  }
+  @media only screen and (max-height: 767px) {
     display: none;
   }
 

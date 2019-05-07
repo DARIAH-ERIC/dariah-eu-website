@@ -731,15 +731,11 @@ body {
         font-family: "Roboto", Arial, sans-serif;
         font-size: 16px;
         font-weight: bold; }
-      #menu-home > li > .widgetizedArea > ul, #menu-home > li > .widgetizedArea > ol, #menu-home-double-menu > li > .widgetizedArea > ul, #menu-home-double-menu > li > .widgetizedArea > ol,
-      #menu-home-triple-menu > li > .widgetizedArea > ul,
-      #menu-home-triple-menu > li > .widgetizedArea > ol, #menu-home-quadruple-menu > li > .widgetizedArea > ul, #menu-home-quadruple-menu > li > .widgetizedArea > ol {
-        height: 100%; }
-        #menu-home > li > .widgetizedArea > ul > li, #menu-home > li > .widgetizedArea > ol > li, #menu-home-double-menu > li > .widgetizedArea > ul > li, #menu-home-double-menu > li > .widgetizedArea > ol > li,
-        #menu-home-triple-menu > li > .widgetizedArea > ul > li,
-        #menu-home-triple-menu > li > .widgetizedArea > ol > li, #menu-home-quadruple-menu > li > .widgetizedArea > ul > li, #menu-home-quadruple-menu > li > .widgetizedArea > ol > li {
-          display: block;
-          width: 100%; }
+      #menu-home > li > .widgetizedArea > ul > li, #menu-home > li > .widgetizedArea > ol > li, #menu-home-double-menu > li > .widgetizedArea > ul > li, #menu-home-double-menu > li > .widgetizedArea > ol > li,
+      #menu-home-triple-menu > li > .widgetizedArea > ul > li,
+      #menu-home-triple-menu > li > .widgetizedArea > ol > li, #menu-home-quadruple-menu > li > .widgetizedArea > ul > li, #menu-home-quadruple-menu > li > .widgetizedArea > ol > li {
+        display: block;
+        width: 100%; }
     #menu-home > li .tp_recent_tweets li, #menu-home-double-menu > li .tp_recent_tweets li,
     #menu-home-triple-menu > li .tp_recent_tweets li, #menu-home-quadruple-menu > li .tp_recent_tweets li {
       display: block;

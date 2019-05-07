@@ -820,6 +820,7 @@ div.moving-background {
     z-index: 1; }
     div.moving-background div.container-title h2 {
       padding: 100px;
+      text-align: center;
       color: white; }
 
 body #top_bg .page_title_ctn {

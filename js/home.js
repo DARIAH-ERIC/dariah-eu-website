@@ -38,7 +38,7 @@
   function onResize() {
     equalheight('.menu-home-container .description');
     equalheight('.menu-home-double-menu-container .description');
-    var height = equalheight('.menu-home-triple-menu-container .description');
+    var height = equalheight('.menu-home-triple-menu-container .widgetizedArea');
     jQuery('.menu-home-triple-menu-container .widget').height(201 + 40 + height);
     equalheight('.menu-home-quadruple-menu-container .description');
     equalheight('.app-category .app-content');

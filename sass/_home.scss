@@ -172,3 +172,34 @@
     }
   }
 }
+
+div.moving-background {
+  position: relative;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  background-image: url(http://dariah.loc/wp-content/uploads/2019/04/bearbeitetetes-presse-bild-612x460.jpg);
+
+  div.opacity-film {
+    opacity: 0.9;
+    background-color: #35383c;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    //z-index: 0;
+  }
+  div.container-title {
+    position: relative;
+    height: 300px;
+    padding: 20px 100px 20px 100px;
+    margin: 20px 100px 20px 100px;
+    z-index: 1;
+
+    h2 {
+      padding: 100px;
+      color: white;
+    }
+  }
+}

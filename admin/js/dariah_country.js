@@ -15,7 +15,6 @@ jQuery(document).ready(function($) {
     var errors = [];
     var title = jQuery('.post-type-dariah_country input[name="post_title"]').val();
     var code = jQuery('.post-type-dariah_country input[name="code"]').val();
-    var coordinator = jQuery('.post-type-dariah_country select[name="coordinator"]').val();
     if (title === '') {
       errors.push('Title required');
     }

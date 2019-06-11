@@ -60,7 +60,7 @@
     add_meta_box( 'national_representative', 'National Representative', 'national_representative', 'dariah_country', 'side', 'low');
     add_meta_box( 'geoloc_capital', 'Geolocation capital', 'geoloc_capital', 'dariah_country', 'side', 'low');
     add_meta_box( 'code_country', 'Code ISO ALPHA-3 *', 'code_country', 'dariah_country', 'side', 'low');
-    add_meta_box( 'coordinator_country', 'Coordinator', 'coordinator_country', 'dariah_country', 'side', 'low');
+    add_meta_box( 'coordinators_country', 'Coordinators', 'coordinators_country', 'dariah_country', 'side', 'low');
   }
 
   function national_representative() {
@@ -85,25 +85,6 @@
         echo '>' . $query->posts[$p]->firstname . ' ' . $query->posts[$p]->lastname . "</option>\n";
       }
     echo '</select>';
-
-    $query = new WP_Query(array(
-      'post_type' => 'dariah_institution',
-      'orderby' => 'title',
-      'order' => 'ASC',
-      'nopaging' => true
-    ));
-
-    $institutions = explode(',', $custom["repInstitutions"][0]);
-    echo '<p>Institutions</p>';
-    echo '<select class="full dariah selectize" multiple name="repInstitutions[]">';
-    for ($p = 0; $p < count($query->posts); $p++) {
-      echo '<option value="' . $query->posts[$p]->ID . '" ';
-      if (in_array($query->posts[$p]->ID, $institutions)) {
-        echo ' selected="selected"';
-      }
-      echo '>' . $query->posts[$p]->post_title . "</option>\n";
-    }
-    echo '</select>';
   }
 
   function geoloc_capital() {
@@ -121,7 +102,7 @@
 		echo '<input class="code" input="text" name="code" value="' . $custom["code"][0] . '" />';
   }
 
-	function coordinator_country() {
+	function coordinators_country() {
     $query = new WP_Query(array(
       'post_type' => 'dariah_person',
       'orderby' => 'title',
@@ -131,18 +112,17 @@
     ));
 		global $post;
 		$custom = get_post_custom( $post->ID );
-    $coordinator = $custom["coordinator"][0];
-    echo '<p>Select country coordinator</p>';
-    echo '<select class="full dariah" name="coordinator">';
-    echo '<option value="">------------------------------------------</option>';
-      for ($p = 0; $p < count($query->posts); $p++) {
-        echo '<option value="' . $query->posts[$p]->ID . '" ';
-        if ($query->posts[$p]->ID == $coordinator) {
-          echo ' selected="selected"';
-        }
-        echo '>' . $query->posts[$p]->lastname . ' ' . $query->posts[$p]->firstname . "</option>\n";
-      }
-    echo '</select>';
+	    $coordinators = explode(',', $custom["coordinators"][0]);
+	    echo '<p>Select country coordinators</p>';
+	    echo '<select class="full dariah selectize" multiple name="coordinators[]">';
+	    for ($p = 0; $p < count($query->posts); $p++) {
+	        echo '<option value="' . $query->posts[$p]->ID . '" ';
+	        if (in_array($query->posts[$p]->ID, $coordinators)) {
+	          echo ' selected="selected"';
+	        }
+	        echo '>' . $query->posts[$p]->lastname . ' ' . $query->posts[$p]->firstname . "</option>\n";
+	    }
+	    echo '</select>';
   }
 
 	function save_meta_country() {
@@ -152,7 +132,7 @@
 		}
 
     if ( isset($_POST['post_type']) && 'dariah_country' == $_POST['post_type'] ) {
-	    update_post_meta( $post->ID, "coordinator", $_POST["coordinator"] );
+	    update_post_meta( $post->ID, "coordinators", implode(',', $_POST["coordinators"]) );
 	    update_post_meta( $post->ID, "repPersons", implode(',', $_POST["repPersons"]) );
 	    update_post_meta( $post->ID, "repInstitutions", implode(',', $_POST["repInstitutions"]) );
       update_post_meta( $post->ID, "code", $_POST["code"] );

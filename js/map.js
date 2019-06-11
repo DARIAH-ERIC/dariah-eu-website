@@ -202,7 +202,7 @@
     jQuery(dariahWindow).find('li:nth-child(4) a').html('DARIAH<br/>nationally');
 
     var _selectedTab;
-    if (selectedCountry.entities.length === 0 && !selectedCountry.national.persons && !selectedCountry.national.institutions && selectedCountry.nationalInstitutions.length === 0 && !selectedCountry.coordinator) {
+    if (selectedCountry.entities.length === 0 && !selectedCountry.national.persons && !selectedCountry.national.institutions && selectedCountry.nationalInstitutions.length === 0 && selectedCountry.coordinators.length === 0) {
       jQuery(dariahWindow).find('li:nth-child(1)').hide();
     } else {
       jQuery(dariahWindow).find('li:nth-child(1)').show();
@@ -272,12 +272,20 @@
         }
 
         if (selectedCountry.entities.length !== 0) {
-          html += '<p class="point">Representing Entity:';
+          if(selectedCountry.entities.length > 1) {
+            html += '<p class="point">Representing Entities:';
+          } else {
+            html += '<p class="point">Representing Entity:';
+          }
           html += selectedCountry.entities.map(function(entity) { return '<span>' + entity.name + '</span>'; }).join('');
           html += '</p>';
         }
         if (selectedCountry.national.persons || selectedCountry.national.institutions) {
-          html += '<p class="point">National Representative:';
+          if(selectedCountry.national.persons.length > 1) {
+            html += '<p class="point">National Representatives:';
+          } else {
+            html += '<p class="point">National Representative:';
+          }
           if (selectedCountry.national.persons) {
             html += selectedCountry.national.persons.map(function(personID) {
               var person = dariahMapData.persons[parseInt(personID, 10)];
@@ -297,7 +305,11 @@
           .filter(function(institution) { return selectedCountry.nationalInstitutions.indexOf(institution.id) !== -1; })
           .sort(sortByName);
         if (nationalCoordinating.length !== 0) {
-          html += '<p class="point">National Coordinating Institution:';
+          if(nationalCoordinating.length > 1) {
+            html += '<p class="point">National Coordinating Institutions:';
+          } else {
+            html += '<p class="point">National Coordinating Institution:';
+          }
           html += nationalCoordinating.map(function(institution) {
             var htmlInstitution = institution.website ? '<a href="' + institution.website + '" class="ico-marker">' + institution.name + '</a>' : '<span class="ico-marker">' + institution.name + '</span>';
             return htmlInstitution;
@@ -305,14 +317,22 @@
           html += '</p>';
         }
 
-        var person = dariahMapData.persons[parseInt(selectedCountry.coordinator, 10)];
-        if (person) {
-          html += '<p class="point">National Coordinator:';
-          if (person.link !== '') {
-            html += '<a href="' + person.link + '" class="ico-person">' + person.firstname + ' ' + person.lastname + '</a>';
+        if (selectedCountry.coordinators.length !== 0) {
+          if(selectedCountry.coordinators.length > 1) {
+            html += '<p class="point">National Coordinators:';
           } else {
-            html += '<span class="ico-person">' + person.firstname + ' ' + person.lastname + '</span>';
+            html += '<p class="point">National Coordinator:';
           }
+          html += selectedCountry.coordinators.map(function(entity) {
+            var person = dariahMapData.persons[parseInt(entity, 10)];
+            if (person) {
+              if (person.link !== '') {
+                return '<a href="' + person.link + '" class="ico-person">' + person.firstname + ' ' + person.lastname + '</a>';
+              } else {
+                return '<span class="ico-person">' + person.firstname + ' ' + person.lastname + '</span>';
+              }
+            }
+          }).join('');
           html += '</p>';
         }
         selectInstitutionMarker([]);

@@ -29,8 +29,8 @@
         $jsonProject->name = $project->post_title;
         $jsonProject->fullname = $custom['fullname'][0];
         $jsonProject->content = nl2br($project->post_content);
-        if ($custom['coordinator'][0] !== '') {
-          $jsonProject->coordinator = $custom['coordinator'][0];
+        if (trim($custom['coordinators'][0]) !== '') {
+          $jsonProject->coordinators = strlen(trim($custom['coordinators'][0])) !== 0 ? explode(',', trim($custom['coordinators'][0])) : null;
         }
         $jsonProject->contacts = explode(',', $custom['contacts'][0]);
         $jsonProject->consortiums = explode(',', $custom['institutions'][0]);
@@ -94,8 +94,10 @@
         $entities = wp_get_post_terms($country->ID, 'dariah_country_entity');
         $jsonCountry = new stdClass();
         $jsonCountry->id = $country->ID;
-        if ($country->coordinator !== '') {
-          $jsonCountry->coordinator = $country->coordinator;
+        if ($country->coordinators !== '') {
+          $jsonCountry->coordinators = strlen($country->coordinators) !== 0 ? explode(',', $country->coordinators) : null;
+        } else {
+          $jsonCountry->coordinators = "";
         }
         $jsonCountry->name = $country->post_title;
         $jsonCountry->code = $country->code;

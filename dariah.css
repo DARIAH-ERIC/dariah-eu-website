@@ -871,7 +871,7 @@ body.page-template .strong_colored strong {
 .single-dariah_project .page_title_ctn,
 .single-dariah_vcc .page_title_ctn,
 .single-dariah_wg .page_title_ctn,
-.single-dariah_initiatives .page_title_ctn {
+.single-dariah_initiative .page_title_ctn {
   background-color: #ed6da0; }
 
 .single-dariah_project #posts,
@@ -887,19 +887,19 @@ body.page-template .strong_colored strong {
 .page-template-single-yearbook .page_title_ctn {
   background-color: #a6bf00; }
 
-.page-template-single-initiatives .page_title_ctn {
+.page-template-single-initiative .page_title_ctn {
   background-color: #0aa9c6; }
 
-.page-template-single-initiatives .list-category {
+.page-template-single-initiative .list-category {
   padding-bottom: 45px;
   margin-bottom: 35px;
   border-bottom: 1px solid #ecf0f1; }
-  .page-template-single-initiatives .list-category h2 {
+  .page-template-single-initiative .list-category h2 {
     margin-bottom: 25px; }
 
-.page-template-single-initiatives .item-list {
+.page-template-single-initiative .item-list {
   font-size: 0; }
-  .page-template-single-initiatives .item-list li {
+  .page-template-single-initiative .item-list li {
     vertical-align: top;
     display: inline-block;
     background-color: #ffffff;
@@ -908,46 +908,46 @@ body.page-template .strong_colored strong {
     margin-bottom: 30px;
     font-family: "Roboto", Arial, sans-serif;
     font-size: 14px; }
-    .page-template-single-initiatives .item-list li:nth-child(4n) {
+    .page-template-single-initiative .item-list li:nth-child(4n) {
       margin-right: 0; }
     @media only screen and (max-width: 767px) {
-      .page-template-single-initiatives .item-list li {
+      .page-template-single-initiative .item-list li {
         width: 100%;
         margin-right: 0; } }
     @media only screen and (min-width: 768px) and (max-width: 1035px) {
-      .page-template-single-initiatives .item-list li {
+      .page-template-single-initiative .item-list li {
         width: 49%;
         margin-right: 0; }
-        .page-template-single-initiatives .item-list li:nth-child(2n + 1) {
+        .page-template-single-initiative .item-list li:nth-child(2n + 1) {
           margin-right: 2%; } }
     @media only screen and (min-width: 1036px) and (max-width: 1214px) {
-      .page-template-single-initiatives .item-list li {
+      .page-template-single-initiative .item-list li {
         margin-right: 0; }
-        .page-template-single-initiatives .item-list li:nth-child(3n + 1) {
+        .page-template-single-initiative .item-list li:nth-child(3n + 1) {
           margin-right: 30px; }
-        .page-template-single-initiatives .item-list li:nth-child(3n + 2) {
+        .page-template-single-initiative .item-list li:nth-child(3n + 2) {
           margin-right: 30px; } }
-    .page-template-single-initiatives .item-list li:hover {
+    .page-template-single-initiative .item-list li:hover {
       background-color: #ed6f59; }
-      .page-template-single-initiatives .item-list li:hover .title,
-      .page-template-single-initiatives .item-list li:hover .description {
+      .page-template-single-initiative .item-list li:hover .title,
+      .page-template-single-initiative .item-list li:hover .description {
         color: #ffffff;
         border-bottom-color: #eb7a67; }
-      .page-template-single-initiatives .item-list li:hover .image-container:before {
+      .page-template-single-initiative .item-list li:hover .image-container:before {
         opacity: 0.85; }
-  .page-template-single-initiatives .item-list .title {
+  .page-template-single-initiative .item-list .title {
     padding: 18px;
     border-bottom: 1px solid #eeeff0;
     font-size: 18px;
     color: #2c3e50;
     font-weight: bold; }
-  .page-template-single-initiatives .item-list .image-container {
+  .page-template-single-initiative .item-list .image-container {
     position: relative;
     width: 100%;
     height: 270px;
     background-size: cover;
     background-position: center; }
-    .page-template-single-initiatives .item-list .image-container:before {
+    .page-template-single-initiative .item-list .image-container:before {
       position: absolute;
       top: 0;
       left: 0;
@@ -963,7 +963,7 @@ body.page-template .strong_colored strong {
       z-index: 2;
       opacity: 0;
       transition: opacity 0.2s linear; }
-  .page-template-single-initiatives .item-list .description {
+  .page-template-single-initiative .item-list .description {
     padding: 18px;
     color: #434343; }
 
@@ -980,13 +980,14 @@ body.page-template .strong_colored strong {
 .dariah_project-template-default .page_title_ctn h1,
 .dariah_vcc-template-default .page_title_ctn h1,
 .dariah_wg-template-default .page_title_ctn h1,
+.dariah_initiative-template-default .page_title_ctn h1,
 .page-template.page-template-single-yearbook #top_bg .page_title_ctn h1,
 .page-template.page-template-single-app #top_bg .page_title_ctn h1,
 .page-template.page-template-single-map #top_bg .page_title_ctn h1,
 .single-dariah_app #top_bg .page_title_ctn h1,
 .page.page-template-single-organigram #top_bg .page_title_ctn h1,
 .page.page-template-single-wwd #top_bg .page_title_ctn h1,
-.page.page-template-single-initiatives #top_bg .page_title_ctn h1 {
+.page.page-template-single-initiative #top_bg .page_title_ctn h1 {
   color: white; }
 
 .page #breadcrumbs, .page #breadcrumbs #crumbs a, .page #breadcrumbs #crumbs span,
@@ -999,6 +1000,9 @@ body.page-template .strong_colored strong {
 .dariah_wg-template-default #breadcrumbs,
 .dariah_wg-template-default #breadcrumbs #crumbs a,
 .dariah_wg-template-default #breadcrumbs #crumbs span,
+.dariah_initiative-template-default #breadcrumbs,
+.dariah_initiative-template-default #breadcrumbs #crumbs a,
+.dariah_initiative-template-default #breadcrumbs #crumbs span,
 .page-template.page-template-single-yearbook #top_bg #breadcrumbs,
 .page-template.page-template-single-yearbook #top_bg #breadcrumbs #crumbs a,
 .page-template.page-template-single-yearbook #top_bg #breadcrumbs #crumbs span,
@@ -1017,9 +1021,9 @@ body.page-template .strong_colored strong {
 .page.page-template-single-wwd #top_bg #breadcrumbs,
 .page.page-template-single-wwd #top_bg #breadcrumbs #crumbs a,
 .page.page-template-single-wwd #top_bg #breadcrumbs #crumbs span,
-.page.page-template-single-initiatives #top_bg #breadcrumbs,
-.page.page-template-single-initiatives #top_bg #breadcrumbs #crumbs a,
-.page.page-template-single-initiatives #top_bg #breadcrumbs #crumbs span {
+.page.page-template-single-initiative #top_bg #breadcrumbs,
+.page.page-template-single-initiative #top_bg #breadcrumbs #crumbs a,
+.page.page-template-single-initiative #top_bg #breadcrumbs #crumbs span {
   color: white; }
 
 .page .header_cart_dropdown ul.cart_list li a.remove:hover,
@@ -1030,6 +1034,8 @@ body.page-template .strong_colored strong {
 .dariah_vcc-template-default .child_pages_ctn a:hover,
 .dariah_wg-template-default .header_cart_dropdown ul.cart_list li a.remove:hover,
 .dariah_wg-template-default .child_pages_ctn a:hover,
+.dariah_initiative-template-default .header_cart_dropdown ul.cart_list li a.remove:hover,
+.dariah_initiative-template-default .child_pages_ctn a:hover,
 .page-template.page-template-single-yearbook #top_bg .header_cart_dropdown ul.cart_list li a.remove:hover,
 .page-template.page-template-single-yearbook #top_bg .child_pages_ctn a:hover,
 .page-template.page-template-single-app #top_bg .header_cart_dropdown ul.cart_list li a.remove:hover,
@@ -1042,8 +1048,8 @@ body.page-template .strong_colored strong {
 .page.page-template-single-organigram #top_bg .child_pages_ctn a:hover,
 .page.page-template-single-wwd #top_bg .header_cart_dropdown ul.cart_list li a.remove:hover,
 .page.page-template-single-wwd #top_bg .child_pages_ctn a:hover,
-.page.page-template-single-initiatives #top_bg .header_cart_dropdown ul.cart_list li a.remove:hover,
-.page.page-template-single-initiatives #top_bg .child_pages_ctn a:hover {
+.page.page-template-single-initiative #top_bg .header_cart_dropdown ul.cart_list li a.remove:hover,
+.page.page-template-single-initiative #top_bg .child_pages_ctn a:hover {
   background-color: #ed6f59;
   color: white !important; }
 
@@ -1051,26 +1057,28 @@ body.page-template .strong_colored strong {
 .dariah_project-template-default .section #posts ol,
 .dariah_vcc-template-default .section #posts ol,
 .dariah_wg-template-default .section #posts ol,
+.dariah_initiative-template-default .section #posts ol,
 .page-template.page-template-single-yearbook #top_bg .section #posts ol,
 .page-template.page-template-single-app #top_bg .section #posts ol,
 .page-template.page-template-single-map #top_bg .section #posts ol,
 .single-dariah_app #top_bg .section #posts ol,
 .page.page-template-single-organigram #top_bg .section #posts ol,
 .page.page-template-single-wwd #top_bg .section #posts ol,
-.page.page-template-single-initiatives #top_bg .section #posts ol {
+.page.page-template-single-initiative #top_bg .section #posts ol {
   list-style-type: decimal; }
 
 .page .section #posts ul,
 .dariah_project-template-default .section #posts ul,
 .dariah_vcc-template-default .section #posts ul,
 .dariah_wg-template-default .section #posts ul,
+.dariah_initiative-template-default .section #posts ul,
 .page-template.page-template-single-yearbook #top_bg .section #posts ul,
 .page-template.page-template-single-app #top_bg .section #posts ul,
 .page-template.page-template-single-map #top_bg .section #posts ul,
 .single-dariah_app #top_bg .section #posts ul,
 .page.page-template-single-organigram #top_bg .section #posts ul,
 .page.page-template-single-wwd #top_bg .section #posts ul,
-.page.page-template-single-initiatives #top_bg .section #posts ul {
+.page.page-template-single-initiative #top_bg .section #posts ul {
   list-style-type: disc;
   margin: 0 0 15px 20px; }
 
@@ -1087,6 +1095,10 @@ body.page-template .strong_colored strong {
 .dariah_wg-template-default .section #posts ol.results,
 .dariah_wg-template-default .section #posts ul.contact-list,
 .dariah_wg-template-default .section #posts ol.contact-list,
+.dariah_initiative-template-default .section #posts ul.results,
+.dariah_initiative-template-default .section #posts ol.results,
+.dariah_initiative-template-default .section #posts ul.contact-list,
+.dariah_initiative-template-default .section #posts ol.contact-list,
 .page-template.page-template-single-yearbook #top_bg .section #posts ul.results,
 .page-template.page-template-single-yearbook #top_bg .section #posts ol.results,
 .page-template.page-template-single-yearbook #top_bg .section #posts ul.contact-list,
@@ -1111,10 +1123,10 @@ body.page-template .strong_colored strong {
 .page.page-template-single-wwd #top_bg .section #posts ol.results,
 .page.page-template-single-wwd #top_bg .section #posts ul.contact-list,
 .page.page-template-single-wwd #top_bg .section #posts ol.contact-list,
-.page.page-template-single-initiatives #top_bg .section #posts ul.results,
-.page.page-template-single-initiatives #top_bg .section #posts ol.results,
-.page.page-template-single-initiatives #top_bg .section #posts ul.contact-list,
-.page.page-template-single-initiatives #top_bg .section #posts ol.contact-list {
+.page.page-template-single-initiative #top_bg .section #posts ul.results,
+.page.page-template-single-initiative #top_bg .section #posts ol.results,
+.page.page-template-single-initiative #top_bg .section #posts ul.contact-list,
+.page.page-template-single-initiative #top_bg .section #posts ol.contact-list {
   list-style-type: none;
   margin: 0; }
 

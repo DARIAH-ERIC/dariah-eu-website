@@ -870,7 +870,8 @@ body.page-template .strong_colored strong {
 
 .single-dariah_project .page_title_ctn,
 .single-dariah_vcc .page_title_ctn,
-.single-dariah_wg .page_title_ctn {
+.single-dariah_wg .page_title_ctn,
+.single-dariah_initiatives .page_title_ctn {
   background-color: #ed6da0; }
 
 .single-dariah_project #posts,

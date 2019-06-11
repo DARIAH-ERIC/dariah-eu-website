@@ -343,12 +343,14 @@ do_action( '__after_page_title' );
 
   </div>
 </div>
+    <div class="allow-space"></div>
 <?php
     wp_nav_menu(array(
         'menu' => 'home-double-menu',
         'walker' => new Home_Walker_Nav_Menu()
     ));
 ?>
+    <div class="allow-space"></div>
     <div class="menu-home-triple-menu-container">
         <ul id="menu-home-triple-menu" class="menu">
             <li class="menu-item menu-item-type-post_type menu-item-object-page">
@@ -365,16 +367,19 @@ do_action( '__after_page_title' );
             </li>
         </ul>
     </div>
+    <div class="allow-space"></div>
     <div class="moving-background">
         <div class="opacity-film"></div>
         <div class="container-title">
             <h2>Тhe Arts and Humanities are anchored at the centre of a technologically evolving knowledge society.</h2>
         </div>
     </div>
+    <div class="allow-space"></div>
 <?php
     wp_nav_menu(array(
         'menu' => 'home-quadruple-menu',
         'walker' => new Home_Walker_Nav_Menu()
     ));
 ?>
+    <div class="allow-space"></div>
 <?php get_footer(); ?>

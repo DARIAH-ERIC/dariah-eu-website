@@ -647,7 +647,7 @@
 #dariahIntro {
   position: absolute;
   z-index: 2;
-  top: 10%;
+  top: 5%;
   bottom: 30%;
   width: 360px;
   left: 20%;
@@ -661,7 +661,7 @@
   @media only screen and (max-width: 767px) {
     display: none;
   }
-  @media only screen and (max-height: 717px) {
+  @media only screen and (max-height: 537px) {
     display: none;
   }
 

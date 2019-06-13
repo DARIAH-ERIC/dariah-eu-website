@@ -343,7 +343,6 @@ do_action( '__after_page_title' );
 
   </div>
 </div>
-    <div class="allow-space"></div>
 <?php
 wp_nav_menu(array(
 	'theme_location' => 'home-menu',

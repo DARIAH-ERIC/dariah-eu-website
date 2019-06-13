@@ -30,7 +30,7 @@
         $jsonProject->fullname = $custom['fullname'][0];
         $jsonProject->content = nl2br($project->post_content);
         if (trim($custom['coordinators'][0]) !== '') {
-          $jsonProject->coordinators = strlen(trim($custom['coordinators'][0])) !== 0 ? explode(',', trim($custom['coordinators'][0])) : null;
+          $jsonProject->coordinators = strlen(trim($custom['coordinators'][0])) !== 0 ? explode(',', trim($custom['coordinators'][0])) : "";
         }
         $jsonProject->contacts = explode(',', $custom['contacts'][0]);
         $jsonProject->consortiums = explode(',', $custom['institutions'][0]);
@@ -95,7 +95,7 @@
         $jsonCountry = new stdClass();
         $jsonCountry->id = $country->ID;
         if ($country->coordinators !== '') {
-          $jsonCountry->coordinators = strlen($country->coordinators) !== 0 ? explode(',', $country->coordinators) : null;
+          $jsonCountry->coordinators = strlen($country->coordinators) !== 0 ? explode(',', $country->coordinators) : "";
         } else {
           $jsonCountry->coordinators = "";
         }

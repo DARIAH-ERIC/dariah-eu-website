@@ -1,6 +1,7 @@
 .single-dariah_project,
 .single-dariah_vcc,
-.single-dariah_wg {
+.single-dariah_wg,
+.single-dariah_initiative {
   .page_title_ctn {
     background-color: $whatWeDoColor;
   }
@@ -29,7 +30,7 @@
   }
 }
 
-.page-template-single-initiatives {
+.page-template-single-initiative {
   .page_title_ctn {
     background-color: #0aa9c6;
   }
@@ -57,13 +58,14 @@
 .dariah_project-template-default,
 .dariah_vcc-template-default,
 .dariah_wg-template-default,
+.dariah_initiative-template-default,
 .page-template.page-template-single-yearbook #top_bg,
 .page-template.page-template-single-app #top_bg,
 .page-template.page-template-single-map #top_bg,
 .single-dariah_app #top_bg,
 .page.page-template-single-organigram #top_bg,
 .page.page-template-single-wwd #top_bg,
-.page.page-template-single-initiatives #top_bg{
+.page.page-template-single-initiative #top_bg{
   .page_title_ctn h1 {
     color: white;
   }

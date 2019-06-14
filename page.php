@@ -296,15 +296,15 @@ echo '<style type="text/css" >.page_title_ctn {padding-top:'.$title_padding_top.
 
 /// Set the title color
 
-if($title_color !== ''){
+if($title_color != ''){
 	$rgba= rd_hex_to_rgb_array($title_color);
 	echo '<style type="text/css" >.page_title_ctn h1,.page_title_ctn h2,#crumbs,#crumbs a{color:'.$title_color.';}.page_t_boxed h1,.page_t_boxed h1{border-color:rgba('. $rgba[0].','.$rgba[1].','.$rgba[2] .',0.5); }#crumbs span{color:rgba('. $rgba[0].','.$rgba[1].','.$rgba[2] .',0.8);}</style>';
 }
 /// Set the title background
-if($titlebg_color !== ''){
+if($titlebg_color != ''){
 	echo '<style type="text/css" >.page_title_ctn {background:'.$titlebg_color.';}</style>';
 }
-if($ctbg !== ''){
+if($ctbg != ''){
 	echo '<style type="text/css" >.page_title_ctn{background:url('.$ctbg.') top center; background-size: cover; border-bottom:1px solid '.$content_border_color.'; }</style>';
 }
 

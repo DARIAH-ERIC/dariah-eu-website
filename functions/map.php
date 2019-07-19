@@ -110,9 +110,9 @@
 
         $jsonCountry->national = new stdClass();
         $representativePersons = trim($custom['repPersons'][0]);
-        $jsonCountry->national->persons = strlen($representativePersons) !== 0 ? explode(',', $representativePersons) : null;
+        $jsonCountry->national->persons = strlen($representativePersons) !== 0 ? explode(',', $representativePersons) : array();
         $representativeInstitutions = trim($custom['repInstitutions'][0]);
-        $jsonCountry->national->institutions = strlen($representativeInstitutions) !== 0 ? explode(',', $representativeInstitutions) : null;
+        $jsonCountry->national->institutions = strlen($representativeInstitutions) !== 0 ? explode(',', $representativeInstitutions) : array();
 
         $_partnerInstitutions = array();
         $_cooperatingInstitutions = array();

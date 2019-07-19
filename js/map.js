@@ -267,8 +267,11 @@
       case 1:
         var logo = "";
         if(selectedCountry.countryLogo != null) {
-          logo = '<img width="100" height="20" src="' + selectedCountry.countryLogo + '" alt="Logo"/>';
+          logo = '<img width="100" height="20" style="margin-right: 30px;" src="' + selectedCountry.countryLogo + '" alt="Logo"/>';
           html += logo;
+        }
+        if(selectedCountry.website != null && selectedCountry.websitename != null) {
+          html += '<a href="' + selectedCountry.website + '">' + selectedCountry.websitename + '</a>';
         }
 
         if (selectedCountry.entities.length !== 0) {
@@ -277,7 +280,7 @@
           } else {
             html += '<p class="point">Representing Entity:';
           }
-          html += selectedCountry.entities.map(function(entity) { return '<span>' + entity.name + '</span>'; }).join('');
+          html += selectedCountry.entities.map(function(entity) { return '<span>' + entity.name.replace("--", ", ") + '</span>'; }).join('');
           html += '</p>';
         }
         if (selectedCountry.national.persons.length > 0 || selectedCountry.national.institutions.length > 0) {

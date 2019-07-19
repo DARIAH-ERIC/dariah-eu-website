@@ -101,6 +101,8 @@
         }
         $jsonCountry->name = $country->post_title;
         $jsonCountry->code = $country->code;
+        $jsonCountry->website = $country->website;
+        $jsonCountry->websitename = $country->websitename;
         $jsonCountry->status = count($status) != 0 ? $status[0]->slug : null;
         $jsonCountry->statusName = count($status) != 0 ? $status[0]->name : null;
         $jsonCountry->entities = $entities;

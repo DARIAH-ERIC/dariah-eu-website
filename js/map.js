@@ -202,7 +202,7 @@
     jQuery(dariahWindow).find('li:nth-child(4) a').html('DARIAH<br/>nationally');
 
     var _selectedTab;
-    if (selectedCountry.entities.length === 0 && !selectedCountry.national.persons && !selectedCountry.national.institutions && selectedCountry.nationalInstitutions.length === 0 && selectedCountry.coordinators.length === 0) {
+    if (selectedCountry.entities.length === 0 && selectedCountry.national.persons.length === 0 && selectedCountry.national.institutions === 0 && selectedCountry.nationalInstitutions.length === 0 && selectedCountry.coordinators.length === 0) {
       jQuery(dariahWindow).find('li:nth-child(1)').hide();
     } else {
       jQuery(dariahWindow).find('li:nth-child(1)').show();
@@ -267,8 +267,11 @@
       case 1:
         var logo = "";
         if(selectedCountry.countryLogo != null) {
-          logo = '<img width="100" height="20" src="' + selectedCountry.countryLogo + '" alt="Logo"/>';
+          logo = '<img width="100" height="20" style="margin-right: 30px;" src="' + selectedCountry.countryLogo + '" alt="Logo"/>';
           html += logo;
+        }
+        if(selectedCountry.website != null && selectedCountry.websitename != null) {
+          html += '<a href="' + selectedCountry.website + '">' + selectedCountry.websitename + '</a>';
         }
 
         if (selectedCountry.entities.length !== 0) {
@@ -277,22 +280,22 @@
           } else {
             html += '<p class="point">Representing Entity:';
           }
-          html += selectedCountry.entities.map(function(entity) { return '<span>' + entity.name + '</span>'; }).join('');
+          html += selectedCountry.entities.map(function(entity) { return '<span>' + entity.name.replace("--", ", ") + '</span>'; }).join('');
           html += '</p>';
         }
-        if (selectedCountry.national.persons || selectedCountry.national.institutions) {
+        if (selectedCountry.national.persons.length > 0 || selectedCountry.national.institutions.length > 0) {
           if(selectedCountry.national.persons.length > 1) {
             html += '<p class="point">National Representatives:';
           } else {
             html += '<p class="point">National Representative:';
           }
-          if (selectedCountry.national.persons) {
+          if (selectedCountry.national.persons.length > 0) {
             html += selectedCountry.national.persons.map(function(personID) {
               var person = dariahMapData.persons[parseInt(personID, 10)];
               return '<span>' + person.firstname + ' ' + person.lastname + '</span>';
             }).join('');
           }
-          if (selectedCountry.national.institutions) {
+          if (selectedCountry.national.institutions.length > 0) {
             html += selectedCountry.national.institutions.map(function(institutionID) {
               var institution = dariahMapData.institutions.filter(function(institution) { return institution.id === parseInt(institutionID, 10); });
               var htmlInstitution = '<span class="ico-marker">' + institution[0].name + '</span>';

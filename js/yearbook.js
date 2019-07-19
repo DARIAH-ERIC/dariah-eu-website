@@ -133,7 +133,7 @@
         if (person.role) { html += '<li>Position : <span>' + person.role + '</span></li>';}
         if (person.institution) { html += '<li>Institution : <span>' + dariahYearbookData.institutions[person.institution].name + '</span></li>';}
         if (person.country) { html += '<li>Country : <span>' + dariahYearbookData.countries[person.country] + '</span></li>';}
-        if (person.positions) {
+        if (person.positions && person.positions.length > 0) {
           html += '<li>Role in DARIAH : <span>';
           for(var j=0; j<person.positions.length; j++) {
             html += dariahYearbookData.positions[person.positions[j]];

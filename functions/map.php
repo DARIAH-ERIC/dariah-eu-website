@@ -101,6 +101,8 @@
         }
         $jsonCountry->name = $country->post_title;
         $jsonCountry->code = $country->code;
+        $jsonCountry->website = $country->website;
+        $jsonCountry->websitename = $country->websitename;
         $jsonCountry->status = count($status) != 0 ? $status[0]->slug : null;
         $jsonCountry->statusName = count($status) != 0 ? $status[0]->name : null;
         $jsonCountry->entities = $entities;
@@ -110,9 +112,9 @@
 
         $jsonCountry->national = new stdClass();
         $representativePersons = trim($custom['repPersons'][0]);
-        $jsonCountry->national->persons = strlen($representativePersons) !== 0 ? explode(',', $representativePersons) : null;
+        $jsonCountry->national->persons = strlen($representativePersons) !== 0 ? explode(',', $representativePersons) : array();
         $representativeInstitutions = trim($custom['repInstitutions'][0]);
-        $jsonCountry->national->institutions = strlen($representativeInstitutions) !== 0 ? explode(',', $representativeInstitutions) : null;
+        $jsonCountry->national->institutions = strlen($representativeInstitutions) !== 0 ? explode(',', $representativeInstitutions) : array();
 
         $_partnerInstitutions = array();
         $_cooperatingInstitutions = array();

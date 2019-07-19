@@ -61,6 +61,8 @@
     add_meta_box( 'geoloc_capital', 'Geolocation capital', 'geoloc_capital', 'dariah_country', 'side', 'low');
     add_meta_box( 'code_country', 'Code ISO ALPHA-3 *', 'code_country', 'dariah_country', 'side', 'low');
     add_meta_box( 'coordinators_country', 'Coordinators', 'coordinators_country', 'dariah_country', 'side', 'low');
+	add_meta_box( 'website_country', 'Website', 'website_country', 'dariah_country', 'normal', 'low');
+	add_meta_box( 'websitename_country', 'Website name', 'websitename_country', 'dariah_country', 'normal', 'low');
   }
 
   function national_representative() {
@@ -125,19 +127,33 @@
 	    echo '</select>';
   }
 
+	function website_country() {
+		global $post;
+		$custom = get_post_custom( $post->ID );
+		echo '<p><label for="website">Website: </label><span class="field"><input class="website full" input="text" name="website" value="' . $custom["website"][0] . '" /></span></p>';
+	}
+
+	function websitename_country() {
+		global $post;
+		$custom = get_post_custom( $post->ID );
+		echo '<p><label for="websitename">Website name: </label><span class="field"><input class="website full" input="text" name="websitename" value="' . $custom["websitename"][0] . '" /></span></p>';
+	}
+
 	function save_meta_country() {
 		global $post;
 		if ( defined('DOING_AUTOSAVE') && DOING_AUTOSAVE ) {
 			return;
 		}
 
-    if ( isset($_POST['post_type']) && 'dariah_country' == $_POST['post_type'] ) {
-	    update_post_meta( $post->ID, "coordinators", implode(',', $_POST["coordinators"]) );
-	    update_post_meta( $post->ID, "repPersons", implode(',', $_POST["repPersons"]) );
-	    update_post_meta( $post->ID, "repInstitutions", implode(',', $_POST["repInstitutions"]) );
-      update_post_meta( $post->ID, "code", $_POST["code"] );
-  		update_post_meta( $post->ID, "longitude",$_POST["longitude"] );
-  		update_post_meta( $post->ID, "latitude",$_POST["latitude"] );
-    }
+	    if ( isset($_POST['post_type']) && 'dariah_country' == $_POST['post_type'] ) {
+		    update_post_meta( $post->ID, "coordinators", implode(',', $_POST["coordinators"]) );
+		    update_post_meta( $post->ID, "repPersons", implode(',', $_POST["repPersons"]) );
+		    update_post_meta( $post->ID, "repInstitutions", implode(',', $_POST["repInstitutions"]) );
+	        update_post_meta( $post->ID, "code", $_POST["code"] );
+	        update_post_meta( $post->ID, "longitude",$_POST["longitude"] );
+	        update_post_meta( $post->ID, "latitude",$_POST["latitude"] );
+		    update_post_meta( $post->ID, "website", $_POST["website"] );
+		    update_post_meta( $post->ID, "websitename", $_POST["websitename"] );
+	    }
 	}
 ?>

@@ -343,9 +343,80 @@ do_action( '__after_page_title' );
 
   </div>
 </div>
+    <div class="allow-space"></div>
+    <div class="container" id="container-about">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="section-1-block about-block">
+                    <div class="about-title">
+                        <h2>About DARIAH</h2>
+                    </div>
+                    <div class="about-text">
+                        <p>DARIAH-EU is distributed Research Infrastructure that supports and enhances
+                            digitally-enabled research and teaching across the Arts and Humanities. It is a network bringing together people, expertise, information, knowledge, content, methods, tools and technologies from its member countries across Europe.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="allow-space"></div>
 <?php
-wp_nav_menu(array(
-	'theme_location' => 'home-menu',
-	'walker' => new Home_Walker_Nav_Menu()
-)); ?>
+//    wp_nav_menu(array(
+//        'menu' => 'home-double-menu',
+//        'walker' => new Home_Walker_Nav_Menu()
+//    ));
+?>
+    <div class="moving-background background-globe">
+        <div class="opacity-film"></div>
+        <div class="container-title container numbers-section-content" id="container-numbers">
+            <div class="row numbers-row">
+                <div class="number-row">
+                    <label>18</label>
+                    <span>Member Countries</span>
+                </div>
+                <div class="number-row">
+                    <label>162</label>
+                    <span>National Partner Institutions</span>
+                </div>
+                <div class="number-row">
+                    <label>25</label>
+                    <span>Cooperating Partners</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="allow-space blue-space"></div>
+    <div class="menu-home-triple-menu-container">
+        <ul id="menu-home-triple-menu" class="menu">
+            <li class="menu-item menu-item-type-post_type menu-item-object-page">
+	            <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("WidgetAreaRecentPosts") ) : ?>
+	            <?php endif;?>
+            </li>
+            <li class="menu-item menu-item-type-post_type menu-item-object-page">
+	            <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("WidgetAreaEvents") ) : ?>
+	            <?php endif;?>
+            </li>
+            <li class="menu-item menu-item-type-post_type menu-item-object-page">
+	            <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("WidgetAreaTwitter") ) : ?>
+	            <?php endif;?>
+            </li>
+        </ul>
+    </div>
+    <div class="allow-space blue-space"></div>
+    <div class="moving-background background-mission">
+        <div class="opacity-film"></div>
+        <div class="container-title">
+            <h2>The DARIAH Mission</h2>
+            <p>DARIAH's mission is to empower research communities with digital methods to create, connect and
+                share knowledge about culture and society.</p>
+        </div>
+    </div>
+    <div class="allow-space blue-space"></div>
+<?php
+    wp_nav_menu(array(
+        'menu' => 'home-quadruple-menu',
+        'walker' => new Home_Walker_Nav_Menu()
+    ));
+?>
+    <div class="allow-space blue-space"></div>
 <?php get_footer(); ?>

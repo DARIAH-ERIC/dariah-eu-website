@@ -10,6 +10,15 @@
   max-width: 1658px;
   margin: 0 auto;
 
+  & .tp_recent_tweets {
+    & li {
+      background-image: none;
+      & .twitter_time {
+        color: #ed6f59;
+      }
+    }
+  }
+
   & > li {
     display: block;
     width: calc(100% - 12px);
@@ -69,7 +78,7 @@
       font-weight: 300;
     }
 
-    & > .widgetizedArea {
+    & > .widgetizedArea > div, & > .widgetizedArea {
       margin: 10px;
       & a {
         color: #ed6f59;
@@ -88,41 +97,41 @@
       }
     }
 
-    .tp_recent_tweets {
-      li {
-        display: block;
-        width: 90%;
-        margin-bottom: 18px;
-        background-image: url('images/ico-twitter-quote.png');
-        background-position-y: 2px;
-        border-bottom: 1px solid #44474a;
+    //.tp_recent_tweets {
+    //  li {
+    //    display: block;
+    //    width: 90%;
+    //    margin-bottom: 18px;
+    //    background-image: url('images/ico-twitter-quote.png');
+    //    background-position-y: 2px;
+    //    border-bottom: 1px solid #44474a;
+    //
+    //    &:last-child {
+    //      border-bottom: none;
+    //    }
+    //  }
+    //
+    //  span {
+    //    color: #000000;
+    //  }
+    //
+    //  a {
+    //    color: #0aa9c6;
+    //
+    //    &.twitter_time {
+    //      color: #000000;
+    //      font-size: 12px;
+    //    }
+    //  }
+    //}
 
-        &:last-child {
-          border-bottom: none;
-        }
-      }
-
-      span {
-        color: #000000;
-      }
-
-      a {
-        color: #0aa9c6;
-
-        &.twitter_time {
-          color: #000000;
-          font-size: 12px;
-        }
-      }
-    }
-
-    .widget_tp_widget_recent_tweets {
-      h3 {
-        background: url('images/ico-twitter-footer.png') left center no-repeat;
-        padding-left: 27px;
-        color: #0aa9c6;
-      }
-    }
+    //.widget_tp_widget_recent_tweets {
+    //  h3 {
+    //    background: url('images/ico-twitter-footer.png') right center no-repeat;
+    //    padding-left: 27px;
+    //    color: #0aa9c6;
+    //  }
+    //}
 
   }
 }
@@ -153,11 +162,75 @@
 }
 
 #menu-home-triple-menu {
-  li {
+  & h3 {
+    color: #0870ac;
+    font-variant: small-caps;
+    font-size: 1.75rem;
+  }
+
+  & .tribe-events-widget-link {
+    display: none;
+  }
+
+  & li {
     margin: 6px;
     @include mintablet {
       display: inline-block;
       width: calc(33% - 12px);
+    }
+
+    padding: 10px 0;
+    position: relative;
+    border-bottom: 1px solid #ddd;
+
+    & h4 {
+      margin: 0;
+    }
+
+    & a, & .tribe-event-title a {
+      font-weight: normal !important;
+      font-size: 18px;
+      color: black;
+      & > span {
+        color: black;
+      }
+    }
+
+    & .rpwwt-post-date, & .tribe-event-duration span {
+      color: #ed6f59;
+    }
+
+    & .rpwwt-post-excerpt > a, & .tribe-events-list-widget-events p a {
+      float: right;
+      cursor: pointer;
+      padding: .25rem .5rem;
+      font-size: .875rem;
+      line-height: 1.5;
+      border-radius: .2rem;
+      color: #212529 !important;
+      background-color: #f8f9fa;
+      border-color: #f8f9fa;
+      display: inline-block;
+      font-weight: 400;
+      text-align: center;
+      vertical-align: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      border-bottom-color: transparent;
+      transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+      -webkit-appearance: button;
+
+      &:hover {
+        color: #212529;
+        background-color: #e2e6ea;
+        border-color: #dae0e5;
+      }
+    }
+
+    &:last-child {
+      border-bottom: 0 none;
     }
   }
 }
@@ -177,33 +250,123 @@ div.moving-background {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center center;
-  background-image: url(/wp-content/uploads/2017/05/bearbeitetetes-presse-bild-612x460.jpg);
+  background-size: cover;
 
-  div.opacity-film {
-    opacity: 0.9;
-    background-color: #35383c;
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    //z-index: 0;
-  }
   div.container-title {
     position: relative;
     height: 300px;
     padding: 20px 100px 20px 100px;
     z-index: 1;
 
-    h2 {
-      padding: 110px;
+    & p {
+      font-size: 26px;
+      color: #fff;
       text-align: center;
-      color: white;
     }
   }
+
+  &.background-globe {
+    background-image: url(/wp-content/themes/thefox-child/images/globe.png);
+    background-color: rgba(8,112,172,0.9);
+
+    & .number-row {
+      text-align: center;
+      color: #ffffff;
+      padding: 100px 10px 100px 10px;
+      float: left;
+      font-size: 20px;
+
+      & label {
+        font-size: 48px;
+        font-weight: 400;
+      }
+      & span {
+        padding: 0;
+        margin-top: -5px;
+        display: block;
+        text-transform: lowercase;
+      }
+    }
+  }
+  &.background-mission {
+    background-image: url(/wp-content/themes/thefox-child/images/mission.jpg);
+    background-color: rgba(8,112,172,0.6);
+
+    & h2 {
+      color: #99cccc;
+      font-size: 48px;
+      text-align: center;
+      padding: 1em 0 2em 0;
+    }
+  }
+
+  div.opacity-film {
+    opacity: 0.6;
+    background-color: #35383c;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+  }
+
+  //& .numbers-section {
+  //  position: relative;
+  //  color: #fff;
+  //  font-size: 20px;
+  //  padding: 60px 0;
+  //
+  //  & .numbers-section-content {
+  //    z-index: 2;
+  //    position: relative;
+  //
+  //    & .numbers-row {
+  //      & label {
+  //        font-size: 48px;
+  //        font-weight: 400;
+  //      }
+  //      & .col-4 {
+  //        text-align: center;
+  //      }
+  //      & span {
+  //        padding: 0;
+  //        margin-top: -18px;
+  //        display: block;
+  //        text-transform: lowercase;
+  //      }
+  //    }
+  //  }
+  //}
 }
 
 div.allow-space {
   padding-bottom: 100px;
-  background-color: #e9eced;
+  &.blue-space {
+    background-color: #e9eced;
+  }
+}
+
+div#container-about {
+  & p {
+    font-size: 16px;
+  }
+  & p, & h2 {
+    color: #243A69;
+    margin: 0;
+  }
+  & .row {
+    padding-top: 2em;
+    padding-bottom: 2em;
+
+    & .about-title {
+      float: left;
+      padding-right: 2em;
+    }
+
+    & .about-text {
+      overflow: hidden;
+      padding-left: 2em;
+      border-left: 2px solid #243A69;
+    }
+  }
 }

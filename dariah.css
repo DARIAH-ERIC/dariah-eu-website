@@ -773,12 +773,41 @@ body {
   #menu-home-triple-menu li:last-child {
     border-bottom: 0 none; }
 
+#menu-home-quadruple-menu a {
+  text-align: center; }
+
 #menu-home-quadruple-menu li {
   margin: 4px; }
   @media (min-width: 768px) {
     #menu-home-quadruple-menu li {
       display: inline-block;
       width: calc(25% - 12px); } }
+  #menu-home-quadruple-menu li a.more-btn {
+    background-image: none;
+    float: right;
+    cursor: pointer;
+    padding: .25rem .5rem;
+    font-size: .875rem;
+    line-height: 1.5;
+    border-radius: .2rem;
+    color: #212529 !important;
+    background-color: #f8f9fa;
+    border-color: #f8f9fa;
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border-bottom-color: transparent;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    -webkit-appearance: button; }
+    #menu-home-quadruple-menu li a.more-btn:hover {
+      color: #212529;
+      background-color: #e2e6ea;
+      border-color: #dae0e5; }
 
 div.moving-background {
   position: relative;

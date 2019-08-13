@@ -37,7 +37,13 @@
   function onResize() {
     equalheight('.menu-home-container .description');
     equalheight('.menu-home-double-menu-container .description');
-    equalheight('.menu-home-triple-menu-container .widgetizedArea');
+    if (jQuery("#menu-home-triple-menu li").css("display") === "inline-block" ) {
+      equalheight('.menu-home-triple-menu-container .widgetizedArea');
+    } else {
+      jQuery('.menu-home-triple-menu-container .widgetizedArea').each(function() {
+        jQuery(this).height('auto');
+      });
+    }
     equalheight('.menu-home-quadruple-menu-container .description');
     equalheight('.app-category .app-content');
     equalheight('.item-list li');

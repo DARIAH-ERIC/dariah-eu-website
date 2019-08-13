@@ -287,7 +287,7 @@ div.moving-background {
 
   div.container-title {
     position: relative;
-    height: 300px;
+    min-height: 300px;
     padding: 20px 100px 20px 100px;
     z-index: 1;
 
@@ -342,34 +342,6 @@ div.moving-background {
     bottom: 0;
     width: 100%;
   }
-
-  //& .numbers-section {
-  //  position: relative;
-  //  color: #fff;
-  //  font-size: 20px;
-  //  padding: 60px 0;
-  //
-  //  & .numbers-section-content {
-  //    z-index: 2;
-  //    position: relative;
-  //
-  //    & .numbers-row {
-  //      & label {
-  //        font-size: 48px;
-  //        font-weight: 400;
-  //      }
-  //      & .col-4 {
-  //        text-align: center;
-  //      }
-  //      & span {
-  //        padding: 0;
-  //        margin-top: -18px;
-  //        display: block;
-  //        text-transform: lowercase;
-  //      }
-  //    }
-  //  }
-  //}
 }
 
 div.allow-space {
@@ -380,6 +352,11 @@ div.allow-space {
 }
 
 div#container-about {
+  margin: 0 15px 0 15px; //for small devices
+  @include mintablet {
+    margin: 0 auto;
+  }
+
   & p {
     font-size: 16px;
   }

@@ -817,7 +817,7 @@ div.moving-background {
   background-size: cover; }
   div.moving-background div.container-title {
     position: relative;
-    height: 300px;
+    min-height: 300px;
     padding: 20px 100px 20px 100px;
     z-index: 1; }
     div.moving-background div.container-title p {
@@ -863,23 +863,26 @@ div.allow-space {
   div.allow-space.blue-space {
     background-color: #e9eced; }
 
-div#container-about p {
-  font-size: 16px; }
-
-div#container-about p, div#container-about h2 {
-  color: #243A69;
-  margin: 0; }
-
-div#container-about .row {
-  padding-top: 2em;
-  padding-bottom: 2em; }
-  div#container-about .row .about-title {
-    float: left;
-    padding-right: 2em; }
-  div#container-about .row .about-text {
-    overflow: hidden;
-    padding-left: 2em;
-    border-left: 2px solid #243A69; }
+div#container-about {
+  margin: 0 15px 0 15px; }
+  @media (min-width: 768px) {
+    div#container-about {
+      margin: 0 auto; } }
+  div#container-about p {
+    font-size: 16px; }
+  div#container-about p, div#container-about h2 {
+    color: #243A69;
+    margin: 0; }
+  div#container-about .row {
+    padding-top: 2em;
+    padding-bottom: 2em; }
+    div#container-about .row .about-title {
+      float: left;
+      padding-right: 2em; }
+    div#container-about .row .about-text {
+      overflow: hidden;
+      padding-left: 2em;
+      border-left: 2px solid #243A69; }
 
 body #top_bg .page_title_ctn {
   padding: 32px; }

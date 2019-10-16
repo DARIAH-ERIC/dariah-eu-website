@@ -936,7 +936,7 @@ div#container-about {
     margin: 0; }
   div#container-about .row {
     padding-top: 2em;
-    padding-bottom: 2em; }
+    padding-bottom: 0; }
     div#container-about .row .about-title {
       float: left;
       padding-right: 2em; }

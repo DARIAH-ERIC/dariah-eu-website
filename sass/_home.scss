@@ -347,7 +347,6 @@ div.moving-background {
 
   &.background-globe {
     background-image: url(/wp-content/themes/thefox-child/images/mission.jpg);
-    background-color: rgba(8,112,172,0.8);
 
     & .numbers-row {
       text-align: center;
@@ -369,7 +368,6 @@ div.moving-background {
 
         & span {
           padding: 0;
-          margin-top: -5px;
           display: block;
           //text-transform: lowercase;
         }
@@ -403,8 +401,7 @@ div.moving-background {
   }
 
   div.opacity-film {
-    opacity: 0.6;
-    background-color: #35383c;
+    background-color: rgba(8,112,172,0.8);
     position: absolute;
     top: 0;
     left: 0;

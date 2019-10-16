@@ -870,8 +870,7 @@ div.moving-background {
       color: #fff;
       text-align: center; }
   div.moving-background.background-globe {
-    background-image: url(/wp-content/themes/thefox-child/images/mission.jpg);
-    background-color: rgba(8, 112, 172, 0.8); }
+    background-image: url(/wp-content/themes/thefox-child/images/mission.jpg); }
     div.moving-background.background-globe .numbers-row {
       text-align: center;
       width: 100%;
@@ -888,7 +887,6 @@ div.moving-background {
           font-size: 30px; }
         div.moving-background.background-globe .numbers-row .number-row span {
           padding: 0;
-          margin-top: -5px;
           display: block; }
       div.moving-background.background-globe .numbers-row .mission {
         flex: 0 0 50%;
@@ -909,8 +907,7 @@ div.moving-background {
       text-align: center;
       padding: 1em 0 2em 0; }
   div.moving-background div.opacity-film {
-    opacity: 0.6;
-    background-color: #35383c;
+    background-color: rgba(8, 112, 172, 0.8);
     position: absolute;
     top: 0;
     left: 0;

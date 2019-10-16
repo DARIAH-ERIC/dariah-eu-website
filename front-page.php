@@ -405,11 +405,12 @@ do_action( '__after_page_title' );
 <!--    </div>-->
 <!--    <div class="allow-space blue-space"></div>-->
 <?php
-    wp_nav_menu(array(
-        'menu' => 'home-quadruple-menu',
-        'walker' => new Home_Walker_Nav_Menu()
-    ));
+//    wp_nav_menu(array(
+//        'menu' => 'home-quadruple-menu',
+//        'walker' => new Home_Walker_Nav_Menu()
+//    ));
 ?>
+<!--    <div class="allow-space"></div>-->
 <!--    <div class="menu-home-quadruple-menu-container"><ul id="menu-home-quadruple-menu" class="menu">-->
 <!--            <li id="menu-item-1730" class="purple menu-item menu-item-type-post_type menu-item-object-page"-->
 <!--                itemscope="" itemtype="http://schema.org/Article"><div class="image" style="background-image: url(https://www-dev.dariah.eu/wp-content/uploads/2017/05/IMG_3923-612x459.jpg);"><a title="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." href="https://www-dev.dariah.eu/tools-services/dariah-training/" itemprop="url">DARIAH Training</a></div><div class="description" itemprop="text" style="height: 300px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <a class="more-btn" href="/Tools_and_Service/">More...</a></div></li>-->
@@ -421,4 +422,62 @@ do_action( '__after_page_title' );
 <!--                itemscope="" itemtype="http://schema.org/Article"><div class="image" style="background-image: url(https://www-dev.dariah.eu/wp-content/uploads/2017/05/IMG_3923-612x459.jpg);"><a title="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." href="https://www-dev.dariah.eu/activities/working-groups-list/" itemprop="url">Working Groups</a></div><div class="description" itemprop="text" style="height: 300px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <a class="more-btn" href="/Tools_and_Service/">More...</a></div></li>-->
 <!--        </ul></div>-->
 <!--    <div class="allow-space blue-space"></div>-->
-<?php get_dariah_footer(); //todo: Everywhere!! ?>
+<div class="menu-home-quadruple-menu-container">
+    <ul id="menu-home-quadruple-menu" class="menu">
+        <li id="menu-item-229" class="blue menu-item menu-item-type-post_type menu-item-object-page" itemscope="" itemtype="http://schema.org/Article">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="/wp-content/uploads/2019/04/bearbeitetetes-presse-bild-612x460.jpg" alt="Tools & Services">
+                    </div>
+                    <div class="flip-card-back">
+                        <p>DARIAH is a pan-european infrastructure for arts and humanities scholars working with
+                            computational methods. It supports digital research as well as the teaching of digital research methods.</p>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li id="menu-item-230" class="green menu-item menu-item-type-post_type menu-item-object-page" itemscope="" itemtype="http://schema.org/Article">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="/wp-content/uploads/2019/04/bearbeitetetes-presse-bild-612x460.jpg" alt="Education & Training">
+                    </div>
+                    <div class="flip-card-back">
+                        <p>DARIAH is a pan-european infrastructure for arts and humanities scholars working with
+                            computational methods. It supports digital research as well as the teaching of digital research methods.</p>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li id="menu-item-231" class="pink menu-item menu-item-type-post_type menu-item-object-page" itemscope="" itemtype="http://schema.org/Article">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="/wp-content/uploads/2019/04/bearbeitetetes-presse-bild-612x460.jpg" alt="Policy & Forsight">
+                    </div>
+                    <div class="flip-card-back">
+                        <p>DARIAH is a pan-european infrastructure for arts and humanities scholars working with
+                            computational methods. It supports digital research as well as the teaching of digital research methods.</p>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li id="menu-item-232" class="purple menu-item menu-item-type-post_type menu-item-object-page" itemscope="" itemtype="http://schema.org/Article">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="/wp-content/uploads/2019/04/bearbeitetetes-presse-bild-612x460.jpg" alt="Transnational WGs">
+                    </div>
+                    <div class="flip-card-back">
+                        <p>DARIAH is a pan-european infrastructure for arts and humanities scholars working with
+                            computational methods. It supports digital research as well as the teaching of digital research methods.</p>
+                    </div>
+                </div>
+            </div>
+        </li>
+    </ul>
+</div>
+<div class="allow-space"></div>
+
+    <?php get_dariah_footer(); ?>

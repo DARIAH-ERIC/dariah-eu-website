@@ -814,6 +814,46 @@ body {
       background-color: #e2e6ea;
       border-color: #dae0e5; }
 
+#menu-home-quadruple-menu .flip-card {
+  background-color: transparent;
+  height: 201px;
+  -webkit-perspective: 1000px;
+          perspective: 1000px; }
+
+#menu-home-quadruple-menu .flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: -webkit-transform 0.4s;
+  transition: transform 0.4s;
+  transition: transform 0.4s, -webkit-transform 0.4s;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d; }
+
+#menu-home-quadruple-menu .flip-card:hover .flip-card-inner {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg); }
+
+#menu-home-quadruple-menu .flip-card-front, #menu-home-quadruple-menu .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden; }
+
+#menu-home-quadruple-menu .flip-card-front {
+  background-color: #bbb;
+  color: black; }
+  #menu-home-quadruple-menu .flip-card-front img {
+    height: 201px; }
+
+#menu-home-quadruple-menu .flip-card-back {
+  background-color: dodgerblue;
+  color: white;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg); }
+
 div.moving-background {
   position: relative;
   background-repeat: no-repeat;
@@ -897,49 +937,6 @@ div#container-about {
       overflow: hidden;
       padding-top: 5em;
       padding-left: 2em; }
-
-#menu-home-quadruple-menu {
-  background-color: transparent;
-  width: 100%;
-  height: 100%;
-  -webkit-perspective: 1000px;
-          perspective: 1000px;
-  /* Remove this if you don't want the 3D effect */ }
-
-#menu-item-229 {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  transition: -webkit-transform 0.8s;
-  transition: transform 0.8s;
-  transition: transform 0.8s, -webkit-transform 0.8s;
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d; }
-
-#menu-home-quadruple-menu:hover #menu-item-229 {
-  -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg); }
-
-/* Position the front and back side */
-.image, .description {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden; }
-
-/* Style the front side (fallback if image is missing) */
-.image {
-  background-color: #bbb;
-  color: black; }
-
-/* Style the back side */
-.description {
-  background-color: dodgerblue;
-  color: white;
-  -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg); }
 
 body #top_bg .page_title_ctn {
   padding: 32px; }

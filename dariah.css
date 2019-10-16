@@ -613,9 +613,11 @@ body {
   margin-bottom: 0;
   margin-top: 42px; }
 
-.menu-home-container, .menu-home-double-menu-container,
-.menu-home-triple-menu-container, .menu-home-quadruple-menu-container {
+.menu-home-container, .menu-home-double-menu-container, .menu-home-quadruple-menu-container {
   background-color: #e9eced;
+  text-align: center; }
+
+.menu-home-triple-menu-container {
   text-align: center; }
 
 #menu-home, #menu-home-double-menu,
@@ -726,15 +728,18 @@ body {
 #menu-home-triple-menu .tribe-events-widget-link {
   display: none; }
 
+#menu-home-triple-menu > li {
+  border: 1px solid #2f6ea5;
+  margin: 40px; }
+
 #menu-home-triple-menu li {
-  margin: 6px;
   padding: 10px 0;
   position: relative;
-  border-bottom: 1px solid #ddd; }
+  border-bottom: 1px solid #2f6ea5; }
   @media (min-width: 768px) {
     #menu-home-triple-menu li {
       display: inline-block;
-      width: calc(33% - 12px); } }
+      width: 23%; } }
   #menu-home-triple-menu li h4 {
     margin: 0; }
   #menu-home-triple-menu li a, #menu-home-triple-menu li .tribe-event-title a {
@@ -770,7 +775,7 @@ body {
       color: #212529;
       background-color: #e2e6ea;
       border-color: #dae0e5; }
-  #menu-home-triple-menu li:last-child {
+  #menu-home-triple-menu li li:last-child {
     border-bottom: 0 none; }
 
 #menu-home-quadruple-menu a {
@@ -827,20 +832,27 @@ div.moving-background {
   div.moving-background.background-globe {
     background-image: url(/wp-content/themes/thefox-child/images/globe.png);
     background-color: rgba(8, 112, 172, 0.9); }
-    div.moving-background.background-globe .number-row {
+    div.moving-background.background-globe .numbers-row {
       text-align: center;
-      color: #ffffff;
-      padding: 100px 10px 100px 10px;
-      float: left;
-      font-size: 20px; }
-      div.moving-background.background-globe .number-row label {
-        font-size: 48px;
-        font-weight: 400; }
-      div.moving-background.background-globe .number-row span {
-        padding: 0;
-        margin-top: -5px;
-        display: block;
-        text-transform: lowercase; }
+      width: 50%; }
+      div.moving-background.background-globe .numbers-row .number-row {
+        color: #ffffff;
+        padding: 100px 10px 100px 10px;
+        float: left;
+        font-size: 20px; }
+        div.moving-background.background-globe .numbers-row .number-row label {
+          font-size: 48px;
+          font-weight: 400; }
+        div.moving-background.background-globe .numbers-row .number-row span {
+          padding: 0;
+          margin-top: -5px;
+          display: block; }
+    div.moving-background.background-globe .mission p {
+      text-align: left !important;
+      font-size: 20px;
+      padding: 100px 10px 100px calc(40% + 100px);
+      margin-left: 100px;
+      display: block; }
   div.moving-background.background-mission {
     background-image: url(/wp-content/themes/thefox-child/images/mission.jpg);
     background-color: rgba(8, 112, 172, 0.6); }

@@ -344,89 +344,98 @@ do_action( '__after_page_title' );
   </div>
 </div>
     <div class="allow-space"></div>
-    <div class="container" id="container-about">
-        <div class="row">
-            <div class="col-xs-12">
-                <div class="section-1-block about-block">
-                    <div class="about-title">
-                        <h2>About DARIAH</h2>
-                    </div>
-                    <div class="about-text">
-                        <p>DARIAH-EU is distributed Research Infrastructure that supports and enhances
-                            digitally-enabled research and teaching across the Arts and Humanities. It is a network bringing together people, expertise, information, knowledge, content, methods, tools and technologies from its member countries across Europe.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <div class="menu-home-triple-menu-container">
+        <ul id="menu-home-triple-menu" class="menu">
+            <li class="menu-item menu-item-type-post_type menu-item-object-page">
+				<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("WidgetAreaRecentPosts") ) : ?>
+				<?php endif;?>
+            </li>
+            <li class="menu-item menu-item-type-post_type menu-item-object-page">
+				<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("WidgetAreaEvents") ) : ?>
+				<?php endif;?>
+            </li>
+            <li class="menu-item menu-item-type-post_type menu-item-object-page">
+				<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("WidgetAreaTwitter") ) : ?>
+				<?php endif;?>
+            </li>
+        </ul>
     </div>
-    <div class="allow-space"></div>
+<!--    <div class="allow-space"></div>-->
+<!--    <div class="allow-space"></div>-->
+<!--    <div class="container" id="container-about">-->
+<!--        <div class="row">-->
+<!--            <div class="col-xs-12">-->
+<!--                <div class="section-1-block about-block">-->
+<!--                    <div class="about-title">-->
+<!--                        <h2>About DARIAH</h2>-->
+<!--                    </div>-->
+<!--                    <div class="about-text">-->
+<!--                        <p>DARIAH-EU is distributed Research Infrastructure that supports and enhances-->
+<!--                            digitally-enabled research and teaching across the Arts and Humanities. It is a network bringing together people, expertise, information, knowledge, content, methods, tools and technologies from its member countries across Europe.</p>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--    <div class="allow-space"></div>-->
 <?php
 //    wp_nav_menu(array(
 //        'menu' => 'home-double-menu',
 //        'walker' => new Home_Walker_Nav_Menu()
 //    ));
 ?>
+    <section class="numbers-section" id="numbers-section" data-start="false">
     <div class="moving-background background-globe">
         <div class="opacity-film"></div>
-        <div class="container-title container numbers-section-content" id="container-numbers">
-            <div class="row numbers-row">
-                <div class="number-row">
-                    <label>18</label>
-                    <span>Member Countries</span>
+        <div class="container-title numbers-section-content" id="container-numbers">
+            <div>
+                <div class="numbers-row">
+                    <div class="number-row">
+                        <label class="counter" data-type="count" data-top="18" id="increment-countries"></label>
+                        <span>Member Countries</span>
+                    </div>
+                    <div class="number-row">
+                        <label class="counter" data-type="count" data-top="162" id="increment-institutions"></label>
+                        <span>National Partner Institutions</span>
+                    </div>
+                    <div class="number-row">
+                        <label class="counter" data-type="count" data-top="25" id="increment-partners"></label>
+                        <span>Cooperating Partners</span>
+                    </div>
                 </div>
-                <div class="number-row">
-                    <label>162</label>
-                    <span>National Partner Institutions</span>
-                </div>
-                <div class="number-row">
-                    <label>25</label>
-                    <span>Cooperating Partners</span>
+                <div class="mission">
+                    <p>DARIAH's mission is to empower research communities with digital methods to create, connect and
+                        share knowledge about culture and society.</p>
                 </div>
             </div>
         </div>
     </div>
-    <div class="allow-space blue-space"></div>
-    <div class="menu-home-triple-menu-container">
-        <ul id="menu-home-triple-menu" class="menu">
-            <li class="menu-item menu-item-type-post_type menu-item-object-page">
-	            <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("WidgetAreaRecentPosts") ) : ?>
-	            <?php endif;?>
-            </li>
-            <li class="menu-item menu-item-type-post_type menu-item-object-page">
-	            <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("WidgetAreaEvents") ) : ?>
-	            <?php endif;?>
-            </li>
-            <li class="menu-item menu-item-type-post_type menu-item-object-page">
-	            <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("WidgetAreaTwitter") ) : ?>
-	            <?php endif;?>
-            </li>
-        </ul>
-    </div>
-    <div class="allow-space blue-space"></div>
-    <div class="moving-background background-mission">
-        <div class="opacity-film"></div>
-        <div class="container-title">
-            <h2>The DARIAH Mission</h2>
-            <p>DARIAH's mission is to empower research communities with digital methods to create, connect and
-                share knowledge about culture and society.</p>
-        </div>
-    </div>
-    <div class="allow-space blue-space"></div>
+    </section>
+
+<!--    <div class="moving-background background-mission">-->
+<!--        <div class="opacity-film"></div>-->
+<!--        <div class="container-title">-->
+<!--            <h2>The DARIAH Mission</h2>-->
+<!--            <p>DARIAH's mission is to empower research communities with digital methods to create, connect and-->
+<!--                share knowledge about culture and society.</p>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--    <div class="allow-space blue-space"></div>-->
 <?php
     wp_nav_menu(array(
         'menu' => 'home-quadruple-menu',
         'walker' => new Home_Walker_Nav_Menu()
     ));
 ?>
-    <div class="menu-home-quadruple-menu-container"><ul id="menu-home-quadruple-menu" class="menu">
-            <li id="menu-item-1730" class="purple menu-item menu-item-type-post_type menu-item-object-page"
-                itemscope="" itemtype="http://schema.org/Article"><div class="image" style="background-image: url(https://www-dev.dariah.eu/wp-content/uploads/2017/05/IMG_3923-612x459.jpg);"><a title="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." href="https://www-dev.dariah.eu/tools-services/dariah-training/" itemprop="url">DARIAH Training</a></div><div class="description" itemprop="text" style="height: 300px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <a class="more-btn" href="/Tools_and_Service/">More...</a></div></li>
-            <li id="menu-item-1730" class="pink menu-item menu-item-type-post_type menu-item-object-page"
-                itemscope="" itemtype="http://schema.org/Article"><div class="image" style="background-image: url(https://www-dev.dariah.eu/wp-content/uploads/2017/05/IMG_3923-612x459.jpg);"><a title="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." href="https://www-dev.dariah.eu/tools-services/dariah-training/" itemprop="url">DARIAH Training</a></div><div class="description" itemprop="text" style="height: 300px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <a class="more-btn" href="/Tools_and_Service/">More...</a></div></li>
-            <li id="menu-item-1731" class="menu-item menu-item-type-post_type menu-item-object-page
-            menu-item-privacy-policy" itemscope="" itemtype="http://schema.org/Article"><div class="image" style="background-image: url(https://www-dev.dariah.eu/wp-content/uploads/2017/05/IMG_3923-612x459.jpg);"><a title="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." href="https://www-dev.dariah.eu/privacy-policy/" itemprop="url">Privacy Policy</a></div><div class="description" itemprop="text" style="height: 300px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <a class="more-btn" href="/Tools_and_Service/">More...</a></div></li>
-            <li id="menu-item-1732" class="pink menu-item menu-item-type-post_type menu-item-object-page"
-                itemscope="" itemtype="http://schema.org/Article"><div class="image" style="background-image: url(https://www-dev.dariah.eu/wp-content/uploads/2017/05/IMG_3923-612x459.jpg);"><a title="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." href="https://www-dev.dariah.eu/activities/working-groups-list/" itemprop="url">Working Groups</a></div><div class="description" itemprop="text" style="height: 300px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <a class="more-btn" href="/Tools_and_Service/">More...</a></div></li>
-        </ul></div>
-    <div class="allow-space blue-space"></div>
+<!--    <div class="menu-home-quadruple-menu-container"><ul id="menu-home-quadruple-menu" class="menu">-->
+<!--            <li id="menu-item-1730" class="purple menu-item menu-item-type-post_type menu-item-object-page"-->
+<!--                itemscope="" itemtype="http://schema.org/Article"><div class="image" style="background-image: url(https://www-dev.dariah.eu/wp-content/uploads/2017/05/IMG_3923-612x459.jpg);"><a title="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." href="https://www-dev.dariah.eu/tools-services/dariah-training/" itemprop="url">DARIAH Training</a></div><div class="description" itemprop="text" style="height: 300px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <a class="more-btn" href="/Tools_and_Service/">More...</a></div></li>-->
+<!--            <li id="menu-item-1730" class="pink menu-item menu-item-type-post_type menu-item-object-page"-->
+<!--                itemscope="" itemtype="http://schema.org/Article"><div class="image" style="background-image: url(https://www-dev.dariah.eu/wp-content/uploads/2017/05/IMG_3923-612x459.jpg);"><a title="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." href="https://www-dev.dariah.eu/tools-services/dariah-training/" itemprop="url">DARIAH Training</a></div><div class="description" itemprop="text" style="height: 300px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <a class="more-btn" href="/Tools_and_Service/">More...</a></div></li>-->
+<!--            <li id="menu-item-1731" class="menu-item menu-item-type-post_type menu-item-object-page-->
+<!--            menu-item-privacy-policy" itemscope="" itemtype="http://schema.org/Article"><div class="image" style="background-image: url(https://www-dev.dariah.eu/wp-content/uploads/2017/05/IMG_3923-612x459.jpg);"><a title="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." href="https://www-dev.dariah.eu/privacy-policy/" itemprop="url">Privacy Policy</a></div><div class="description" itemprop="text" style="height: 300px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <a class="more-btn" href="/Tools_and_Service/">More...</a></div></li>-->
+<!--            <li id="menu-item-1732" class="pink menu-item menu-item-type-post_type menu-item-object-page"-->
+<!--                itemscope="" itemtype="http://schema.org/Article"><div class="image" style="background-image: url(https://www-dev.dariah.eu/wp-content/uploads/2017/05/IMG_3923-612x459.jpg);"><a title="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." href="https://www-dev.dariah.eu/activities/working-groups-list/" itemprop="url">Working Groups</a></div><div class="description" itemprop="text" style="height: 300px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <a class="more-btn" href="/Tools_and_Service/">More...</a></div></li>-->
+<!--        </ul></div>-->
+<!--    <div class="allow-space blue-space"></div>-->
 <?php get_footer(); ?>

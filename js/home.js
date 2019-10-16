@@ -32,6 +32,8 @@
   jQuery(window).ready(function() {
     onResize();
     jQuery('.tnp-email').attr('placeholder', 'E-mail');
+
+    printIncrement();
   });
 
   function onResize() {
@@ -51,4 +53,38 @@
 
   jQuery(window).resize(onResize);
 
+  jQuery(window).scroll(function(){
+    printIncrement();
+  });
+
+  function printIncrement() {
+    var numbersSection = document.getElementById("numbers-section");
+    if (!isElementOutViewport(numbersSection) && jQuery("#numbers-section").attr("data-start") === "false") {
+      increment(jQuery("#increment-countries"));
+      increment(jQuery("#increment-institutions"));
+      increment(jQuery("#increment-partners"));
+      jQuery("#numbers-section").attr("data-start","true");
+    }
+  }
+
+  function increment(elementToIncrement) {
+    var element = jQuery(elementToIncrement);
+    var number = element.attr("data-top");
+    number = parseInt(number,10);
+    var i=0;
+    function incrementItem() {
+      i++;
+      element.html(i);
+      if (i===number) {
+        clearInterval(interval);
+      }
+    }
+    var incrementTime = 1000/number;
+    var interval = setInterval(incrementItem, incrementTime);
+  }
+
+  function isElementOutViewport(el){
+    var rect = el.getBoundingClientRect();
+    return rect.bottom < 0 || rect.right < 0 || rect.left > window.innerWidth || rect.top > window.innerHeight;
+  }
 })(jQuery);

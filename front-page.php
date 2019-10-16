@@ -343,7 +343,7 @@ do_action( '__after_page_title' );
 
   </div>
 </div>
-    <div class="allow-space"></div>
+<!--    <div class="allow-space"></div>-->
     <div class="menu-home-triple-menu-container">
         <ul id="menu-home-triple-menu" class="menu">
             <li class="menu-item menu-item-type-post_type menu-item-object-page">
@@ -438,4 +438,7 @@ do_action( '__after_page_title' );
 <!--                itemscope="" itemtype="http://schema.org/Article"><div class="image" style="background-image: url(https://www-dev.dariah.eu/wp-content/uploads/2017/05/IMG_3923-612x459.jpg);"><a title="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." href="https://www-dev.dariah.eu/activities/working-groups-list/" itemprop="url">Working Groups</a></div><div class="description" itemprop="text" style="height: 300px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <a class="more-btn" href="/Tools_and_Service/">More...</a></div></li>-->
 <!--        </ul></div>-->
 <!--    <div class="allow-space blue-space"></div>-->
+    <div style="background-color: #313335 !important;">
+        vkjdfnkgnsdl
+    </div>
 <?php get_footer(); ?>

@@ -346,8 +346,8 @@ div.moving-background {
   }
 
   &.background-globe {
-    background-image: url(/wp-content/themes/thefox-child/images/globe.png);
-    background-color: rgba(8,112,172,0.9);
+    background-image: url(/wp-content/themes/thefox-child/images/mission.jpg);
+    background-color: rgba(8,112,172,0.8);
 
     & .numbers-row {
       text-align: center;
@@ -440,7 +440,7 @@ div#container-about {
   }
   & .row {
     padding-top: 2em;
-    padding-bottom: 0;
+    padding-bottom: 6px;
 
     & .about-title {
       float: left;

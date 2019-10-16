@@ -246,10 +246,10 @@
     text-align: center;
   }
   li {
-    margin: 4px;
+    margin: 30px;
     @include mintablet {
       display: inline-block;
-      width: calc(25% - 12px);
+      width: 20%;
     }
 
     & a.more-btn {
@@ -319,8 +319,8 @@
   }
 
   .flip-card-back {
-    background-color: dodgerblue;
-    color: white;
+    background-color: white;
+    color: black;
     transform: rotateY(180deg);
   }
 }
@@ -351,17 +351,20 @@ div.moving-background {
 
     & .numbers-row {
       text-align: center;
-      width: 50%;
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
 
       & .number-row {
         color: #ffffff;
         padding: 100px 10px 100px 10px;
         float: left;
         font-size: 20px;
+        flex: 0 0 16.666666%;
+        max-width: 16.666666%;
 
         & label {
-          font-size: 48px;
-          font-weight: 400;
+          font-size: 30px;
         }
 
         & span {
@@ -371,16 +374,19 @@ div.moving-background {
           //text-transform: lowercase;
         }
       }
-    }
 
-    & .mission {
-      p {
-        text-align: left !important;
-        font-size: 24px;
-        font-weight: bold;
-        padding: 100px 10px 100px calc(40% + 100px);
-        margin-left: 100px;
-        display: block;
+      & .mission {
+        flex: 0 0 50%;
+        max-width: 50%;
+        padding: 100px 0 100px 0;
+
+        p {
+          text-align: left !important;
+          font-size: 24px;
+          color: #ffffff !important;
+          font-weight: bold;
+          margin-left: 100px;
+        }
       }
     }
   }
@@ -416,15 +422,19 @@ div.allow-space {
 
 div#container-about {
   margin: 0 15px 0 15px; //for small devices
-  border-bottom: 2px solid white;
+
+  & > .wrapper {
+    border-bottom: 2px solid white;
+  }
+
   @include mintablet {
     margin: 0 auto;
   }
 
-  & p {
+  & span {
     font-size: 20px;
   }
-  & p, & h2 {
+  & span, & h2 {
     color: white;
     margin: 0;
   }
@@ -439,7 +449,7 @@ div#container-about {
 
     & .about-text {
       overflow: hidden;
-      padding-top: 5em;
+      padding-top: 2.5em;
       padding-left: 2em;
     }
   }

@@ -782,11 +782,11 @@ body {
   text-align: center; }
 
 #menu-home-quadruple-menu li {
-  margin: 4px; }
+  margin: 30px; }
   @media (min-width: 768px) {
     #menu-home-quadruple-menu li {
       display: inline-block;
-      width: calc(25% - 12px); } }
+      width: 20%; } }
   #menu-home-quadruple-menu li a.more-btn {
     background-image: none;
     float: right;
@@ -849,8 +849,8 @@ body {
     height: 201px; }
 
 #menu-home-quadruple-menu .flip-card-back {
-  background-color: dodgerblue;
-  color: white;
+  background-color: white;
+  color: black;
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg); }
 
@@ -874,26 +874,32 @@ div.moving-background {
     background-color: rgba(8, 112, 172, 0.9); }
     div.moving-background.background-globe .numbers-row {
       text-align: center;
-      width: 50%; }
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap; }
       div.moving-background.background-globe .numbers-row .number-row {
         color: #ffffff;
         padding: 100px 10px 100px 10px;
         float: left;
-        font-size: 20px; }
+        font-size: 20px;
+        flex: 0 0 16.666666%;
+        max-width: 16.666666%; }
         div.moving-background.background-globe .numbers-row .number-row label {
-          font-size: 48px;
-          font-weight: 400; }
+          font-size: 30px; }
         div.moving-background.background-globe .numbers-row .number-row span {
           padding: 0;
           margin-top: -5px;
           display: block; }
-    div.moving-background.background-globe .mission p {
-      text-align: left !important;
-      font-size: 24px;
-      font-weight: bold;
-      padding: 100px 10px 100px calc(40% + 100px);
-      margin-left: 100px;
-      display: block; }
+      div.moving-background.background-globe .numbers-row .mission {
+        flex: 0 0 50%;
+        max-width: 50%;
+        padding: 100px 0 100px 0; }
+        div.moving-background.background-globe .numbers-row .mission p {
+          text-align: left !important;
+          font-size: 24px;
+          color: #ffffff !important;
+          font-weight: bold;
+          margin-left: 100px; }
   div.moving-background.background-mission {
     background-image: url(/wp-content/themes/thefox-child/images/mission.jpg);
     background-color: rgba(8, 112, 172, 0.6); }
@@ -917,14 +923,15 @@ div.allow-space {
     background-color: #e9eced; }
 
 div#container-about {
-  margin: 0 15px 0 15px;
-  border-bottom: 2px solid white; }
+  margin: 0 15px 0 15px; }
+  div#container-about > .wrapper {
+    border-bottom: 2px solid white; }
   @media (min-width: 768px) {
     div#container-about {
       margin: 0 auto; } }
-  div#container-about p {
+  div#container-about span {
     font-size: 20px; }
-  div#container-about p, div#container-about h2 {
+  div#container-about span, div#container-about h2 {
     color: white;
     margin: 0; }
   div#container-about .row {
@@ -935,7 +942,7 @@ div#container-about {
       padding-right: 2em; }
     div#container-about .row .about-text {
       overflow: hidden;
-      padding-top: 5em;
+      padding-top: 2.5em;
       padding-left: 2em; }
 
 body #top_bg .page_title_ctn {

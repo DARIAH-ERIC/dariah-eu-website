@@ -385,10 +385,10 @@ do_action( '__after_page_title' );
                         <label class="counter" data-type="count" data-top="25" id="increment-partners"></label>
                         <span>Cooperating Partners</span>
                     </div>
-                </div>
-                <div class="mission">
-                    <p>DARIAH's mission is to empower research communities with digital methods to create, connect and
-                        share knowledge about culture and society.</p>
+                    <div class="mission">
+                        <p>DARIAH's mission is to empower research communities with digital methods to create,
+                        connect and share knowledge about culture and society.</p>
+                    </div>
                 </div>
             </div>
         </div>

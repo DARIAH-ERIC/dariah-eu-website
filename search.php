@@ -205,4 +205,4 @@ wp_enqueue_script('js_refresh_bp', get_template_directory_uri() . '/js/refresh_b
 <!-- #page_content END -->
 
 <?php endif; ?>
-<?php get_footer(); ?>
+<?php get_dariah_footer(); ?>

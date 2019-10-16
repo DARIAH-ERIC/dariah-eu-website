@@ -320,4 +320,4 @@ wp_reset_query();
     <div id="posts" itemprop="articleBody"><?php echo the_content(); ?></div>
   </div>
 </div>
-<?php get_footer(); ?>
+<?php get_dariah_footer(); ?>

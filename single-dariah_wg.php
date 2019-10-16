@@ -320,4 +320,4 @@ do_action( '__after_page_title' );
 
   </div>
 </div>
-<?php get_footer(); ?>
+<?php get_dariah_footer(); ?>

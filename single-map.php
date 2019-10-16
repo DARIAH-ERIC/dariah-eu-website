@@ -362,4 +362,4 @@ wp_reset_query();
 		</div>
   </div>
 </div>
-<?php get_footer(); ?>
+<?php get_dariah_footer(); ?>

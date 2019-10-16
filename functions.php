@@ -111,6 +111,7 @@
 
   include( 'class/HomeWalkerMenu.php' );
   include( 'class/HTML2Text.php' );
+  include( 'class/DARIAHFooter.php' );
   include( 'widget/widget-mailchimp.php' );
   include( 'widget/widget-menu-project.php' );
   include( 'widget/widget-menu-vcc.php' );

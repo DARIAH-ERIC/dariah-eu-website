@@ -598,4 +598,4 @@ echo !empty( $output_string ) ? $output_string : '';
   <p>Sorry, but you are looking for something that isn't here.</p>
 </div>
 <?php endif; ?>
-<?php get_footer(); ?>
+<?php get_dariah_footer(); ?>

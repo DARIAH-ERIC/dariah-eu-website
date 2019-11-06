@@ -59,7 +59,7 @@
 
   function printIncrement() {
     var numbersSection = document.getElementById("numbers-section");
-    if (!isElementOutViewport(numbersSection) && jQuery("#numbers-section").attr("data-start") === "false") {
+    if (numbersSection !== null && !isElementOutViewport(numbersSection) && jQuery("#numbers-section").attr("data-start") === "false") {
       increment(jQuery("#increment-countries"));
       increment(jQuery("#increment-institutions"));
       increment(jQuery("#increment-partners"));

@@ -191,7 +191,10 @@
 
     padding: 10px 0;
     position: relative;
-    border-bottom: 1px solid #2f6ea5;
+
+    & li {
+      border-bottom: 1px solid #2f6ea5;
+    }
 
     & h4 {
       margin: 0;

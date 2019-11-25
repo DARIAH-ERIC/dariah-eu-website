@@ -736,12 +736,13 @@ body {
 
 #menu-home-triple-menu li {
   padding: 10px 0;
-  position: relative;
-  border-bottom: 1px solid #2f6ea5; }
+  position: relative; }
   @media (min-width: 768px) {
     #menu-home-triple-menu li {
       display: inline-block;
       width: 27%; } }
+  #menu-home-triple-menu li li {
+    border-bottom: 1px solid #2f6ea5; }
   #menu-home-triple-menu li h4 {
     margin: 0; }
   #menu-home-triple-menu li a, #menu-home-triple-menu li .tribe-event-title a {

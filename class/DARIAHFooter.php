@@ -8,7 +8,7 @@
             <div class="col-xs-12">
                 <div class="section-1-block about-block">
                     <div class="about-title">
-                        <img src="/wp-content/themes/thefox-child/images/DARIAH-EU-Logo-W.png"/>
+                        <img alt="Logo of DARIAH" src="/wp-content/themes/thefox-child/images/DARIAH-EU-Logo-W.png"/>
                     </div>
                     <div class="about-text">
                         <div><span>Follow us on:</span>&nbsp; 

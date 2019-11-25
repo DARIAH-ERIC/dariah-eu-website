@@ -9,7 +9,7 @@ function dariah_breadcrumbs() {
 
   $showOnHome = 0; // 1 - show breadcrumbs on the homepage, 0 - don't show
 
-  $delimiter = '<i class="fa-angle-right crumbs_delimiter"></i>'; // delimiter between crumbs
+  $delimiter = '<em class="fa-angle-right crumbs_delimiter"></em>'; // delimiter between crumbs
 
   $home = __('Home', 'thefoxwp'); // text for the 'Home' link
 

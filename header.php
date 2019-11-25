@@ -134,7 +134,7 @@ if($rd_data['rd_topbar']== 'yes'){ ?>
     <div id="header_socials" class="header_top_si si_float_right">
       <div id="rss">
         <a href="/category/news/feed/" target="_blank">
-        <i class="fa fa-rss"></i>
+        <em class="fa fa-rss"></em>
         </a>
       </div>
     </div>
@@ -229,7 +229,8 @@ if($rd_data['rd_topbar']== 'yes'){ ?>
       <?php } if ($rd_data['rd_header_search'] == 'yes') {   ?>
       <div id="search-form">
         <form method="get" action="<?php echo home_url(''); ?>" id="searchform">
-          <input type="text" name="s" placeholder="<?php echo esc_attr(__('Search','thefoxwp')); ?>" class="search" id="ssform"   value="<?php the_search_query(); ?>" />
+          <label for="ssform" style="display: none;">Search</label>
+          <input type="text" name="s" title="Search on website" placeholder="<?php echo esc_attr(__('Search', 'thefoxwp')); ?>" class="search" id="ssform" value="<?php the_search_query(); ?>" />
           <input type="submit" id="searchsubmit" value="" />
           <span class="search_button_icon"></span>
         </form>
@@ -250,12 +251,13 @@ if($rd_data['rd_topbar']== 'yes'){ ?>
  } if ($rd_data['rd_header_search'] == 'yes' && $nav_type !== 'nav_type_15'  && $nav_type !== 'nav_type_16'  && $nav_type !== 'nav_type_17'  && $nav_type !== 'nav_type_18' && $nav_type !== 'nav_type_19' && $nav_type !== 'nav_type_19_f'){ ?>
       <div id="search-form">
         <form method="get" action="<?php echo home_url(''); ?>" id="searchform">
-          <input type="text" name="s" placeholder="<?php echo esc_attr(__('Search','thefoxwp')); ?>" class="search" id="ssform"  value="<?php the_search_query(); ?>" />
+          <label for="ssform" style="display: none;">Search</label>
+          <input type="text" name="s" title="Search on website" placeholder="<?php echo esc_attr(__('Search','thefoxwp')); ?>" class="search" id="ssform" value="<?php the_search_query(); ?>" />
           <input type="submit" id="searchsubmit" value="" />
           <span class="search_button_icon"></span>
         </form>
       </div>
-      <div id="searchtop"> <a id="searchtop_img"><i class="fa fa-search"></i></a> </div>
+      <div id="searchtop"> <a id="searchtop_img"><em class="fa fa-search"></em></a> </div>
       <?php }
 
 

@@ -729,8 +729,10 @@ body {
   display: none; }
 
 #menu-home-triple-menu > li {
-  border: 1px solid #2f6ea5;
-  margin: 40px; }
+  margin: 25px;
+  border: 1px solid #f5f5f5;
+  border-radius: 1.2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08); }
 
 #menu-home-triple-menu li {
   padding: 10px 0;
@@ -816,9 +818,15 @@ body {
 
 #menu-home-quadruple-menu .flip-card {
   background-color: transparent;
-  height: 201px;
+  height: 210px;
   -webkit-perspective: 1000px;
-          perspective: 1000px; }
+          perspective: 1000px;
+  border: 1px solid #f5f5f5;
+  border-radius: 1.2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08); }
+
+#menu-home-quadruple-menu .flip-card:hover {
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.12); }
 
 #menu-home-quadruple-menu .flip-card-inner {
   position: relative;
@@ -843,7 +851,6 @@ body {
           backface-visibility: hidden; }
 
 #menu-home-quadruple-menu .flip-card-front {
-  background-color: #bbb;
   color: black; }
   #menu-home-quadruple-menu .flip-card-front img {
     height: 201px; }
@@ -877,20 +884,27 @@ div.moving-background {
       display: flex;
       flex-wrap: wrap; }
       div.moving-background.background-globe .numbers-row .number-row {
-        color: #ffffff;
+        color: #233267;
+        margin: 0 5px 0 5px;
         padding: 100px 10px 100px 10px;
         float: left;
         font-size: 20px;
-        flex: 0 0 16.666666%;
-        max-width: 16.666666%; }
+        flex: 0 0 12.666666%;
+        max-width: 12.666666%; }
         div.moving-background.background-globe .numbers-row .number-row label {
           font-size: 30px; }
         div.moving-background.background-globe .numbers-row .number-row span {
           padding: 0;
           display: block; }
+      div.moving-background.background-globe .numbers-row .circ {
+        padding-top: 100px !important;
+        border-radius: 50%;
+        width: 100px !important;
+        height: 100px !important;
+        background-color: #ffffff; }
       div.moving-background.background-globe .numbers-row .mission {
-        flex: 0 0 50%;
-        max-width: 50%;
+        flex: 0 0 45%;
+        max-width: 45%;
         padding: 100px 0 100px 0; }
         div.moving-background.background-globe .numbers-row .mission p {
           text-align: left !important;
@@ -939,7 +953,7 @@ div#container-about {
       padding-right: 2em; }
     div#container-about .row .about-text {
       overflow: hidden;
-      padding-top: 2.5em;
+      padding-top: 1em;
       padding-left: 2em; }
 
 body #top_bg .page_title_ctn {

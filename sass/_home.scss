@@ -1,8 +1,6 @@
-.menu-home-container, .menu-home-double-menu-container {
-  background-color: #e9eced;
-  text-align: center;
-}
+.menu-home-container, .menu-home-double-menu-container,
 .menu-home-triple-menu-container, .menu-home-quadruple-menu-container {
+  background-color: #e9eced;
   text-align: center;
 }
 
@@ -11,15 +9,6 @@
   padding: 6px 6px;
   max-width: 1658px;
   margin: 0 auto;
-
-  & .tp_recent_tweets {
-    & li {
-      background-image: none;
-      & .twitter_time {
-        color: #ed6f59;
-      }
-    }
-  }
 
   & > li {
     display: block;
@@ -80,7 +69,7 @@
       font-weight: 300;
     }
 
-    & > .widgetizedArea > div, & > .widgetizedArea {
+    & > .widgetizedArea {
       margin: 10px;
       & a {
         color: #ed6f59;
@@ -99,41 +88,41 @@
       }
     }
 
-    //.tp_recent_tweets {
-    //  li {
-    //    display: block;
-    //    width: 90%;
-    //    margin-bottom: 18px;
-    //    background-image: url('images/ico-twitter-quote.png');
-    //    background-position-y: 2px;
-    //    border-bottom: 1px solid #44474a;
-    //
-    //    &:last-child {
-    //      border-bottom: none;
-    //    }
-    //  }
-    //
-    //  span {
-    //    color: #000000;
-    //  }
-    //
-    //  a {
-    //    color: #0aa9c6;
-    //
-    //    &.twitter_time {
-    //      color: #000000;
-    //      font-size: 12px;
-    //    }
-    //  }
-    //}
+    .tp_recent_tweets {
+      li {
+        display: block;
+        width: 90%;
+        margin-bottom: 18px;
+        background-image: url('images/ico-twitter-quote.png');
+        background-position-y: 2px;
+        border-bottom: 1px solid #44474a;
 
-    //.widget_tp_widget_recent_tweets {
-    //  h3 {
-    //    background: url('images/ico-twitter-footer.png') right center no-repeat;
-    //    padding-left: 27px;
-    //    color: #0aa9c6;
-    //  }
-    //}
+        &:last-child {
+          border-bottom: none;
+        }
+      }
+
+      span {
+        color: #000000;
+      }
+
+      a {
+        color: #0aa9c6;
+
+        &.twitter_time {
+          color: #000000;
+          font-size: 12px;
+        }
+      }
+    }
+
+    .widget_tp_widget_recent_tweets {
+      h3 {
+        background: url('images/ico-twitter-footer.png') left center no-repeat;
+        padding-left: 27px;
+        color: #0aa9c6;
+      }
+    }
 
   }
 }
@@ -164,179 +153,22 @@
 }
 
 #menu-home-triple-menu {
-  & h3 {
-    color: #0870ac;
-    font-variant: small-caps;
-    font-size: 1.75rem;
-  }
-
-  & .tribe-events-widget-link {
-    display: none;
-  }
-
-  & > li {
-    //border: 1px solid #2f6ea5;
-    margin: 25px;
-
-    border: 1px solid #f5f5f5;
-    border-radius: 1.2rem;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-  }
-
-  & li {
+  li {
+    margin: 6px;
     @include mintablet {
       display: inline-block;
-      width: 27%;
-    }
-
-    padding: 10px 0;
-    position: relative;
-
-    & li {
-      border-bottom: 1px solid #2f6ea5;
-    }
-
-    & h4 {
-      margin: 0;
-    }
-
-    & a, & .tribe-event-title a {
-      font-weight: normal !important;
-      font-size: 18px;
-      color: black;
-      & > span {
-        color: black;
-      }
-    }
-
-    & .rpwwt-post-date, & .tribe-event-duration span {
-      color: #ed6f59;
-    }
-
-    & .rpwwt-post-excerpt > a, & .tribe-events-list-widget-events p a {
-      float: right;
-      cursor: pointer;
-      padding: .25rem .5rem;
-      font-size: .875rem;
-      line-height: 1.5;
-      border-radius: .2rem;
-      color: #212529 !important;
-      background-color: #f8f9fa;
-      border-color: #f8f9fa;
-      display: inline-block;
-      font-weight: 400;
-      text-align: center;
-      vertical-align: middle;
-      -webkit-user-select: none;
-      -moz-user-select: none;
-      -ms-user-select: none;
-      user-select: none;
-      border-bottom-color: transparent;
-      transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
-      -webkit-appearance: button;
-
-      &:hover {
-        color: #212529;
-        background-color: #e2e6ea;
-        border-color: #dae0e5;
-      }
-    }
-
-    & li:last-child {
-      border-bottom: 0 none;
+      width: calc(33% - 12px);
     }
   }
 }
 
 #menu-home-quadruple-menu {
-  & a {
-    text-align: center;
-  }
   li {
-    margin: 30px;
+    margin: 4px;
     @include mintablet {
       display: inline-block;
-      width: 20%;
+      width: calc(25% - 12px);
     }
-
-    & a.more-btn {
-      background-image: none;
-      float: right;
-      cursor: pointer;
-      padding: .25rem .5rem;
-      font-size: .875rem;
-      line-height: 1.5;
-      border-radius: .2rem;
-      color: #212529 !important;
-      background-color: #f8f9fa;
-      border-color: #f8f9fa;
-      display: inline-block;
-      font-weight: 400;
-      text-align: center;
-      vertical-align: middle;
-      -webkit-user-select: none;
-      -moz-user-select: none;
-      -ms-user-select: none;
-      user-select: none;
-      border-bottom-color: transparent;
-      transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
-      -webkit-appearance: button;
-
-      &:hover {
-        color: #212529;
-        background-color: #e2e6ea;
-        border-color: #dae0e5;
-      }
-    }
-  }
-
-  .flip-card {
-    background-color: transparent;
-    //width: 100%;
-    height: 210px;
-    //height: 201px;
-    perspective: 1000px;
-
-    border: 1px solid #f5f5f5;
-    border-radius: 1.2rem;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-  }
-  .flip-card:hover {
-    box-shadow: 0 10px 35px rgba(0,0,0,0.12);
-  }
-
-  .flip-card-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    transition: transform 0.4s;
-    transform-style: preserve-3d;
-  }
-
-  .flip-card:hover .flip-card-inner {
-    transform: rotateY(180deg);
-  }
-
-  .flip-card-front, .flip-card-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
-  }
-
-  .flip-card-front {
-    //background-color: #bbb;
-    color: black;
-    img {
-      height: 201px;
-    }
-  }
-
-  .flip-card-back {
-    background-color: white;
-    color: black;
-    transform: rotateY(180deg);
   }
 }
 
@@ -345,135 +177,33 @@ div.moving-background {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center center;
-  background-size: cover;
-
-  div.container-title {
-    position: relative;
-    min-height: 300px;
-    padding: 20px 100px 20px 100px;
-    z-index: 1;
-
-    & p {
-      font-size: 26px;
-      color: #fff;
-      text-align: center;
-    }
-  }
-
-  &.background-globe {
-    background-image: url(/wp-content/themes/thefox-child/images/mission.jpg);
-
-    & .numbers-row {
-      text-align: center;
-      width: 100%;
-      display: flex;
-      flex-wrap: wrap;
-
-      & .number-row {
-        //color: #ffffff;
-        color: #233267;
-        margin: 0 5px 0 5px;
-        padding: 100px 10px 100px 10px;
-        float: left;
-        font-size: 20px;
-        flex: 0 0 12.666666%;
-        max-width: 12.666666%;
-
-        & label {
-          font-size: 30px;
-        }
-
-        & span {
-          padding: 0;
-          display: block;
-          //text-transform: lowercase;
-        }
-      }
-
-      & .circ {
-        padding-top:100px !important;
-        border-radius: 50%;
-        width: 100px !important;
-        height: 100px !important;
-        //display: inline-block;
-        background-color: #ffffff;
-      }
-
-      & .mission {
-        flex: 0 0 45%;
-        max-width: 45%;
-        padding: 100px 0 100px 0;
-
-        p {
-          text-align: left !important;
-          font-size: 24px;
-          color: #ffffff !important;
-          font-weight: bold;
-          margin-left: 100px;
-        }
-      }
-    }
-  }
-  &.background-mission {
-    background-image: url(/wp-content/themes/thefox-child/images/mission.jpg);
-    background-color: rgba(8,112,172,0.6);
-
-    & h2 {
-      color: #99cccc;
-      font-size: 48px;
-      text-align: center;
-      padding: 1em 0 2em 0;
-    }
-  }
+  background-image: url(/wp-content/uploads/2017/05/bearbeitetetes-presse-bild-612x460.jpg);
 
   div.opacity-film {
-    background-color: rgba(8,112,172,0.8);
+    opacity: 0.9;
+    background-color: #35383c;
     position: absolute;
     top: 0;
     left: 0;
     bottom: 0;
     width: 100%;
+    //z-index: 0;
+  }
+  div.container-title {
+    position: relative;
+    height: 300px;
+    padding: 20px 100px 20px 100px;
+    z-index: 1;
+
+    h2 {
+      padding: 110px;
+      text-align: center;
+      color: white;
+    }
   }
 }
 
 div.allow-space {
   padding-bottom: 100px;
-  &.blue-space {
-    background-color: #e9eced;
-  }
-}
-
-div#container-about {
-  margin: 0 15px 0 15px; //for small devices
-
-  & > .wrapper {
-    border-bottom: 2px solid white;
-  }
-
-  @include mintablet {
-    margin: 0 auto;
-  }
-
-  & span {
-    font-size: 20px;
-  }
-  & span, & h2 {
-    color: white;
-    margin: 0;
-  }
-  & .row {
-    padding-top: 2em;
-    padding-bottom: 6px;
-
-    & .about-title {
-      float: left;
-      padding-right: 2em;
-    }
-
-    & .about-text {
-      overflow: hidden;
-      padding-top: 1em;
-      padding-left: 2em;
-    }
-  }
+  background-color: #e9eced;
 }

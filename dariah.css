@@ -613,6 +613,29 @@ body {
   margin-bottom: 0;
   margin-top: 42px; }
 
+div#container-about {
+  margin: 0 15px 0 15px; }
+  div#container-about > .wrapper {
+    border-bottom: 2px solid white; }
+  @media (min-width: 768px) {
+    div#container-about {
+      margin: 0 auto; } }
+  div#container-about span {
+    font-size: 20px; }
+  div#container-about span, div#container-about h2 {
+    color: white;
+    margin: 0; }
+  div#container-about .row {
+    padding-top: 2em;
+    padding-bottom: 6px; }
+    div#container-about .row .about-title {
+      float: left;
+      padding-right: 2em; }
+    div#container-about .row .about-text {
+      overflow: hidden;
+      padding-top: 1em;
+      padding-left: 2em; }
+
 .menu-home-container, .menu-home-double-menu-container,
 .menu-home-triple-menu-container, .menu-home-quadruple-menu-container {
   background-color: #e9eced;
@@ -1980,8 +2003,6 @@ span.wpcf7-not-valid-tip {
       fill: #046eab; }
     #dariahMap path.cooperating-partners {
       fill: #138fd7; }
-    #dariahMap path.selected {
-      fill: #076fac !important; }
   #dariahMap div.legend {
     line-height: 25px;
     color: #555;

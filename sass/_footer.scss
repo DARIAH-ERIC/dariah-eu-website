@@ -272,3 +272,38 @@
     margin-top: 42px;
   }
 }
+
+div#container-about {
+  margin: 0 15px 0 15px; //for small devices
+
+  & > .wrapper {
+    border-bottom: 2px solid white;
+  }
+
+  @include mintablet {
+    margin: 0 auto;
+  }
+
+  & span {
+    font-size: 20px;
+  }
+  & span, & h2 {
+    color: white;
+    margin: 0;
+  }
+  & .row {
+    padding-top: 2em;
+    padding-bottom: 6px;
+
+    & .about-title {
+      float: left;
+      padding-right: 2em;
+    }
+
+    & .about-text {
+      overflow: hidden;
+      padding-top: 1em;
+      padding-left: 2em;
+    }
+  }
+}

@@ -348,4 +348,4 @@ wp_nav_menu(array(
 	'theme_location' => 'home-menu',
 	'walker' => new Home_Walker_Nav_Menu()
 )); ?>
-<?php get_footer(); ?>
+<?php get_dariah_footer(); ?>

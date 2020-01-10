@@ -279,4 +279,4 @@ else{
     <div class="clearfix"></div>
   </div>
 </div>
-<?php get_footer(); ?>
+<?php get_dariah_footer(); ?>

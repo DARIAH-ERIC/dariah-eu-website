@@ -347,4 +347,4 @@ $content_diff = str_replace( $content_cut, '', $content_full );
 		</div>
 	</div>
 </div>
-<?php get_footer(); ?>
+<?php get_dariah_footer(); ?>

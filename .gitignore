@@ -1,0 +1,7 @@
+/node_modules/
+/.idea/
+/dariah-eu-theme.iml
+/build/yearbook.csv
+/build/yearbook.json
+/package-lock.json
+/map/dynamic-data.json

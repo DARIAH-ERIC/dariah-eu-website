@@ -202,7 +202,7 @@
     jQuery(dariahWindow).find('li:nth-child(4) a').html('DARIAH<br/>nationally');
 
     var _selectedTab;
-    if (selectedCountry.entities.length === 0 && selectedCountry.national.persons.length === 0 && selectedCountry.national.institutions === 0 && selectedCountry.nationalInstitutions.length === 0 && selectedCountry.coordinators.length === 0) {
+    if (selectedCountry.entities.length === 0 && selectedCountry.national.persons.length === 0 && selectedCountry.national.institutions.length === 0 && selectedCountry.nationalInstitutions.length === 0 && (!selectedCountry.coordinators || selectedCountry.coordinators === "" || selectedCountry.coordinators.length === 0)) {
       jQuery(dariahWindow).find('li:nth-child(1)').hide();
     } else {
       jQuery(dariahWindow).find('li:nth-child(1)').show();

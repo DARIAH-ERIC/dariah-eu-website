@@ -257,7 +257,7 @@ if($rd_data['rd_topbar']== 'yes'){ ?>
           <span class="search_button_icon"></span>
         </form>
       </div>
-      <div id="searchtop"> <a id="searchtop_img"><em class="fa fa-search"></em></a> </div>
+      <div id="searchtop"> <a id="searchtop_img"><i class="fa fa-search"></i></a> </div>
       <?php }
 
 

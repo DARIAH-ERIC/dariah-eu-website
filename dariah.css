@@ -798,6 +798,189 @@ div.allow-space {
   padding-bottom: 100px;
   background-color: #e9eced; }
 
+/* 1. Rev Slider */
+.rev_slider img, .tp-simpleresponsive img {
+  border-radius: 6px; }
+
+/* 2. Blog Post Images */
+.post-attachement img {
+  border-radius: 6px;
+  border-style: solid !important;
+  border: #eee;
+  border-width: 2px !important;
+  border-radius: 6px; }
+
+/* Blog Post Arrows */
+.related_left, .related_right {
+  border: 1px solid #2b3547;
+  color: #2b3547; }
+
+/* Blog Post Read More Buttons */
+.blog_related_post .more-link {
+  font-size: 11px;
+  padding: 2px 15px;
+  border-radius: 30px; }
+
+.blog_related_post .more-link:hover {
+  background-color: #1E396C;
+  color: #ffffff !important; }
+
+.related_nav.cbp_type04 .related_right, .related_nav.cbp_type04 .related_left {
+  border-radius: 30px; }
+
+/* Post Titles - Latest news */
+.post-title h2 {
+  font-weight: 700;
+  line-height: 24px;
+  font-size: 18px !important; }
+
+.post-info {
+  font-size: 14px;
+  padding-bottom: 0px;
+  border-bottom: 0px;
+  font-weight: 300; }
+
+.entry, .left_posts, .business_posts {
+  color: #333 !important;
+  font-weight: 300; }
+
+/* Members Counters*/
+.vc_custom_1589227941901 a {
+  color: #ffffff !important;
+  line-height: 1em; }
+
+.vc_custom_1589227941901 a:hover {
+  color: #a1b1bc !important; }
+
+.rd_count_wrap {
+  margin-bottom: 1.3em; }
+
+.rd_count_wrap .count_number {
+  font-weight: 300; }
+
+.rd_count_wrap .count_title {
+  font-weight: 500 !important; }
+
+/* Twitter Carousel */
+.tweet_ctn {
+  font-size: 18px; }
+
+.rd_twitter_nav {
+  margin-top: 18px; }
+
+.rd_twitter_icon {
+  color: lightSkyBlue !important;
+  border-color: lightSkyBlue !important; }
+
+.tweet_left, .tweet_right {
+  color: #2c3547;
+  border-color: #2c3547; }
+
+/* Row */
+.wpb_row {
+  margin-bottom: 0px; }
+
+/* Activities - Info Boxes */
+.vc_span12 .icon_box2 {
+  min-width: 23%;
+  border-radius: 5px;
+  margin-left: .8em;
+  max-width: 23%;
+  display: inline-block;
+  font-weight: 300; }
+
+/* Footer */
+div#container-about .row .about-text {
+  padding-top: 2.2em;
+  padding-right: 1em; }
+
+#footer .page_item a, #footer .menu-item a {
+  color: #ffffff; }
+
+.widget_nav_menu .menu-item a {
+  padding: 0 0 1.0em;
+  font-size: 15px; }
+
+#top_bg #footer_bg, #footer_bg, #top_bg #footer, #footer {
+  background-color: #2C3547 !important; }
+
+#footer {
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 16px !important; }
+
+.mc_signup_submit {
+  margin-left: 45px; }
+
+.widget_mailchimp #mc_signup_submit {
+  border-radius: 30px !important;
+  font-size: 14px;
+  line-height: 12px; }
+
+.widget_mailchimp .mc_input {
+  background-color: #202734 !important; }
+
+/* Media Queries - Twitter, Activities Info Boxes */
+@media only screen and (max-width: 1219px) and (min-width: 1034px) {
+  .vc_span12 .icon_box2 {
+    max-width: 45%;
+    width: 44%;
+    margin: 18px 0px 0px 26px !important; }
+  .tweet_ctn {
+    font-size: 14px; }
+  .rd_twitter_nav {
+    margin-top: 15px; } }
+
+@media only screen and (max-width: 1035px) and (min-width: 768px) {
+  .vc_span12 .icon_box2 {
+    max-width: 46%;
+    width: 46%;
+    margin-top: 18px; }
+  .vc_custom_1587702426893 {
+    margin-left: 5px !important; }
+  .tweet_user a {
+    font-size: 16px; }
+  .tweet_ctn {
+    font-size: 14px; }
+  .rd_twitter_nav {
+    margin-top: 15px; } }
+
+@media only screen and (max-width: 767px) and (min-width: 260px) {
+  .vc_span12 .icon_box2 {
+    max-width: 70%;
+    width: 70%;
+    margin: 16px 22px 0px 15%; }
+  .vc_custom_1587945868565 {
+    margin-left: 0px !important;
+    padding-left: 0px !important; }
+  .tf_btn_pos a {
+    width: 40% !important; }
+  div#container-about span {
+    margin-left: -1em; }
+  .vc_custom_1587130211305 .blog_related_post {
+    padding-right: 20px;
+    padding-left: 20px; }
+  .vc_custom_1587130211305 {
+    padding: 10px !important; }
+  .footer_type_1 .widget h2 {
+    margin-top: 1em; }
+  #footer {
+    padding-left: 3%; } }
+
+/* Social Icons On Mobile */
+@media only screen and (max-width: 480px) and (min-width: 260px) {
+  .vc_custom_heading {
+    margin-left: 30px; }
+  .vc_custom_1587945868565 {
+    margin-left: 0px !important;
+    padding-left: 0px !important; }
+  div#container-about .row .about-text {
+    overflow: hidden;
+    padding-left: 130px !important;
+    text-align: left; }
+  div#container-about .row .about-text {
+    padding-top: 1.2em; } }
+
 body #top_bg .page_title_ctn {
   padding: 32px; }
   body #top_bg .page_title_ctn.white h1,

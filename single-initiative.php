@@ -12,7 +12,7 @@ Template Name: Dariah Initiatives and Documents
 
 $slider_page_id = $post->ID;
 if(is_home() && !is_front_page()){
-	$slider_page_id = get_option('pagfe_for_posts');
+	$slider_page_id = get_option('page_for_posts');
 }
 
 if(get_post_meta($slider_page_id, 'rd_slider_type', true) == 'layer' && (get_post_meta($slider_page_id, 'rd_slider', true) || get_post_meta($slider_page_id, 'rd_slider', true) != 0)){

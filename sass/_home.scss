@@ -250,7 +250,7 @@ div.allow-space {
 }
 .post-info {
   font-size: 14px;
-  padding-bottom: 0px;
+  padding-bottom: 0px!important;
   border-bottom: 0px;
   font-weight:300;
 }
@@ -295,15 +295,15 @@ div.allow-space {
 
 /* Row */
 .wpb_row {
-  margin-bottom: 0px;
+  margin-bottom: 0px!important;
 }
 
 /* Activities - Info Boxes */
 .vc_span12 .icon_box2 {
-  min-width: 23%;
+  min-width: 23%!important;
   border-radius: 5px;
-  margin-left: .8em;
-  max-width: 23%;
+  margin-left: .8em!important;
+  max-width: 23%!important;
   display: inline-block;
   font-weight:300;
 }
@@ -314,7 +314,10 @@ div#container-about .row .about-text {
   padding-right: 1em;
 }
 #footer .page_item a, #footer .menu-item a {
-  color: #ffffff;
+  color: #ffffff!important;
+}
+#footer .page_item a, #footer .menu-item a:hover {
+  color: #a1b1bc!important;
 }
 .widget_nav_menu .menu-item a {
   padding: 0 0 1.0em;
@@ -343,7 +346,7 @@ div#container-about .row .about-text {
 /* Media Queries - Twitter, Activities Info Boxes */
 @media only screen and (max-width: 1219px) and (min-width: 1034px){
   .vc_span12 .icon_box2 {
-    max-width: 45%;
+    max-width: 45%!important;
     width: 44%;
     margin: 18px 0px 0px 26px!important;
   }

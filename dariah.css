@@ -936,9 +936,9 @@ div#container-about .row .about-text {
 
 @media only screen and (max-width: 1035px) and (min-width: 768px) {
   .vc_span12 .icon_box2 {
-    max-width: 46%;
-    width: 46%;
-    margin-top: 18px; }
+    max-width: 46% !important;
+    width: 46% !important;
+    margin-top: 18px !important; }
   .vc_custom_1587702426893 {
     margin-left: 5px !important; }
   .tweet_user a {
@@ -950,8 +950,8 @@ div#container-about .row .about-text {
 
 @media only screen and (max-width: 767px) and (min-width: 260px) {
   .vc_span12 .icon_box2 {
-    max-width: 70%;
-    width: 70%;
+    max-width: 70% !important;
+    width: 70% !important;
     margin: 16px 22px 0px 15%; }
   .vc_custom_1587945868565 {
     margin-left: 0px !important;

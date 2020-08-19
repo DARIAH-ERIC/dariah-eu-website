@@ -37,6 +37,14 @@
 		);
 
 		register_post_type( 'dariah_wg', $args );
+
+	  $taxonomyLink = array (
+		  'hierarchical'      => true,
+		  'label'             => 'WG categories',
+		  'query_var'         => true
+	  );
+
+	  register_taxonomy( 'dariah_wg_link', 'dariah_wg', $taxonomyLink);
   }
 
   function add_meta_wg() {

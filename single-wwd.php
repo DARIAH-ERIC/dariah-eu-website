@@ -344,19 +344,19 @@ do_action( '__after_page_title' );
 				$postType = 'dariah_initiative';
 			}
 
-			if ($postType == 'dariah_project') {
-				$app_categories = get_terms( 'dariah_project_link' );
+			if ($postType == 'dariah_project' || $postType == 'dariah_wg') {
+		        $app_categories = get_terms( $postType . '_link' );
 				global $more;
 				$tempMore = $more;
 				$more = false;
 				foreach ( $app_categories as $app_category ) {
 						$items_query = new WP_Query( array(
-								'post_type' => 'dariah_project',
+								'post_type' => $postType,
 								'orderby' => 'date',
 								'nopaging' => true,
 								'tax_query' => array(
 										array(
-												'taxonomy' => 'dariah_project_link',
+												'taxonomy' => $postType . '_link',
 												'field' => 'slug',
 												'terms' => array( $app_category->slug ),
 												'operator' => 'IN'

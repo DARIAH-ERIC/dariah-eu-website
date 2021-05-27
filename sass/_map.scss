@@ -675,3 +675,13 @@
     width: 90%;
   }
 }
+
+#below-map {
+  padding: 10px;
+  color: black;
+
+  ul {
+    list-style-type: disc;
+    list-style-position: inside;
+  }
+}

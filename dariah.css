@@ -2496,6 +2496,13 @@ span.wpcf7-not-valid-tip {
     line-height: 20px;
     width: 90%; }
 
+#below-map {
+  padding: 10px;
+  color: black; }
+  #below-map ul {
+    list-style-type: disc;
+    list-style-position: inside; }
+
 .page-template-single-organigram .page_title_ctn {
   border-bottom: none;
   background-color: #43A9C6; }

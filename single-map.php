@@ -377,7 +377,7 @@ wp_reset_query();
   </div>
 </div>
 
-<div>
+<div id="below-map">
     <?php echo $content_diff; ?>
 </div>
 <?php get_dariah_footer(); ?>

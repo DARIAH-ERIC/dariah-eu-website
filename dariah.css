@@ -2189,6 +2189,8 @@ span.wpcf7-not-valid-tip {
       fill: #046eab; }
     #dariahMap path.cooperating-partners {
       fill: #138fd7; }
+    #dariahMap path.observers {
+      fill: #0870ac; }
   #dariahMap div.legend {
     line-height: 25px;
     color: #555;
@@ -2205,6 +2207,8 @@ span.wpcf7-not-valid-tip {
         background-color: #046eab; }
       #dariahMap div.legend i.cooperating-partners {
         background-color: #138fd7; }
+      #dariahMap div.legend i.observers {
+        background-color: #0870ac; }
 
 #dariahWindow {
   overflow: hidden;

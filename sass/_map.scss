@@ -231,6 +231,10 @@
       fill: #138fd7;
     }
 
+    &.observers {
+      fill: #0870ac;
+    }
+
     &.selected {
       //fill: #076fac !important;
     }
@@ -256,6 +260,9 @@
         }
         &.cooperating-partners {
           background-color: #138fd7;
+        }
+        &.observers {
+          background-color: #0870ac;
         }
       }
     }

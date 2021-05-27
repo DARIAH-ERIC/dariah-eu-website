@@ -69,8 +69,8 @@
     var legend = L.control();
     legend.onAdd = function (map) {
         var div = L.DomUtil.create('div', 'info legend'),
-            colors = ["Member Countries", "Cooperating Partners", "Observer Countries"],
-            labels = ["members", "cooperating-partners", "observers"];
+            colors = ["Member Countries", "Observer Countries", "Cooperating Partners"],
+            labels = ["members", "observers", "cooperating-partners"];
 
         // loop through our density intervals and generate a label with a colored square for each interval
         for (var i = 0; i < colors.length; i++) {

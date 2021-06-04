@@ -2501,8 +2501,9 @@ span.wpcf7-not-valid-tip {
     width: 90%; }
 
 #below-map {
-  padding: 10px;
-  color: black; }
+  color: black;
+  margin: 10px auto;
+  width: 1170px; }
   #below-map ul {
     list-style-type: disc;
     list-style-position: inside; }

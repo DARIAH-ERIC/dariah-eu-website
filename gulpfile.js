@@ -57,4 +57,4 @@ gulp.task('watch', function() {
   gulp.watch('./js/*.js', ['js', reload]);
 });
 
-gulp.task('default', ['sass', 'js', 'watch']);
+gulp.task('default', gulp.series('sass', 'js', 'watch'));

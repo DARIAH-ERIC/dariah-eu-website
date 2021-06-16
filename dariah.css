@@ -1504,7 +1504,6 @@ body.page-template .strong_colored strong {
     height: 23px;
     display: block;
     background-color: #f7f7f7;
-    -webkit-transform: rotate(45deg);
     transform: rotate(45deg); } }
 
 .page #sidebar .tagcloud a:hover,
@@ -2096,8 +2095,7 @@ span.wpcf7-not-valid-tip {
 
 @media only screen and (max-width: 767px) {
   .page-template-single-map.fixed #mapNav, .page-template-single-map.fixed #dariahMap {
-    -webkit-filter: brightness(50%);
-            filter: brightness(50%);
+    filter: brightness(50%);
     opacity: 0.5; }
   .page-template-single-map .leaflet-top {
     top: 100px; } }
@@ -2189,6 +2187,8 @@ span.wpcf7-not-valid-tip {
       fill: #046eab; }
     #dariahMap path.cooperating-partners {
       fill: #138fd7; }
+    #dariahMap path.observers {
+      fill: #0aa9c6; }
   #dariahMap div.legend {
     line-height: 25px;
     color: #555;
@@ -2205,6 +2205,8 @@ span.wpcf7-not-valid-tip {
         background-color: #046eab; }
       #dariahMap div.legend i.cooperating-partners {
         background-color: #138fd7; }
+      #dariahMap div.legend i.observers {
+        background-color: #0aa9c6; }
 
 #dariahWindow {
   overflow: hidden;
@@ -2357,11 +2359,11 @@ span.wpcf7-not-valid-tip {
           height: 32px; } }
   #dariahWindow.country li.selected {
     color: #0870ac; }
-  #dariahWindow.country a:not(.ico-marker, .ico-person) {
+  #dariahWindow.country a {
     padding-top: 15px;
     min-height: 58px; }
     @media only screen and (min-width: 1035px) {
-      #dariahWindow.country a:not(.ico-marker, .ico-person) {
+      #dariahWindow.country a {
         padding: 15px 20px 7px; } }
   #dariahWindow.country .content a, #dariahWindow.country .content li:before, #dariahWindow.country .content li a {
     color: #0870ac; }
@@ -2495,6 +2497,14 @@ span.wpcf7-not-valid-tip {
   #dariahIntro p {
     line-height: 20px;
     width: 90%; }
+
+#below-map {
+  color: black;
+  margin: 10px auto;
+  width: 1170px; }
+  #below-map ul {
+    list-style-type: disc;
+    list-style-position: inside; }
 
 .page-template-single-organigram .page_title_ctn {
   border-bottom: none;
@@ -2688,8 +2698,7 @@ span.wpcf7-not-valid-tip {
         height: 96px; } }
     #dariahYearbook .thumb img {
       top: 50%;
-      -webkit-transform: translateY(-50%);
-              transform: translateY(-50%);
+      transform: translateY(-50%);
       position: absolute; }
   #dariahYearbook .results {
     padding: 0 22px; }
@@ -2756,7 +2765,6 @@ span.wpcf7-not-valid-tip {
       height: 23px;
       display: block;
       background-color: #f5f5f5;
-      -webkit-transform: rotate(45deg);
       transform: rotate(45deg); }
   #dariahYearbook .tabs li {
     position: relative;
@@ -2862,12 +2870,10 @@ span.wpcf7-not-valid-tip {
     transition: all .2s; }
   #dariahYearbook [type="checkbox"]:not(:checked) + label:after {
     opacity: 0;
-    -webkit-transform: scale(0);
-            transform: scale(0); }
+    transform: scale(0); }
   #dariahYearbook [type="checkbox"]:checked + label:after {
     opacity: 1;
-    -webkit-transform: scale(1);
-            transform: scale(1); }
+    transform: scale(1); }
   #dariahYearbook #pagination {
     margin: 0 22px;
     padding: 30px 0;

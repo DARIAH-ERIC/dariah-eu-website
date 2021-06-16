@@ -231,6 +231,10 @@
       fill: #138fd7;
     }
 
+    &.observers {
+      fill: #0aa9c6;
+    }
+
     &.selected {
       //fill: #076fac !important;
     }
@@ -256,6 +260,9 @@
         }
         &.cooperating-partners {
           background-color: #138fd7;
+        }
+        &.observers {
+          background-color: #0aa9c6;
         }
       }
     }
@@ -673,5 +680,16 @@
   p {
     line-height: 20px;
     width: 90%;
+  }
+}
+
+#below-map {
+  color: black;
+  margin: 10px auto;
+  width: 1170px;
+
+  ul {
+    list-style-type: disc;
+    list-style-position: inside;
   }
 }

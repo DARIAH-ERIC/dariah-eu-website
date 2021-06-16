@@ -339,8 +339,22 @@ wp_reset_query();
       <img class="pre_dummy_img" src="<?php echo get_template_directory_uri(); ?>/images/loader.gif"/>
     </div>
   </div>
+
+<?php
+    global $more;
+    $tempMore = $more;
+    $more = false;
+    $content_cut = get_the_content( '' );
+    $more = true;
+    $content_full = get_the_content();
+    $content_diff = str_replace( $content_cut, '', $content_full );
+
+    $content_cut = apply_filters( 'the_content', $content_cut );
+    $content_diff = apply_filters( 'the_content', $content_diff );
+?>
+
   <div id="dariahMap"></div>
-  <div id="dariahIntro" itemprop="about"><?php echo the_content(); ?></div>
+  <div id="dariahIntro" itemprop="about"><?php echo $content_cut; ?></div>
   <div id="dariahWindow">
     <div class="header">
       <h1></h1>
@@ -361,5 +375,9 @@ wp_reset_query();
 			<div class="content"></div>
 		</div>
   </div>
+</div>
+
+<div id="below-map">
+    <?php echo $content_diff; ?>
 </div>
 <?php get_dariah_footer(); ?>

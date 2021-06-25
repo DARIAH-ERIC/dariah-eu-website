@@ -12,7 +12,7 @@
   }
 
 class dariah_menu_project_widget extends WP_Widget {
-  function Dariah_Menu_Project_Widget() {
+  function __construct() {
     $widget_ops = array( 'classname' => 'dariah_menu_project_widget', 'description' => __('Display Dariah Project', 'dariah') );
     $control_ops = array( 'width' => 300, 'height' => 350, 'id_base' => 'dariah_menu_project_widget' );
     parent::__construct( 'dariah_menu_project_widget', __('Dariah Projects', 'dariah'), $widget_ops, $control_ops );

@@ -2359,11 +2359,11 @@ span.wpcf7-not-valid-tip {
           height: 32px; } }
   #dariahWindow.country li.selected {
     color: #0870ac; }
-  #dariahWindow.country a {
+  #dariahWindow.country a:not(.ico-marker, .ico-person) {
     padding-top: 15px;
     min-height: 58px; }
     @media only screen and (min-width: 1035px) {
-      #dariahWindow.country a {
+      #dariahWindow.country a:not(.ico-marker, .ico-person) {
         padding: 15px 20px 7px; } }
   #dariahWindow.country .content a, #dariahWindow.country .content li:before, #dariahWindow.country .content li a {
     color: #0870ac; }

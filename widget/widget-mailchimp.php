@@ -5,7 +5,7 @@
   }
 
 class dariah_mailchimp extends WP_Widget {
-  function Dariah_Mailchimp() {
+  function __construct() {
     $widget_ops = array( 'classname' => 'dariah_mailchimp_widget', 'description' => __('Display Dariah Mailchimp', 'dariah') );
     $control_ops = array( 'width' => 300, 'height' => 350, 'id_base' => 'dariah_mailchimp_widget' );
     parent::__construct( 'dariah_mailchimp_widget', __('Dariah MailChimp', 'dariah'), $widget_ops, $control_ops );

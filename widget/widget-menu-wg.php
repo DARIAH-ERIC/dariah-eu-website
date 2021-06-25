@@ -12,7 +12,7 @@
   }
 
 class dariah_menu_wg_widget extends WP_Widget {
-  function Dariah_Menu_WG_Widget() {
+  function __construct() {
     $widget_ops = array( 'classname' => 'dariah_menu_wg_widget', 'description' => __('Display Dariah Working Groups', 'dariah') );
     $control_ops = array( 'width' => 300, 'height' => 350, 'id_base' => 'dariah_menu_wg_widget' );
     parent::__construct( 'dariah_menu_wg_widget', __('Dariah WGs', 'dariah'), $widget_ops, $control_ops );

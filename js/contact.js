@@ -2,10 +2,10 @@
   var contentBerlin = '<p class="title">DARIAH-EU Coordination Office</p>Centre Marc Bloch<br />Friedrichstraße' +
       ' 191<br />D-10117 Berlin<br />Germany';
   var contentTheHague = '<p class="title">DANS : Netherland Institute for Permanent Access to Digital Research' +
-      ' Ressources</p>Anna van Saksenlaan 51<br/>2593 HW The Hague<br/>P.O. Box 93067<br/>2509 AB The' +
+      ' Resources</p>Anna van Saksenlaan 51<br/>2593 HW The Hague<br/>P.O. Box 93067<br/>2509 AB The' +
       ' Hague<br/>Netherlands';
-  var contentParis = '<p class="title">DARIAH-EU</p>c/o TGIR Huma-Num<br/>TGIR HUMA-NUM<br/>CNRS UMS 3598<br/>54 bd' +
-      ' Raspail<br/>75006 Paris<br/>France';
+  var contentParis = '<p class="title">DARIAH-EU</p>c/o TGIR Huma-Num<br/>CNRS UMS 3598<br/>54 bd Raspail<br/>75006' +
+      ' Paris<br/>France';
   var contentDublin = '<p class="title">Trinity College Dublin</p>Trinity Long Room Hub Arts and Humanities Research' +
       ' Institute<br/>The University of Dublin<br/>College Green<br/>Dublin 2<br/>Ireland';
   var positionBerlin = {

@@ -15,6 +15,9 @@ function get_dariah_footer() {
                         	<a href="https://twitter.com/DARIAHeu">
                         		<img src="/wp-content/themes/thefox-child/images/Asset-1@2x.png" alt="twitter" width="30" height="30">
                         	</a>&nbsp;
+                        	<a href="https://www.linkedin.com/company/dariah-eric">
+                        		<img src="/wp-content/themes/thefox-child/images/linkedin-logo-grey.png" alt="linkedin" width="30" height="30">
+                        	</a>&nbsp;
                         	<a href="https://www.youtube.com/channel/UCeQpM_gUvNZXUWf6qQ226GQ?view_as=subscriber">
                         		<img src="/wp-content/themes/thefox-child/images/Asset-3@2x.png" alt="youtube" width="30" height="30">
                         	</a>&nbsp;

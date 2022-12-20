@@ -59,7 +59,7 @@
           <?php } ?>
 
           <?php if(strlen(trim($item->email)) != 0) { ?>
-            <a href="mailto:<?php echo encode_email($item->email); ?>" class="dariah-mail" itemprop="email"><?php echo $item->email; ?></a>
+            <a href="mailto:<?php echo $item->email; ?>" class="dariah-mail" itemprop="email"><?php echo $item->email; ?></a>
           <?php } ?>
         </div>
       </div>

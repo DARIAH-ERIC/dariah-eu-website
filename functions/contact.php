@@ -30,10 +30,24 @@
         if ($displayMore) {
           $excerpt .= '...';
         }
+        $imageClassStr = "";
+
+        if (is_array($imageClasses)) {
+            //if it is a multidimenisonal array
+            if (count($imageClasses) == count($imageClasses, COUNT_RECURSIVE)) {
+                foreach ($imageClasses as $k => $v) {
+                    $imageClassStr .= $v . ' ';
+                }
+            } else {
+                $imageClassStr = implode($imageClasses, ' ');
+            }
+        } else {
+            $imageClassStr = $imageClasses;
+        }
     ?>
     <li>
       <div class="person-desc" itemprop="member" itemscope itemtype="http://schema.org/Person">
-        <div class="<?php echo implode($imageClasses, ' '); ?>" style="background-image: url('<?php echo $imagePath; ?>');"></div>
+        <div class="<?php echo imageClassStr; ?>" style="background-image: url('<?php echo $imagePath; ?>');"></div>
         <div class="content">
           <p class="name" itemprop="name"><?php echo $item->firstname . ' ' . $item->lastname; ?></p>
           <?php if (strlen(trim($custom['position'][0])) != 0) { ?>

@@ -142,12 +142,12 @@
 			return;
 		}
 
-    if ( isset($_POST['post_type']) && 'dariah_project' == $_POST['post_type'] ) {
-  		update_post_meta( $post->ID, "fullname", $_POST["fullname"] );
-  		update_post_meta( $post->ID, "website", $_POST["website"] );
-  		update_post_meta( $post->ID, "coordinator", $_POST["coordinator"] );
-  		update_post_meta( $post->ID, "contacts", implode(',', $_POST["contacts"]) );
-  		update_post_meta( $post->ID, "institutions", implode(',', $_POST["institutions"]) );
+    if (isset($_POST['post_type']) && 'dariah_project' == $_POST['post_type']) {
+        update_post_meta($post->ID, "fullname", is_array($_POST["fullname"]) ? implode(',', $_POST["fullname"]) : $_POST["fullname"]);
+        update_post_meta($post->ID, "website", is_array($_POST["website"]) ? implode(',', $_POST["website"]) : $_POST["website"]);
+        update_post_meta($post->ID, "coordinator", is_array($_POST["coordinator"]) ? implode(',', $_POST["coordinator"]) : $_POST["coordinator"]);
+        update_post_meta($post->ID, "contacts", is_array($_POST["contacts"]) ? implode(',', $_POST["contacts"]) : $_POST["contacts"]);
+        update_post_meta($post->ID, "institutions", is_array($_POST["institutions"]) ? implode(',', $_POST["institutions"]) : $_POST["institutions"]);
     }
 	}
 ?>

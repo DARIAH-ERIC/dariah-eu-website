@@ -154,6 +154,8 @@
 	        update_post_meta( $post->ID, "latitude",$_POST["latitude"] );
 		    update_post_meta( $post->ID, "website", $_POST["website"] );
 		    update_post_meta( $post->ID, "websitename", $_POST["websitename"] );
+			//regenerate the map json data after the update
+        	dariah_create_json_for_map();
 	    }
 	}
 ?>

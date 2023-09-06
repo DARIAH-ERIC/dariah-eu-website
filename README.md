@@ -34,11 +34,26 @@ You can find country iso3 code [here](http://www.nationsonline.org/oneworld/coun
 
 The mandatory `dynamic-data.json` file is created/updated when you create/edit a country, an institution, a person or
  a project.
+
+ ### Update:
+ You can also get the country border coorindates from this repo: https://gist.github.com/mapsam/6197016
+ You have to just simply copy the coordinates and insert them into the map/europe-panes.js it has already the leaflet formatting. 
  
 ## Mandatory automatically created files
 In addition to the `dynamic-data.json` files that is created/updated when creating/editing a country,
 an institution, a person or a project, the file `build/yearbook.json` are as well. You 
 might have to `mkdir build` to create the `build` directory if it is the first time you run the theme.
+
+## Tools and services
+The content is fetched from the DH marketplace. The tabs has a description which is inside the actual tools and services page:
+
+```html
+<span class="tab-core-description-text" style="display: none;">Mature service owned by DARIAH-ERIC enabling the infrastructure to carry out its mission.</span>
+
+<span class="tab-community-description-text" style="display: none;">Mature service owned by one or more DARIAH partner institutions. These services usually support local capacity building and scientific instrumentation.</span>
+
+```
+This two text contains the description text for the Core and for the Community tabs. Please just change the text inside the span element (do not change the visibility) and a jquery code will fetch the values on the first page load and on every tab change.
 
 ## Helpdesk
 In order to use the [Helpdesk](https://github.com/DARIAH-ERIC/contact-helpdesk), you can either use the full 
